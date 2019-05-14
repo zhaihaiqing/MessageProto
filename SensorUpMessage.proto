@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+
+package SensorMessages;
+
+import "SensorMessages/SensorMessages.proto";
+
+message SensorUpMessage {
+  string packet_name = 1;
+  int32 node_id = 2;
+  string gateway_id = 3;
+  uint32 unix_time = 4;
+
+  oneof msg {
+    HighPrecisionIncliData highprecisioninclidata = 20;
+    TempHumiData temphumidata = 21;
+    VibraWireData vibrawiredata = 22;
+    AnemometerData anemometerdata = 23;
+    InclinationData inclinationdata = 24;
+    VoltageData voltagedata = 25;
+    CurrentData currentdata = 26;
+    ResistanceData resistancedata = 27;
+    MillivoltData millivoltdata = 28;
+    VibrationData vibrationdata = 29;
+    CablePeaksHCF100 cablepeakshcf100 = 30;
+    SettlementData settlementdata = 31;
+    StressData stressdata = 32;
+    IncliHCF410V1 inclihcf410v1 = 33;
+    GRTU1000 grtu1000 = 34;
+    HOS3000CH4 hos3000ch4 = 35;
+    DistanceData distancedata = 36;
+    Uart485ForHFS716Sample uart485forhfs716sample = 37;
+    VoltageDataV1 voltagedatav1 = 38;
+  }
+}

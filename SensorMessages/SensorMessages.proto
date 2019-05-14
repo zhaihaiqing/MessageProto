@@ -1,0 +1,127 @@
+syntax = "proto3";
+
+
+message HighPrecisionIncliData{
+   double angle = 1;
+   double chip_temp = 2;
+}
+
+message TempHumiData{
+   double humi = 1;
+   double temp = 2;
+}
+
+message VibraWireData{
+   string channel = 1;
+   int32 db = 2;
+   double freq = 3;
+   double temp = 4;
+}
+
+message AnemometerData{
+   double dev_temp = 1;
+   double humi = 2;
+   double smooth_wind_direction = 3;
+   double smooth_wind_speed = 4;
+   double temp = 5;
+   double wind_direction = 6;
+   double wind_speed = 7;
+}
+
+message InclinationData{
+   double absolute_angle = 1;
+   double primary_projection = 2;
+   double secondary_projection = 3;
+}
+
+message VoltageData{
+   string channel = 1;
+   double data = 2;
+   int32 microsecond = 3;
+   double sample_interval = 4;
+}
+
+message CurrentData{
+   string channel = 1;
+   double data = 2;
+   int32 microsecond = 3;
+   double sample_interval = 4;
+}
+
+message ResistanceData{
+   string channel = 1;
+   double data = 2;
+   int32 microsecond = 3;
+   double sample_interval = 4;
+}
+
+message MillivoltData{
+   string channel = 1;
+   double data = 2;
+   int32 microsecond = 3;
+   double sample_interval = 4;
+}
+
+message VibrationData{
+   string channel = 1;
+   double data = 2;
+   int32 microsecond = 3;
+   double sample_interval = 4;
+}
+
+message CablePeaksHCF100{
+   double base_freq = 1;
+   repeated int32 peaks = 2;
+   repeated int32 values = 3;
+}
+
+message SettlementData{
+   double adc_value = 1;
+   int32 err = 2;
+   double raw_press = 3;
+   double raw_value = 4;
+   double relative_value = 5;
+   double temp = 6;
+   double value = 7;
+}
+
+message StressData{
+   string channel = 1;
+   double data = 2;
+   int32 microsecond = 3;
+   double sample_interval = 4;
+}
+
+message IncliHCF410V1{
+   double x = 1;
+   double y = 2;
+   double z = 3;
+}
+
+message GRTU1000{
+   int32 gas_channel_1 = 1;
+   int32 gas_channel_2 = 2;
+   int32 gas_channel_3 = 3;
+   int32 gas_channel_4 = 4;
+   double temp = 5;
+}
+
+message HOS3000CH4{
+   int32 GasStrength = 1;
+}
+
+message DistanceData{
+   double Distance = 1;
+}
+
+message Uart485ForHFS716Sample{
+   double Hz_or_resratio = 1;
+   string channel = 2;
+   int32 channel_unixtime = 3;
+   double temperature_or_ressum = 4;
+}
+
+message VoltageDataV1{
+   double mV = 1;
+   double temp = 2;
+}
