@@ -10,6 +10,8 @@ message SensorUpMessage {
   int32 node_id = 2;
   string gateway_id = 3;
   uint32 unix_time = 4;
+  string channel = 5;
+  int32 microsecond = 6;
 
   oneof msg {
     HighPrecisionIncliData highprecisioninclidata = 20;

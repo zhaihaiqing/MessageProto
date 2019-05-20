@@ -12,10 +12,9 @@ message TempHumiData{
 }
 
 message VibraWireData{
-   string channel = 1;
-   int32 db = 2;
-   double freq = 3;
-   double temp = 4;
+   int32 db = 1;
+   double freq = 2;
+   double temp = 3;
 }
 
 message AnemometerData{
@@ -35,38 +34,28 @@ message InclinationData{
 }
 
 message VoltageData{
-   string channel = 1;
-   double data = 2;
-   int32 microsecond = 3;
-   double sample_interval = 4;
+   double data = 1;
+   double sample_interval = 2;
 }
 
 message CurrentData{
-   string channel = 1;
-   double data = 2;
-   int32 microsecond = 3;
-   double sample_interval = 4;
+   double data = 1;
+   double sample_interval = 2;
 }
 
 message ResistanceData{
-   string channel = 1;
-   double data = 2;
-   int32 microsecond = 3;
-   double sample_interval = 4;
+   double data = 1;
+   double sample_interval = 2;
 }
 
 message MillivoltData{
-   string channel = 1;
-   double data = 2;
-   int32 microsecond = 3;
-   double sample_interval = 4;
+   double data = 1;
+   double sample_interval = 2;
 }
 
 message VibrationData{
-   string channel = 1;
-   double data = 2;
-   int32 microsecond = 3;
-   double sample_interval = 4;
+   double data = 1;
+   double sample_interval = 2;
 }
 
 message CablePeaksHCF100{
@@ -86,10 +75,8 @@ message SettlementData{
 }
 
 message StressData{
-   string channel = 1;
-   double data = 2;
-   int32 microsecond = 3;
-   double sample_interval = 4;
+   double data = 1;
+   double sample_interval = 2;
 }
 
 message IncliHCF410V1{
@@ -116,9 +103,8 @@ message DistanceData{
 
 message Uart485ForHFS716Sample{
    double Hz_or_resratio = 1;
-   string channel = 2;
-   int32 channel_unixtime = 3;
-   double temperature_or_ressum = 4;
+   int32 channel_unixtime = 2;
+   double temperature_or_ressum = 3;
 }
 
 message VoltageDataV1{
