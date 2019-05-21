@@ -1,0 +1,334 @@
+{
+    "GetCablePeaksHCF100": {
+        "fields": [
+            "odr",
+            "range",
+            "axis"
+        ],
+        "packets": [
+            "GetCablePeaksHCF100"
+        ]
+    },
+    "GetVibration": {
+        "fields":[
+            "odr",
+            "range",
+            "axis",
+            "period"
+        ],
+        "packets":[
+            "GetVibraHCF300",
+            "GetVibraHCF3000"
+        ]
+    },
+    "GetVibraWireHFS200":{
+        "fields":[
+            "channel",
+            "sample_pattern"
+        ],
+        "packets":[
+            "GetVibraWireHFS200",
+            "GetVibraWireHFS200V1"
+        ]
+    },
+    "GetVibraWireHFS400":{
+        "fields":[
+            "odr",
+            "period"
+        ],
+        "packets":[
+            "GetVibraWireHFS400"
+        ]
+    },
+    "GetElectricityHIS100":{
+        "fields":[
+            "channel",
+            "odr",
+            "period",
+            "is_continuous",
+            "is_out_power",
+            "is_factory_init",
+            "is_user_init"
+        ],
+        "odr":{
+            "200Hz": 13,
+            "100Hz": 14,
+            "60Hz": 15,
+            "50Hz": 16,
+            "20Hz": 17,
+            "16.7Hz": 18,
+            "10Hz": 19,
+            "5Hz": 20
+        },
+        "channel":{
+            "channel1": 1,
+            "channel2": 2,
+            "channel1_2": 3,
+            "channel3": 4,
+            "channel1_3": 5,
+            "channel2_3": 6,
+            "channel1_2_3": 7,
+            "channel4:": 8,
+            "channel1_4": 9,
+            "channel2_4": 10,
+            "channel1_2_4": 11,
+            "channel3_4": 12,
+            "channel1_3_4": 13,
+            "channel2_3_4": 14,
+            "channel1_2_3_4": 15
+         },
+        "packets":[
+            "GetElectricityHIS100"
+        ]
+    },
+    "GetStressHIS300":{
+        "fields":[
+            "channel",
+            "odr",
+            "period",
+            "is_continuous"
+        ],
+        "odr":{
+            "40Hz": 0,
+            "20Hz": 1,
+            "10Hz": 2,
+            "5Hz": 3
+        },
+        "channel":{
+            "channel1": 1,
+            "channel2": 2,
+            "channel1_2": 3,
+            "channel3": 4,
+            "channel1_3": 5,
+            "channel2_3": 6,
+            "channel1_2_3": 7,
+            "channel4:": 8,
+            "channel1_4": 9,
+            "channel2_4": 10,
+            "channel1_2_4": 11,
+            "channel3_4": 12,
+            "channel1_3_4": 13,
+            "channel2_3_4": 14,
+            "channel1_2_3_4": 15
+         },
+        "packets":[
+            "GetStressHIS300"
+        ]
+    },
+    "GetStressHIS500":{
+        "fields":[
+            "k_value",
+            "odr",
+            "period"
+        ],
+        "odr":{
+            "5Hz": 0,
+            "10Hz": 1,
+            "20Hz": 2,
+            "4Hz": 3,
+            "80Hz": 4,
+            "160Hz": 5
+        },
+        "packets":[
+            "GetStressHIS500"
+        ]
+    },
+    "GetVibraWireHFS316":{
+        "fields":[
+            "sample_pattern",
+            "channel"
+        ],
+        "packets":[
+            "GetVibraWireHFS316"
+        ]
+    },
+    "GetPressHGR100B2":{
+        "fields":[
+            "sample_pattern"
+        ],
+        "packets":[
+            "GetPressHGR100B2"
+        ]
+    },
+    "GetVibraWireHFS500":{
+        "fields":[
+            "sample_pattern",
+            "channel"
+        ],
+        "packets":[
+            "GetVibraWireHFS500",
+            "GetVibraWireHFS500V1"
+        ]
+    },
+    "GetAnemometerFC307":{
+        "fields":[
+            "addr"
+        ],
+        "packets":[
+            "GetAnemometerFC307"
+        ]
+    },
+    "GetMonitorIncliHCF420":{
+        "fields":[
+            "response_time",
+            "sample_interval",
+            "angle_threshold_1",
+            "angle_threshold_2",
+            "angle_threshold_3",
+            "group"
+        ],
+        "packets":[
+            "GetMonitorIncliHCF420"
+        ]
+    },
+    "SetMainDirectionHCF200":{
+        "fields":[
+            "main_direction"
+        ],
+        "packets":[
+            "SetMainDirectionHCF200"
+        ]
+    },
+    "ConfigClockTask":{
+        "fields":[
+            "is_on_1",
+            "hour_1",
+            "minute_1",
+            "second_1",
+            "interval_1",
+            "number_1",            
+            "is_on_2",
+            "hour_2",
+            "minute_2",
+            "second_2",
+            "interval_2",
+            "number_2",
+            "type",
+            "odr",
+            "range",
+            "axis",
+            "period",
+            "def_sample_type",
+            "channel",
+            "sample_pattern",
+            "is_continuous",
+            "is_out_power",
+            "is_factory_init",
+            "is_user_init",
+            "k_value",
+            "odr_s",
+            "range_s",
+            "axis_s",
+            "period_s",
+            "def_sample_type_s",
+            "channel_s",
+            "sample_pattern_s",
+            "is_continuous_s",
+            "is_out_power_s",
+            "is_factory_init_s",
+            "is_user_init_s",
+            "k_value_s"
+        ],
+        "packets":[
+            "ConfigClockTaskHCF100",
+            "ConfigClockTaskHCF200",
+            "ConfigClockTaskHCF300",
+            "ConfigClockTaskHCF400",
+            "ConfigClockTaskHCF500",
+            "ConfigClockTaskHCF600",
+            "ConfigClockTaskHIS800",
+            "ConfigClockTaskHCF2000",
+            "ConfigClockTaskHCF3000",
+            "ConfigClockTaskHFS200",
+            "ConfigClockTaskHFS200V1",
+            "ConfigClockTaskHFS400",
+            "ConfigClockTaskHFS316",
+            "ConfigClockTaskHIS100",
+            "ConfigClockTaskHIS300",
+            "ConfigClockTaskHIS500",
+            "ConfigClockTaskHGR100B2",
+            "ConfigClockTaskHFS500",
+            "ConfigClockTaskHCF910",
+            "ConfigClockTaskGRTU1000",
+            "ConfigClockTaskFC307"
+        ]
+    },
+    "SetTriggerConfigHCF300":{
+        "fields":[
+            "is_set_trigger",
+            "monitor_odr",
+            "monitor_axis",
+            "trigger_odr",
+            "trigger_axis",
+            "trigger_range",
+            "trigger_sensitivity",
+            "trigger_threshold",
+            "trigger_period"
+        ],
+        "packets":[
+            "SetTriggerConfigHCF300"
+        ]
+    },
+    "OnceInstructionHIS700":{
+        "fields":[
+            "addr",
+            "disconnect_timeout"
+        ],
+        "packets":[
+            "GetAnemometerHCF920",
+            "GetMeteorologyHCF930",
+            "GetCH4HOS3000CH4",
+            "GetShapeArrayHCF1100",
+            "GetTempHumiHOS9010"
+        ]
+    },
+    "TwiceInstructionHIS700":{
+        "fields":[
+            "addr",
+            "disconnect_timeout",
+            "sample_collect_interval"
+        ],
+        "packets":[
+            "GetVibraWireUart485ForHFS316",
+            "GetVibraWireHFS716",
+            "GetDistanceHOS910030",
+            "GetSettlementHCF700"
+        ]
+    },
+    "HIS700AutoSample":{
+        "fields":[
+            "is_on",
+            "sample_collect_interval",
+            "auto_sample_interval",
+            "disconnect_timeout"
+        ],
+        "packets":[
+            "HIS700AutoSample"
+        ]
+    },
+    "SetStdNodeHGR100B2":{
+        "fields":[
+            "reference_node_id"
+        ],
+        "packets":[
+            "SetStdNodeHGR100B2"
+        ]
+    },
+    "SetBaudrateHIS700":{
+        "fields":[
+            "baudrate"
+        ],
+        "packets":[
+            "SetBaudrateHIS700"
+        ]
+    },
+    "SetChannelConfigHFS316":{
+        "fields":[
+            "channel_config_bit_map"
+        ],
+        "packets":[
+            "SetChannelConfigHFS316"
+        ]
+    }
+
+}

@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+
+package SensorMessages;
+
+import "SensorMessages/SensorMessages.proto";
+
+message SensorDownMessage {
+  string instruction_name = 1;
+  string gateway_id = 2;
+  int32 node_id = 3;
+  string user_id = 4;
+  uint32 unix_time = 5;
+
+  oneof msg {
+    GetCablePeaksHCF100 getcablepeakshcf100 = 20;
+    GetVibration getvibration = 21;
+    GetVibraWireHFS200 getvibrawirehfs200 = 22;
+    GetVibraWireHFS400 getvibrawirehfs400 = 23;
+    GetElectricityHIS100 getelectricityhis100 = 24;
+    GetStressHIS300 getstresshis300 = 25;
+    GetStressHIS500 getstresshis500 = 26;
+    GetVibraWireHFS316 getvibrawirehfs316 = 27;
+    GetPressHGR100B2 getpresshgr100b2 = 28;
+    GetVibraWireHFS500 getvibrawirehfs500 = 29;
+    GetAnemometerFC307 getanemometerfc307 = 30;
+    GetMonitorIncliHCF420 getmonitorinclihcf420 = 31;
+    SetMainDirectionHCF200 setmaindirectionhcf200 = 32;
+    ConfigClockTask configclocktask = 33;
+    SetTriggerConfigHCF300 settriggerconfighcf300 = 34;
+    OnceInstructionHIS700 onceinstructionhis700 = 35;
+    TwiceInstructionHIS700 twiceinstructionhis700 = 36;
+    HIS700AutoSample his700autosample = 37;
+    SetStdNodeHGR100B2 setstdnodehgr100b2 = 38;
+    SetBaudrateHIS700 setbaudratehis700 = 39;
+    SetChannelConfigHFS316 setchannelconfighfs316 = 40;
+  }
+}

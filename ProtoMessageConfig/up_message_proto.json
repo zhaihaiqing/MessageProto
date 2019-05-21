@@ -130,7 +130,9 @@
         "fields":[
             "base_freq",
             "peaks",
-            "values"
+            "values",
+            "peaks_num",
+            "freq"
         ],
         "packets":[
             "CablePeaksHCF100"

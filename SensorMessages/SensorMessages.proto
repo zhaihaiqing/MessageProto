@@ -60,8 +60,10 @@ message VibrationData{
 
 message CablePeaksHCF100{
    double base_freq = 1;
-   repeated int32 peaks = 2;
-   repeated int32 values = 3;
+   double freq = 2;
+   repeated int32 peaks = 3;
+   int32 peaks_num = 4;
+   repeated int32 values = 5;
 }
 
 message SettlementData{
@@ -110,4 +112,163 @@ message Uart485ForHFS716Sample{
 message VoltageDataV1{
    double mV = 1;
    double temp = 2;
+}
+
+message GetCablePeaksHCF100{
+   int32 axis = 1;
+   int32 odr = 2;
+   int32 range = 3;
+}
+
+message GetVibration{
+   int32 axis = 1;
+   int32 odr = 2;
+   int32 period = 3;
+   int32 range = 4;
+}
+
+message GetVibraWireHFS200{
+   int32 channel = 1;
+   int32 sample_pattern = 2;
+}
+
+message GetVibraWireHFS400{
+   int32 odr = 1;
+   int32 period = 2;
+}
+
+message GetElectricityHIS100{
+   int32 channel = 1;
+   int32 is_continuous = 2;
+   int32 is_factory_init = 3;
+   int32 is_out_power = 4;
+   int32 is_user_init = 5;
+   int32 odr = 6;
+   int32 period = 7;
+}
+
+message GetStressHIS300{
+   int32 channel = 1;
+   int32 is_continuous = 2;
+   int32 odr = 3;
+   int32 period = 4;
+}
+
+message GetStressHIS500{
+   double k_value = 1;
+   int32 odr = 2;
+   int32 period = 3;
+}
+
+message GetVibraWireHFS316{
+   int32 channel = 1;
+   int32 sample_pattern = 2;
+}
+
+message GetPressHGR100B2{
+   int32 sample_pattern = 1;
+}
+
+message GetVibraWireHFS500{
+   int32 channel = 1;
+   int32 sample_pattern = 2;
+}
+
+message GetAnemometerFC307{
+   int32 addr = 1;
+}
+
+message GetMonitorIncliHCF420{
+   double angle_threshold_1 = 1;
+   double angle_threshold_2 = 2;
+   double angle_threshold_3 = 3;
+   int32 group = 4;
+   int32 response_time = 5;
+   int32 sample_interval = 6;
+}
+
+message SetMainDirectionHCF200{
+   int32 main_direction = 1;
+}
+
+message ConfigClockTask{
+   int32 axis = 1;
+   int32 axis_s = 2;
+   int32 channel = 3;
+   int32 channel_s = 4;
+   int32 def_sample_type = 5;
+   int32 def_sample_type_s = 6;
+   int32 hour_1 = 7;
+   int32 hour_2 = 8;
+   int32 interval_1 = 9;
+   int32 interval_2 = 10;
+   int32 is_continuous = 11;
+   int32 is_continuous_s = 12;
+   int32 is_factory_init = 13;
+   int32 is_factory_init_s = 14;
+   int32 is_on_1 = 15;
+   int32 is_on_2 = 16;
+   int32 is_out_power = 17;
+   int32 is_out_power_s = 18;
+   int32 is_user_init = 19;
+   int32 is_user_init_s = 20;
+   double k_value = 21;
+   double k_value_s = 22;
+   int32 minute_1 = 23;
+   int32 minute_2 = 24;
+   int32 number_1 = 25;
+   int32 number_2 = 26;
+   int32 odr = 27;
+   int32 odr_s = 28;
+   int32 period = 29;
+   int32 period_s = 30;
+   int32 range = 31;
+   int32 range_s = 32;
+   int32 sample_pattern = 33;
+   int32 sample_pattern_s = 34;
+   int32 second_1 = 35;
+   int32 second_2 = 36;
+   int32 type = 37;
+}
+
+message SetTriggerConfigHCF300{
+   int32 is_set_trigger = 1;
+   int32 monitor_axis = 2;
+   int32 monitor_odr = 3;
+   int32 trigger_axis = 4;
+   int32 trigger_odr = 5;
+   int32 trigger_period = 6;
+   int32 trigger_range = 7;
+   double trigger_sensitivity = 8;
+   double trigger_threshold = 9;
+}
+
+message OnceInstructionHIS700{
+   int32 addr = 1;
+   int32 disconnect_timeout = 2;
+}
+
+message TwiceInstructionHIS700{
+   int32 addr = 1;
+   int32 disconnect_timeout = 2;
+   int32 sample_collect_interval = 3;
+}
+
+message HIS700AutoSample{
+   int32 auto_sample_interval = 1;
+   int32 disconnect_timeout = 2;
+   int32 is_on = 3;
+   int32 sample_collect_interval = 4;
+}
+
+message SetStdNodeHGR100B2{
+   int32 reference_node_id = 1;
+}
+
+message SetBaudrateHIS700{
+   int32 baudrate = 1;
+}
+
+message SetChannelConfigHFS316{
+   int32 channel_config_bit_map = 1;
 }
