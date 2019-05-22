@@ -24,8 +24,9 @@ message SensorAckMessage {
     }
 
     string instruction_name = 1;    //下行指令的指令名
-    string gateway_id = 2;
-    int32 node_id = 3;
-    uint32 unix_time = 4;
-    ErrCode err_code = 5;
+    string packet_name = 2; //ack 包名
+    string gateway_id = 3;
+    int32 node_id = 4;
+    uint32 unix_time = 5;
+    ErrCode err_code = 6;
 }
