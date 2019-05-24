@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package SensorMessages;
+
+import "SensorDownMessage.proto"
+import "SensorAckMessage.proto"
+
+service SensorDownHandle {
+  rpc SensorDown (SensorDownMessage) returns (SensorAckMessage) {}
+}
