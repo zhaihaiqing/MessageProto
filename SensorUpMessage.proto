@@ -33,5 +33,12 @@ message SensorUpMessage {
     DistanceData distancedata = 36;
     Uart485ForHFS716Sample uart485forhfs716sample = 37;
     VoltageDataV1 voltagedatav1 = 38;
+    TopInfoNodeData topinfonodedata = 39;
+    PowerStateNodeData powerstatenodedata = 40;
+    SerialNumber serialnumber = 41;
+    HoldRegisterData1HCF700 holdregisterdata1hcf700 = 42;
+    HoldRegisterData2HCF700 holdregisterdata2hcf700 = 43;
+    InputRegisterDataHCF700 inputregisterdatahcf700 = 44;
+    GRTU1000Status grtu1000status = 45;
   }
 }

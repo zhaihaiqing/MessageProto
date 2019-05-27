@@ -226,13 +226,78 @@
             "VoltageHIS800"
         ]
     },
-    "TopInfo":{
+    "TopInfoNodeData":{
         "fields":[
-            "mV",
+            "product_type",
+            "parent",
+            "battery_voltage",
+            "worktime",
+            "rf_channel",
+            "SQI",
+            "reboot_count"
+        ],
+        "packets":[
+            "TopInfoSensorNode",
+            "TopInfoTransNode"
+        ]
+    },
+    "PowerStateNodeData":{
+        "fields":[
+            "temp",
+            "voltage",
+            "current"
+        ],
+        "packets":[
+            "PowerStateSensorNode",
+            "PowerStateSensorNode"
+        ]
+    },
+    "SerialNumber":{
+        "fields":[
+            "serial_number"
+        ],
+        "packets":[
+            "SerialNumber"
+        ]
+    },
+    "HoldRegisterData1HCF700":{
+        "fields":[
+            "addr",
+            "density"
+        ],
+        "packets":[
+            "HoldRegisterData1HCF700"
+        ]
+    },
+    "HoldRegisterData2HCF700":{
+        "fields":[
+            "addr",
+            "g_value",
+            "full_sensor_value"
+        ],
+        "packets":[
+            "HoldRegisterData2HCF700"
+        ]
+    },
+    "InputRegisterDataHCF700":{
+        "fields":[
+            "addr",
+            "work_time",
             "temp"
         ],
         "packets":[
-            "TopInfoSensorNode"
+            "InputRegisterDataHCF700"
+        ]
+    },
+    "GRTU1000Status":{
+        "fields":[
+            "longdata",
+            "latidata",
+            "latitude",
+            "longitude"
+        ],
+        "packets":[
+            "GRTU1000Status"
         ]
     }
 }

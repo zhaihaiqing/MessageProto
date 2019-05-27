@@ -115,6 +115,50 @@ message VoltageDataV1{
    double temp = 2;
 }
 
+message TopInfoNodeData{
+   int32 SQI = 1;
+   double battery_voltage = 2;
+   int32 parent = 3;
+   string product_type = 4;
+   int32 reboot_count = 5;
+   int32 rf_channel = 6;
+   int32 worktime = 7;
+}
+
+message PowerStateNodeData{
+   double current = 1;
+   double temp = 2;
+   double voltage = 3;
+}
+
+message SerialNumber{
+   string serial_number = 1;
+}
+
+message HoldRegisterData1HCF700{
+   int32 addr = 1;
+   double density = 2;
+}
+
+message HoldRegisterData2HCF700{
+   int32 addr = 1;
+   double full_sensor_value = 2;
+   double g_value = 3;
+}
+
+message InputRegisterDataHCF700{
+   int32 addr = 1;
+   double temp = 2;
+   int32 work_time = 3;
+}
+
+message GRTU1000Status{
+   int32 latidata = 1;
+   int32 latitude = 2;
+   int32 longdata = 3;
+   int32 longitude = 4;
+}
+
 message GetCablePeaksHCF100{
    int32 axis = 1;
    int32 odr = 2;
