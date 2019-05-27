@@ -126,7 +126,7 @@
             "VibraHCF3000"
         ]
     },
-    "CablePeaksHCF100":{
+    "CablePeaksData":{
         "fields":[
             "base_freq",
             "peaks",
@@ -134,6 +134,9 @@
             "peaks_num",
             "freq"
         ],
+        "extension":{
+            "double": "cable_force"
+        },
         "packets":[
             "CablePeaksHCF100"
         ]
@@ -221,6 +224,15 @@
         ],
         "packets":[
             "VoltageHIS800"
+        ]
+    },
+    "TopInfo":{
+        "fields":[
+            "mV",
+            "temp"
+        ],
+        "packets":[
+            "TopInfoSensorNode"
         ]
     }
 }

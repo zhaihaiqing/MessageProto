@@ -24,7 +24,7 @@ message SensorUpMessage {
     ResistanceData resistancedata = 27;
     MillivoltData millivoltdata = 28;
     VibrationData vibrationdata = 29;
-    CablePeaksHCF100 cablepeakshcf100 = 30;
+    CablePeaksData cablepeaksdata = 30;
     SettlementData settlementdata = 31;
     StressData stressdata = 32;
     IncliHCF410V1 inclihcf410v1 = 33;

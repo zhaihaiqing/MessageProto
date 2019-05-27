@@ -58,12 +58,13 @@ message VibrationData{
    double sample_interval = 2;
 }
 
-message CablePeaksHCF100{
+message CablePeaksData{
    double base_freq = 1;
    double freq = 2;
    repeated int32 peaks = 3;
    int32 peaks_num = 4;
    repeated int32 values = 5;
+   double cable_force = 6;
 }
 
 message SettlementData{
