@@ -64,7 +64,6 @@ message CablePeaksData{
    repeated int32 peaks = 3;
    int32 peaks_num = 4;
    repeated int32 values = 5;
-   double cable_force = 6;
 }
 
 message SettlementData{
@@ -126,9 +125,9 @@ message TopInfoNodeData{
 }
 
 message PowerStateNodeData{
-   double current = 1;
-   double temp = 2;
-   double voltage = 3;
+   double battery_voltage = 1;
+   double current = 2;
+   double temp = 3;
 }
 
 message SerialNumber{
@@ -316,4 +315,8 @@ message SetBaudrateHIS700{
 
 message SetChannelConfigHFS316{
    int32 channel_config_bit_map = 1;
+}
+
+message GetGatewayCtrlInfo{
+   string command = 1;
 }

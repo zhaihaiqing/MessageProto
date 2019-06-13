@@ -24,8 +24,7 @@
         "fields":[
             "db",
             "freq",
-            "temp",
-            "channel"
+            "temp"
         ],
         "packets": [
             "VibraWireHFS316",
@@ -67,9 +66,7 @@
     "VoltageData":{
         "fields":[
             "data",
-            "sample_interval",
-            "channel",
-            "microsecond"
+            "sample_interval"
         ],
         "packets":[
             "VoltageHIS100",
@@ -79,9 +76,7 @@
     "CurrentData":{
         "fields":[
             "data",
-            "sample_interval",
-            "channel",
-            "microsecond"
+            "sample_interval"
         ],
         "packets":[
             "CurrentHIS100",
@@ -91,9 +86,7 @@
     "ResistanceData":{
         "fields":[
             "data",
-            "sample_interval",
-            "channel",
-            "microsecond"
+            "sample_interval"
         ],
         "packets":[
             "ResistanceHIS100",
@@ -103,9 +96,7 @@
     "MillivoltData":{
         "fields":[
             "data",
-            "sample_interval",
-            "channel",
-            "microsecond"
+            "sample_interval"
         ],
         "packets":[
             "MillivoltHIS100",
@@ -115,9 +106,7 @@
     "VibrationData":{
         "fields":[
             "data",
-            "sample_interval",
-            "channel",
-            "microsecond"
+            "sample_interval"
         ],
         "packets":[
             "VibraHCF300",
@@ -134,9 +123,7 @@
             "peaks_num",
             "freq"
         ],
-        "extension":{
-            "double": "cable_force"
-        },
+        "extension":null,
         "packets":[
             "CablePeaksHCF100"
         ]
@@ -159,9 +146,7 @@
     "StressData":{
         "fields":[
             "data",
-            "sample_interval",
-            "channel",
-            "microsecond"
+            "sample_interval"
         ],
         "packets":[
             "StressHIS300Cont",
@@ -210,8 +195,7 @@
         "fields":[
             "temperature_or_ressum",
             "Hz_or_resratio",
-            "channel_unixtime",
-            "channel"
+            "channel_unixtime"
         ],
         "packets":[
             "Uart485ForHFS716SampleData"
@@ -244,12 +228,12 @@
     "PowerStateNodeData":{
         "fields":[
             "temp",
-            "voltage",
+            "battery_voltage",
             "current"
         ],
         "packets":[
             "PowerStateSensorNode",
-            "PowerStateSensorNode"
+            "PowerStateTransNode"
         ]
     },
     "SerialNumber":{

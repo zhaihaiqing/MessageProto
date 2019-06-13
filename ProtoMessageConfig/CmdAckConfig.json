@@ -73,5 +73,6 @@
     "SetStdNodeHGR100B2": "SetStdNodeHGR100B2Ack",
     "QueryStdNodeHGR100B2": "QueryStdNodeHGR100B2Ack",
     "SetBaudrateHIS700": "SetBaudrateAck",
-    "SetChannelConfigHFS316": "ChangeChannelConfigHFS316Ack"
+    "SetChannelConfigHFS316": "ChangeChannelConfigHFS316Ack",
+    "GetGatewayCtrlInfo": "GetGatewayCtrlInfoAck"
 }

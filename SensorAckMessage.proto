@@ -29,4 +29,6 @@ message SensorAckMessage {
     int32 node_id = 4;
     uint32 unix_time = 5;
     ErrCode err_code = 6;
+    string comment = 7; //用于网关回复消息
+
 }

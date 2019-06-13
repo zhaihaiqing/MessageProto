@@ -34,5 +34,6 @@ message SensorDownMessage {
     SetStdNodeHGR100B2 setstdnodehgr100b2 = 38;
     SetBaudrateHIS700 setbaudratehis700 = 39;
     SetChannelConfigHFS316 setchannelconfighfs316 = 40;
+    GetGatewayCtrlInfo getgatewayctrlinfo = 41;
   }
 }

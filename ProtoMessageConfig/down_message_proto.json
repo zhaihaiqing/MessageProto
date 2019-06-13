@@ -329,6 +329,15 @@
         "packets":[
             "SetChannelConfigHFS316"
         ]
+    },
+    "GetGatewayCtrlInfo":{
+        "fields":null,
+        "extension":{
+            "string": "command"
+        },
+        "packets":[
+            "GetGatewayCtrlInfo"
+        ]
     }
 
 }
