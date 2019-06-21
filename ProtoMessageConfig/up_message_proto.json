@@ -283,5 +283,39 @@
         "packets":[
             "GRTU1000Status"
         ]
+    },
+    "WeightingData": {
+        "fields": null,
+        "extension": {
+            "LaneID": "string",
+            "LaneIDFlyOver": "string",
+            "Speed": "double",
+            "Plate": "string",
+            "VehType": "string",
+            "GrossLoad": "double",
+            "error": "string",
+            "AL": "string",
+            "GV": "string",
+            "OS": "string",
+            "ImageFile": "string",
+            "AxleLoad1": "double",
+            "AxleLoad2": "double",
+            "AxleLoad3": "double",
+            "AxleLoad4": "double",
+            "AxleLoad5": "double",
+            "AxleLoad6": "double",
+            "AxleLoad7": "double",
+            "AxleLoad8": "double",
+            "AxleSpacing1": "double",
+            "AxleSpacing2": "double",
+            "AxleSpacing3": "double",
+            "AxleSpacing4": "double",
+            "AxleSpacing5": "double",
+            "AxleSpacing6": "double",
+            "AxleSpacing7": "double"
+        },
+        "packets": [
+            "BJCC-ITS"
+        ]
     }
 }

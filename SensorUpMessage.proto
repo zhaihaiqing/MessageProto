@@ -7,7 +7,7 @@ import "SensorMessages/SensorMessages.proto";
 
 message SensorUpMessage {
   string packet_name = 1;
-  int32 node_id = 2;
+  string node_id = 2;
   string gateway_id = 3;
   uint32 unix_time = 4;
   string channel = 5;
@@ -41,5 +41,6 @@ message SensorUpMessage {
     HoldRegisterData2HCF700 holdregisterdata2hcf700 = 43;
     InputRegisterDataHCF700 inputregisterdatahcf700 = 44;
     GRTU1000Status grtu1000status = 45;
+    WeightingData weightingdata = 46;
   }
 }

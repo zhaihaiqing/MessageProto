@@ -158,6 +158,35 @@ message GRTU1000Status{
    int32 longitude = 4;
 }
 
+message WeightingData{
+   string AL = 1;
+   double AxleLoad1 = 2;
+   double AxleLoad2 = 3;
+   double AxleLoad3 = 4;
+   double AxleLoad4 = 5;
+   double AxleLoad5 = 6;
+   double AxleLoad6 = 7;
+   double AxleLoad7 = 8;
+   double AxleLoad8 = 9;
+   double AxleSpacing1 = 10;
+   double AxleSpacing2 = 11;
+   double AxleSpacing3 = 12;
+   double AxleSpacing4 = 13;
+   double AxleSpacing5 = 14;
+   double AxleSpacing6 = 15;
+   double AxleSpacing7 = 16;
+   string GV = 17;
+   double GrossLoad = 18;
+   string ImageFile = 19;
+   string LaneID = 20;
+   string LaneIDFlyOver = 21;
+   string OS = 22;
+   string Plate = 23;
+   double Speed = 24;
+   string VehType = 25;
+   string error = 26;
+}
+
 message GetCablePeaksHCF100{
    int32 axis = 1;
    int32 odr = 2;

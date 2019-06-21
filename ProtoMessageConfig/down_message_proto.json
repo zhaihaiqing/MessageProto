@@ -275,11 +275,11 @@
             "disconnect_timeout"
         ],
         "packets":[
-            "GetAnemometerHCF920",
-            "GetMeteorologyHCF930",
-            "GetCH4HOS3000CH4",
-            "GetShapeArrayHCF1100",
-            "GetTempHumiHOS9010"
+            "GetAnemometerHCF920RS",
+            "GetMeteorologyHCF930RS",
+            "GetCH4HOS3000CH4RS",
+            "GetShapeArrayHCF1100RS",
+            "GetTempHumiHOS9010RS"
         ]
     },
     "TwiceInstructionHIS700":{
@@ -289,10 +289,10 @@
             "sample_collect_interval"
         ],
         "packets":[
-            "GetVibraWireUart485ForHFS316",
-            "GetVibraWireHFS716",
-            "GetDistanceHOS910030",
-            "GetSettlementHCF700"
+            "GetVibraWireHFS316RS",
+            "GetVibraWireHFS716RS",
+            "GetDistanceHOS910030RS",
+            "GetSettlementHCF700RS"
         ]
     },
     "HIS700AutoSample":{
@@ -333,11 +333,10 @@
     "GetGatewayCtrlInfo":{
         "fields":null,
         "extension":{
-            "string": "command"
+            "command": "string"
         },
         "packets":[
             "GetGatewayCtrlInfo"
         ]
     }
-
 }
