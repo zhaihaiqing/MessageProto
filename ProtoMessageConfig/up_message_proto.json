@@ -24,15 +24,18 @@
         "fields":[
             "db",
             "freq",
-            "temp"
+            "temp",
+            "channel"
         ],
         "packets": [
             "VibraWireHFS316",
             "VibraWireHFS100",
             "VibraWireHFS200",
+            "VibraWireHFS200V1",
             "VibraWireHFS400",
             "VibraWireHFS500",
-            "VibraWireHFS500V1"        
+            "VibraWireHFS500V1",
+            "Uart485ForHFS316SampleData"       
         ]
     },
     "AnemometerData":{
@@ -43,13 +46,16 @@
             "humi",
             "dev_temp",
             "smooth_wind_speed",
-            "smooth_wind_direction"
+            "smooth_wind_direction",
+            "air_pressure"
         ],
         "packets":[
             "AnemometerHCF900",
             "AnemometerHCF910",
             "FC307DataList",
-            "Uart485ForHCF920SampleData"
+            "Uart485ForHCF920SampleData",
+            "Uart485ForHCF930SampleData",
+            "WinderCupSampleHCF910"
         ]
     },
     "InclinationData":{
@@ -316,6 +322,50 @@
         },
         "packets": [
             "BJCC-ITS"
+        ]
+    },
+    "ClockTaskSampleInfoHCF100":{
+        "fields":[
+            "cable_marked",
+            "odr",
+            "range",
+            "axis",
+            "odr_s",
+            "range_s",
+            "axis_s"
+        ],
+        "packets":[
+            "ClockTaskSampleInfoHCF100"
+        ]
+    },
+    "CalibrationConfigHCF2000":{
+        "fields":[
+            "num",
+            "temp",
+            "offset"
+        ],
+        "packets":[
+            "CalibrationConfigHCF2000"
+        ]
+    },
+    "ClockTaskSampleInfoHCF200":{
+        "fields":[
+            "incli_marked",
+            "main_direction"
+        ],
+        "packets":[
+            "ClockTaskSampleInfoHCF200"
+        ]
+    },
+    "ClockTaskSampleInfoHCF3000":{
+        "fields":[
+            "odr",
+            "odr_s",
+            "period",
+            "period_s"
+        ],
+        "packets":[
+            "ClockTaskSampleInfoHCF3000"
         ]
     }
 }

@@ -28,12 +28,12 @@
     "GetAnemometerFC307": "SampleAck",
     "GetGasGRTU1000": "SampleAck",
     "GetMonitorIncliHCF420": "SampleAck",
-    "InitIncliHCF2000": "InitSampleHCF2000Ack",
+    "InitIncliHCF2000": "InitSampleHCF2000Done",
     "CancelSampleSensorNode": "CancelSampleAck",
     "AutoScanHGR100B2": "AutoScanHGR100B2Ack",
     "RebootSensorNode": "RebootAck",
     "RebootTransNode": "RebootAck",
-    "SetMainDirectionHCF200": "SetMainDirectionAck",
+    "SetMainDirectionHCF200": "SetMainDirectionHCF200Ack",
     "InitIncliHCF200": "InitIncliHCF200Ack",
     "ConfigClockTaskHCF100": "ConfigClockTaskAck",
     "ConfigClockTaskHCF200": "ConfigClockTaskAck",
@@ -74,5 +74,8 @@
     "QueryStdNodeHGR100B2": "QueryStdNodeHGR100B2Ack",
     "SetBaudrateHIS700": "SetBaudrateAck",
     "SetChannelConfigHFS316": "ChangeChannelConfigHFS316Ack",
-    "GetGatewayCtrlInfo": "GetGatewayCtrlInfoAck"
+    "GetGatewayCtrlInfo": "GetGatewayCtrlInfoAck",
+    "AddCalibrationHCF2000": "AddCalibrationHCF2000Ack",
+    "QueryCalibrationHCF2000": "QueryCalibrationHCF2000Ack",
+    "RemoveCalibrationHCF2000": "DelCalibrationHCF2000Ack"
 }

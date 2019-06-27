@@ -338,5 +338,14 @@
         "packets":[
             "GetGatewayCtrlInfo"
         ]
+    },
+    "AddCalibrationHCF2000":{
+        "fields":[
+            "temp",
+            "offset"
+        ],
+        "packets":[
+            "AddCalibrationHCF2000"
+        ]
     }
 }
