@@ -13,6 +13,7 @@ message SensorUpMessage {
   string channel = 5;
   int32 microsecond = 6;
   string err_comment = 7;
+  string sensor_id = 8;
 
   oneof msg {
     HighPrecisionIncliData highprecisioninclidata = 20;
@@ -42,5 +43,9 @@ message SensorUpMessage {
     InputRegisterDataHCF700 inputregisterdatahcf700 = 44;
     GRTU1000Status grtu1000status = 45;
     WeightingData weightingdata = 46;
+    ClockTaskSampleInfoHCF100 clocktasksampleinfohcf100 = 47;
+    CalibrationConfigHCF2000 calibrationconfighcf2000 = 48;
+    ClockTaskSampleInfoHCF200 clocktasksampleinfohcf200 = 49;
+    ClockTaskSampleInfoHCF3000 clocktasksampleinfohcf3000 = 50;
   }
 }

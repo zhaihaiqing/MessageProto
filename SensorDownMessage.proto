@@ -35,5 +35,6 @@ message SensorDownMessage {
     SetBaudrateHIS700 setbaudratehis700 = 39;
     SetChannelConfigHFS316 setchannelconfighfs316 = 40;
     GetGatewayCtrlInfo getgatewayctrlinfo = 41;
+    AddCalibrationHCF2000 addcalibrationhcf2000 = 42;
   }
 }

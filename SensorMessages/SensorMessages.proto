@@ -18,13 +18,14 @@ message VibraWireData{
 }
 
 message AnemometerData{
-   double dev_temp = 1;
-   double humi = 2;
-   double smooth_wind_direction = 3;
-   double smooth_wind_speed = 4;
-   double temp = 5;
-   double wind_direction = 6;
-   double wind_speed = 7;
+   double air_pressure = 1;
+   double dev_temp = 2;
+   double humi = 3;
+   double smooth_wind_direction = 4;
+   double smooth_wind_speed = 5;
+   double temp = 6;
+   double wind_direction = 7;
+   double wind_speed = 8;
 }
 
 message InclinationData{
@@ -185,6 +186,34 @@ message WeightingData{
    double Speed = 24;
    string VehType = 25;
    string error = 26;
+}
+
+message ClockTaskSampleInfoHCF100{
+   string axis = 1;
+   string axis_s = 2;
+   int32 cable_marked = 3;
+   string odr = 4;
+   string odr_s = 5;
+   string range = 6;
+   string range_s = 7;
+}
+
+message CalibrationConfigHCF2000{
+   int32 num = 1;
+   double offset = 2;
+   double temp = 3;
+}
+
+message ClockTaskSampleInfoHCF200{
+   int32 incli_marked = 1;
+   int32 main_direction = 2;
+}
+
+message ClockTaskSampleInfoHCF3000{
+   string odr = 1;
+   string odr_s = 2;
+   int32 period = 3;
+   int32 period_s = 4;
 }
 
 message GetCablePeaksHCF100{
@@ -348,4 +377,9 @@ message SetChannelConfigHFS316{
 
 message GetGatewayCtrlInfo{
    string command = 1;
+}
+
+message AddCalibrationHCF2000{
+   sint32 offset = 1;
+   sint32 temp = 2;
 }
