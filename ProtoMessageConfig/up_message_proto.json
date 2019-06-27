@@ -72,7 +72,9 @@
     "VoltageData":{
         "fields":[
             "data",
-            "sample_interval"
+            "sample_interval",
+            "channel",
+            "microsecond"
         ],
         "packets":[
             "VoltageHIS100",
@@ -82,7 +84,9 @@
     "CurrentData":{
         "fields":[
             "data",
-            "sample_interval"
+            "sample_interval",
+            "channel",
+            "microsecond"
         ],
         "packets":[
             "CurrentHIS100",
@@ -92,7 +96,9 @@
     "ResistanceData":{
         "fields":[
             "data",
-            "sample_interval"
+            "sample_interval",
+            "channel",
+            "microsecond"
         ],
         "packets":[
             "ResistanceHIS100",
@@ -102,7 +108,9 @@
     "MillivoltData":{
         "fields":[
             "data",
-            "sample_interval"
+            "sample_interval",
+            "channel",
+            "microsecond"
         ],
         "packets":[
             "MillivoltHIS100",
@@ -112,7 +120,9 @@
     "VibrationData":{
         "fields":[
             "data",
-            "sample_interval"
+            "sample_interval",
+            "channel",
+            "microsecond"
         ],
         "packets":[
             "VibraHCF300",
@@ -152,7 +162,9 @@
     "StressData":{
         "fields":[
             "data",
-            "sample_interval"
+            "sample_interval",
+            "channel",
+            "microsecond"
         ],
         "packets":[
             "StressHIS300Cont",
@@ -201,7 +213,8 @@
         "fields":[
             "temperature_or_ressum",
             "Hz_or_resratio",
-            "channel_unixtime"
+            "channel_unixtime",
+            "channel"
         ],
         "packets":[
             "Uart485ForHFS716SampleData"
