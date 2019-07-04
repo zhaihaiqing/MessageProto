@@ -7,8 +7,8 @@ message HighPrecisionIncliData{
 }
 
 message TempHumiData{
-   double humi = 1;
-   double temp = 2;
+   double temp = 1;
+   double humi = 2;
 }
 
 message VibraWireData{
@@ -18,14 +18,14 @@ message VibraWireData{
 }
 
 message AnemometerData{
-   double air_pressure = 1;
-   double dev_temp = 2;
-   double humi = 3;
-   double smooth_wind_direction = 4;
-   double smooth_wind_speed = 5;
-   double temp = 6;
-   double wind_direction = 7;
-   double wind_speed = 8;
+   double wind_direction = 1;
+   double wind_speed = 2;
+   double temp = 3;
+   double humi = 4;
+   double dev_temp = 5;
+   double smooth_wind_speed = 6;
+   double smooth_wind_direction = 7;
+   double air_pressure = 8;
 }
 
 message InclinationData{
@@ -61,20 +61,20 @@ message VibrationData{
 
 message CablePeaksData{
    double base_freq = 1;
-   double freq = 2;
-   repeated int32 peaks = 3;
+   repeated int32 peaks = 2;
+   repeated int32 values = 3;
    int32 peaks_num = 4;
-   repeated int32 values = 5;
+   double freq = 5;
 }
 
 message SettlementData{
-   double adc_value = 1;
-   int32 err = 2;
-   double raw_press = 3;
-   double raw_value = 4;
-   double relative_value = 5;
-   double temp = 6;
-   double value = 7;
+   double raw_value = 1;
+   double value = 2;
+   double relative_value = 3;
+   double temp = 4;
+   double adc_value = 5;
+   double raw_press = 6;
+   int32 err = 7;
 }
 
 message StressData{
@@ -105,9 +105,9 @@ message DistanceData{
 }
 
 message Uart485ForHFS716Sample{
-   double Hz_or_resratio = 1;
-   int32 channel_unixtime = 2;
-   double temperature_or_ressum = 3;
+   double temperature_or_ressum = 1;
+   double Hz_or_resratio = 2;
+   int32 channel_unixtime = 3;
 }
 
 message VoltageDataV1{
@@ -116,19 +116,19 @@ message VoltageDataV1{
 }
 
 message TopInfoNodeData{
-   int32 SQI = 1;
-   double battery_voltage = 2;
-   int32 parent = 3;
-   string product_type = 4;
-   int32 reboot_count = 5;
-   int32 rf_channel = 6;
-   int32 worktime = 7;
+   string product_type = 1;
+   int32 parent = 2;
+   double battery_voltage = 3;
+   int32 worktime = 4;
+   int32 rf_channel = 5;
+   int32 SQI = 6;
+   int32 reboot_count = 7;
 }
 
 message PowerStateNodeData{
-   double battery_voltage = 1;
-   double current = 2;
-   double temp = 3;
+   double temp = 1;
+   double battery_voltage = 2;
+   double current = 3;
 }
 
 message SerialNumber{
@@ -142,66 +142,66 @@ message HoldRegisterData1HCF700{
 
 message HoldRegisterData2HCF700{
    int32 addr = 1;
-   double full_sensor_value = 2;
-   double g_value = 3;
+   double g_value = 2;
+   double full_sensor_value = 3;
 }
 
 message InputRegisterDataHCF700{
    int32 addr = 1;
-   double temp = 2;
-   int32 work_time = 3;
+   int32 work_time = 2;
+   double temp = 3;
 }
 
 message GRTU1000Status{
-   int32 latidata = 1;
-   int32 latitude = 2;
-   int32 longdata = 3;
+   int32 longdata = 1;
+   int32 latidata = 2;
+   int32 latitude = 3;
    int32 longitude = 4;
 }
 
 message WeightingData{
-   string AL = 1;
-   double AxleLoad1 = 2;
-   double AxleLoad2 = 3;
-   double AxleLoad3 = 4;
-   double AxleLoad4 = 5;
-   double AxleLoad5 = 6;
-   double AxleLoad6 = 7;
-   double AxleLoad7 = 8;
-   double AxleLoad8 = 9;
-   double AxleSpacing1 = 10;
-   double AxleSpacing2 = 11;
-   double AxleSpacing3 = 12;
-   double AxleSpacing4 = 13;
-   double AxleSpacing5 = 14;
-   double AxleSpacing6 = 15;
-   double AxleSpacing7 = 16;
-   string GV = 17;
-   double GrossLoad = 18;
-   string ImageFile = 19;
-   string LaneID = 20;
-   string LaneIDFlyOver = 21;
-   string OS = 22;
-   string Plate = 23;
-   double Speed = 24;
-   string VehType = 25;
-   string error = 26;
+   string LaneID = 1;
+   string LaneIDFlyOver = 2;
+   double Speed = 3;
+   string Plate = 4;
+   string VehType = 5;
+   double GrossLoad = 6;
+   string error = 7;
+   string AL = 8;
+   string GV = 9;
+   string OS = 10;
+   string ImageFile = 11;
+   double AxleLoad1 = 12;
+   double AxleLoad2 = 13;
+   double AxleLoad3 = 14;
+   double AxleLoad4 = 15;
+   double AxleLoad5 = 16;
+   double AxleLoad6 = 17;
+   double AxleLoad7 = 18;
+   double AxleLoad8 = 19;
+   double AxleSpacing1 = 20;
+   double AxleSpacing2 = 21;
+   double AxleSpacing3 = 22;
+   double AxleSpacing4 = 23;
+   double AxleSpacing5 = 24;
+   double AxleSpacing6 = 25;
+   double AxleSpacing7 = 26;
 }
 
 message ClockTaskSampleInfoHCF100{
-   string axis = 1;
-   string axis_s = 2;
-   int32 cable_marked = 3;
-   string odr = 4;
+   int32 cable_marked = 1;
+   string odr = 2;
+   string range = 3;
+   string axis = 4;
    string odr_s = 5;
-   string range = 6;
-   string range_s = 7;
+   string range_s = 6;
+   string axis_s = 7;
 }
 
 message CalibrationConfigHCF2000{
    int32 num = 1;
-   double offset = 2;
-   double temp = 3;
+   double temp = 2;
+   double offset = 3;
 }
 
 message ClockTaskSampleInfoHCF200{
@@ -217,16 +217,16 @@ message ClockTaskSampleInfoHCF3000{
 }
 
 message GetCablePeaksHCF100{
-   int32 axis = 1;
-   int32 odr = 2;
-   int32 range = 3;
+   int32 odr = 1;
+   int32 range = 2;
+   int32 axis = 3;
 }
 
 message GetVibration{
-   int32 axis = 1;
-   int32 odr = 2;
-   int32 period = 3;
-   int32 range = 4;
+   int32 odr = 1;
+   int32 range = 2;
+   int32 axis = 3;
+   int32 period = 4;
 }
 
 message GetVibraWireHFS200{
@@ -241,19 +241,19 @@ message GetVibraWireHFS400{
 
 message GetElectricityHIS100{
    int32 channel = 1;
-   int32 is_continuous = 2;
-   int32 is_factory_init = 3;
-   int32 is_out_power = 4;
-   int32 is_user_init = 5;
-   int32 odr = 6;
-   int32 period = 7;
+   int32 odr = 2;
+   int32 period = 3;
+   int32 is_continuous = 4;
+   int32 is_out_power = 5;
+   int32 is_factory_init = 6;
+   int32 is_user_init = 7;
 }
 
 message GetStressHIS300{
    int32 channel = 1;
-   int32 is_continuous = 2;
-   int32 odr = 3;
-   int32 period = 4;
+   int32 odr = 2;
+   int32 period = 3;
+   int32 is_continuous = 4;
 }
 
 message GetStressHIS500{
@@ -263,8 +263,8 @@ message GetStressHIS500{
 }
 
 message GetVibraWireHFS316{
-   int32 channel = 1;
-   int32 sample_pattern = 2;
+   int32 sample_pattern = 1;
+   int32 channel = 2;
 }
 
 message GetPressHGR100B2{
@@ -272,8 +272,8 @@ message GetPressHGR100B2{
 }
 
 message GetVibraWireHFS500{
-   int32 channel = 1;
-   int32 sample_pattern = 2;
+   int32 sample_pattern = 1;
+   int32 channel = 2;
 }
 
 message GetAnemometerFC307{
@@ -281,12 +281,12 @@ message GetAnemometerFC307{
 }
 
 message GetMonitorIncliHCF420{
-   double angle_threshold_1 = 1;
-   double angle_threshold_2 = 2;
-   double angle_threshold_3 = 3;
-   int32 group = 4;
-   int32 response_time = 5;
-   int32 sample_interval = 6;
+   int32 response_time = 1;
+   int32 sample_interval = 2;
+   double angle_threshold_1 = 3;
+   double angle_threshold_2 = 4;
+   double angle_threshold_3 = 5;
+   int32 group = 6;
 }
 
 message SetMainDirectionHCF200{
@@ -294,55 +294,55 @@ message SetMainDirectionHCF200{
 }
 
 message ConfigClockTask{
-   int32 axis = 1;
-   int32 axis_s = 2;
-   int32 channel = 3;
-   int32 channel_s = 4;
-   int32 def_sample_type = 5;
-   int32 def_sample_type_s = 6;
-   int32 hour_1 = 7;
+   int32 is_on_1 = 1;
+   int32 hour_1 = 2;
+   int32 minute_1 = 3;
+   int32 second_1 = 4;
+   int32 interval_1 = 5;
+   int32 number_1 = 6;
+   int32 is_on_2 = 7;
    int32 hour_2 = 8;
-   int32 interval_1 = 9;
-   int32 interval_2 = 10;
-   int32 is_continuous = 11;
-   int32 is_continuous_s = 12;
-   int32 is_factory_init = 13;
-   int32 is_factory_init_s = 14;
-   int32 is_on_1 = 15;
-   int32 is_on_2 = 16;
-   int32 is_out_power = 17;
-   int32 is_out_power_s = 18;
-   int32 is_user_init = 19;
-   int32 is_user_init_s = 20;
-   double k_value = 21;
-   double k_value_s = 22;
-   int32 minute_1 = 23;
-   int32 minute_2 = 24;
-   int32 number_1 = 25;
-   int32 number_2 = 26;
-   int32 odr = 27;
-   int32 odr_s = 28;
-   int32 period = 29;
-   int32 period_s = 30;
-   int32 range = 31;
-   int32 range_s = 32;
-   int32 sample_pattern = 33;
-   int32 sample_pattern_s = 34;
-   int32 second_1 = 35;
-   int32 second_2 = 36;
-   int32 type = 37;
+   int32 minute_2 = 9;
+   int32 second_2 = 10;
+   int32 interval_2 = 11;
+   int32 number_2 = 12;
+   int32 type = 13;
+   int32 odr = 14;
+   int32 range = 15;
+   int32 axis = 16;
+   int32 period = 17;
+   int32 def_sample_type = 18;
+   int32 channel = 19;
+   int32 sample_pattern = 20;
+   int32 is_continuous = 21;
+   int32 is_out_power = 22;
+   int32 is_factory_init = 23;
+   int32 is_user_init = 24;
+   double k_value = 25;
+   int32 odr_s = 26;
+   int32 range_s = 27;
+   int32 axis_s = 28;
+   int32 period_s = 29;
+   int32 def_sample_type_s = 30;
+   int32 channel_s = 31;
+   int32 sample_pattern_s = 32;
+   int32 is_continuous_s = 33;
+   int32 is_out_power_s = 34;
+   int32 is_factory_init_s = 35;
+   int32 is_user_init_s = 36;
+   double k_value_s = 37;
 }
 
 message SetTriggerConfigHCF300{
    int32 is_set_trigger = 1;
-   int32 monitor_axis = 2;
-   int32 monitor_odr = 3;
-   int32 trigger_axis = 4;
-   int32 trigger_odr = 5;
-   int32 trigger_period = 6;
-   int32 trigger_range = 7;
-   double trigger_sensitivity = 8;
-   double trigger_threshold = 9;
+   int32 monitor_odr = 2;
+   int32 monitor_axis = 3;
+   int32 trigger_odr = 4;
+   int32 trigger_axis = 5;
+   int32 trigger_range = 6;
+   double trigger_sensitivity = 7;
+   double trigger_threshold = 8;
+   int32 trigger_period = 9;
 }
 
 message OnceInstructionHIS700{
@@ -357,10 +357,10 @@ message TwiceInstructionHIS700{
 }
 
 message HIS700AutoSample{
-   int32 auto_sample_interval = 1;
-   int32 disconnect_timeout = 2;
-   int32 is_on = 3;
-   int32 sample_collect_interval = 4;
+   int32 is_on = 1;
+   int32 sample_collect_interval = 2;
+   int32 auto_sample_interval = 3;
+   int32 disconnect_timeout = 4;
 }
 
 message SetStdNodeHGR100B2{
@@ -380,6 +380,6 @@ message GetGatewayCtrlInfo{
 }
 
 message AddCalibrationHCF2000{
-   sint32 offset = 1;
-   sint32 temp = 2;
+   sint32 temp = 1;
+   sint32 offset = 2;
 }
