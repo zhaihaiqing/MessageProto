@@ -13,7 +13,9 @@ message SensorUpMessage {
   string channel = 5;
   int32 microsecond = 6;
   string err_comment = 7;
-  string sensor_id = 8;
+  string project_name = 8;
+  string module_name = 9;
+  string sensor_id = 10;
 
   oneof msg {
     HighPrecisionIncliData highprecisioninclidata = 20;
