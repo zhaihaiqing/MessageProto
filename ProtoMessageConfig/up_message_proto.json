@@ -29,7 +29,10 @@
             "db",
             "freq",
             "temp",
+            "data",
             "voltage",
+            "sample_interval",
+            "microsecond",
             "channel"
         ],
         "packets": [
@@ -164,7 +167,9 @@
             "peaks",
             "peaks_num",
             "values",
-            "quality"
+            "quality",
+            "range",
+            "extent"
         ],
         "extension":null,
         "packets":[

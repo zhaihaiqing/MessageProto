@@ -19,7 +19,9 @@ message VibraWireData{
    int32 db = 1;
    double freq = 2;
    double temp = 3;
-   double voltage = 4;
+   double data = 4;
+   double voltage = 5;
+   double sample_interval = 6;
 }
 
 message AnemometerData{
@@ -88,6 +90,8 @@ message CablePeaksData{
    int32 peaks_num = 7;
    repeated int32 values = 8;
    int32 quality = 9;
+   string range = 10;
+   double extent = 11;
 }
 
 message SettlementData{
