@@ -1,15 +1,25 @@
 {
-    "GetCablePeaksHCF100": {
+    "SetRfChannelInfo": {
+        "fields":[
+            "rf_channel"
+        ],
+        "packets":[
+            "SetRfChannelSensorNode",
+            "SetRfChannelTransNode"
+        ]
+    },
+    "GetCablePeaksSampleData": {
         "fields": [
             "odr",
             "range",
             "axis"
         ],
         "packets": [
-            "GetCablePeaksHCF100"
+            "GetCablePeaksHCF100",
+            "GetCablePeaksHCF4000"
         ]
     },
-    "GetVibration": {
+    "GetVibSampleData": {
         "fields":[
             "odr",
             "range",
@@ -18,31 +28,29 @@
         ],
         "packets":[
             "GetVibraHCF300",
-            "GetVibraHCF3000"
+            "GetVibraHCF3000",
+            "GetVibraHCF40000",
+            "GetVibraWireHFS400"
         ]
     },
-    "GetVibraWireHFS200":{
+    "GetVibraWireSampleData":{
         "fields":[
-            "channel",
-            "sample_pattern"
+            "channel_bit",
+            "sample_pattern",
+            "local_channel_bit",
+            "ext_channel_bit"
         ],
         "packets":[
             "GetVibraWireHFS200",
-            "GetVibraWireHFS200V1"
-        ]
-    },
-    "GetVibraWireHFS400":{
-        "fields":[
-            "odr",
-            "period"
-        ],
-        "packets":[
-            "GetVibraWireHFS400"
+            "GetVibraWireHFS200V1",
+            "GetVibraWireHFS316",
+            "GetVibraWireHFS500V1",
+            "GetVibraWireHFS530"
         ]
     },
     "GetElectricityHIS100":{
         "fields":[
-            "channel",
+            "channel_bit",
             "odr",
             "period",
             "is_continuous",
@@ -133,31 +141,12 @@
             "GetStressHIS500"
         ]
     },
-    "GetVibraWireHFS316":{
-        "fields":[
-            "sample_pattern",
-            "channel"
-        ],
-        "packets":[
-            "GetVibraWireHFS316"
-        ]
-    },
     "GetPressHGR100B2":{
         "fields":[
             "sample_pattern"
         ],
         "packets":[
             "GetPressHGR100B2"
-        ]
-    },
-    "GetVibraWireHFS500":{
-        "fields":[
-            "sample_pattern",
-            "channel"
-        ],
-        "packets":[
-            "GetVibraWireHFS500",
-            "GetVibraWireHFS500V1"
         ]
     },
     "GetAnemometerFC307":{
@@ -203,31 +192,34 @@
             "second_2",
             "interval_2",
             "number_2",
-            "type",
             "odr",
             "range",
             "axis",
             "period",
             "def_sample_type",
-            "channel",
+            "channel_bit",
             "sample_pattern",
             "is_continuous",
             "is_out_power",
             "is_factory_init",
             "is_user_init",
             "k_value",
+            "local_channel_bit",
+            "ext_channel_bit",
             "odr_s",
             "range_s",
             "axis_s",
             "period_s",
             "def_sample_type_s",
-            "channel_s",
+            "channel_bit_s",
             "sample_pattern_s",
             "is_continuous_s",
             "is_out_power_s",
             "is_factory_init_s",
             "is_user_init_s",
-            "k_value_s"
+            "k_value_s",
+            "local_channel_bit_s",
+            "ext_channel_bit_s"
         ],
         "packets":[
             "ConfigClockTaskHCF100",
@@ -239,6 +231,7 @@
             "ConfigClockTaskHIS800",
             "ConfigClockTaskHCF2000",
             "ConfigClockTaskHCF3000",
+            "ConfigClockTaskHCF4000",
             "ConfigClockTaskHFS200",
             "ConfigClockTaskHFS200V1",
             "ConfigClockTaskHFS400",
@@ -250,10 +243,11 @@
             "ConfigClockTaskHFS500",
             "ConfigClockTaskHCF910",
             "ConfigClockTaskGRTU1000",
-            "ConfigClockTaskFC307"
+            "ConfigClockTaskFC307",
+            "ConfigClockTaskHFS530"
         ]
     },
-    "SetTriggerConfigHCF300":{
+    "SetTriggerConfigInfo":{
         "fields":[
             "is_set_trigger",
             "monitor_odr",
@@ -266,7 +260,16 @@
             "trigger_period"
         ],
         "packets":[
-            "SetTriggerConfigHCF300"
+            "SetTriggerConfigHCF300",
+            "SetTriggerConfigHCF4000"
+        ]
+    },
+    "SimpleSampleHIS700":{
+        "fields":[
+            "disconnect_timeout"
+        ],
+        "packets":[
+            "GetWinderCupSampleHCF910RS"
         ]
     },
     "OnceInstructionHIS700":{
@@ -279,7 +282,8 @@
             "GetMeteorologyHCF930RS",
             "GetCH4HOS3000CH4RS",
             "GetShapeArrayHCF1100RS",
-            "GetTempHumiHOS9010RS"
+            "GetTempHumiHOS9010RS",
+            "GetCH4HOS3000CH4RS"
         ]
     },
     "TwiceInstructionHIS700":{
@@ -308,7 +312,7 @@
     },
     "SetStdNodeHGR100B2":{
         "fields":[
-            "reference_node_id"
+            "reference_node"
         ],
         "packets":[
             "SetStdNodeHGR100B2"
@@ -324,7 +328,7 @@
     },
     "SetChannelConfigHFS316":{
         "fields":[
-            "channel_config_bit_map"
+            "channel_config_bit"
         ],
         "packets":[
             "SetChannelConfigHFS316"
@@ -345,7 +349,118 @@
             "offset"
         ],
         "packets":[
-            "AddCalibrationHCF2000"
+            "AddCaliHCF2000"
+        ]
+    },
+    "RegistryOpHCF700HGR100B2": {
+        "fields":[
+            "addr"
+        ],
+        "packets":[
+            "ReadHoldRegHCF700HGR100B2",
+            "ReadInputRegHCF700HGR100B2",
+            "InitPressHGR100B2"
+        ]
+    },
+    "SetHoldRegHCF700HGR100B2": {
+        "fields":[
+            "dest_addr",
+            "set_addr",
+            "channel_bit",
+            "init_value",
+            "density",
+            "g_value",
+            "full_adc_value",
+            "zero_adc_value",
+            "full_sensor_value"
+        ],
+        "packets":[
+            "SetHoldRegHCF700HGR100B2"
+        ]
+    },
+    "SetIncliCalibration": {
+        "fields":[
+            "incli_marked",
+            "main_direction",
+            "origin_x",
+            "origin_y",
+            "origin_z"
+        ],
+        "packets":[
+            "SetIncliCalibration"
+        ]
+    },
+    "SetChannelFreqInfo": {
+        "fields":[
+            "channel_freq"
+        ],
+        "packets":[
+            "SetChannelFreqHFS500",
+            "SetChannelFreqHFS530"
+        ]
+    },
+    "SetChannelConfigHIS100": {
+        "fields":[
+            "channel1_config",
+            "channel2_config",
+            "channel3_config",
+            "channel4_config"
+        ],
+        "packets":[
+            "SetChannelConfigHIS100"
+        ]
+    },
+    "SetCaliHIS100": {
+        "fields":[
+            "channel_bit",
+            "number",
+            "sensor_data",
+            "standard_data"
+        ],
+        "packets":[
+            "SetCaliHIS100"
+        ]
+    },
+    "RemoveCaliHIS100": {
+        "fields":[
+            "channel_bit"
+        ],
+        "packets":[
+            "RemoveCaliHIS100"
+        ]
+    },
+    "ChangeInstructionHIS700": {
+        "fields":[
+            "main_type",
+            "sub_type",
+            "disconnect_timeout",
+            "is_operate_eeprom",
+            "is_write",
+            "is_sample_instruct",
+            "instruct_length",
+            "instruct"
+        ],
+        "packets":[
+            "InstructionConfigHIS700",
+            "ClearInstructionHIS700"
+        ]
+    },
+    "ChangeNodeWhiteListTransNode": {
+        "fields":[
+            "serial_number"
+        ],
+        "packets":[
+            "AddNodeWhiteListTransNode",
+            "RemoveNodeWhiteListTransNode"
+        ]
+    },
+    "CloseWhiteListTransNode": {
+        "fields":[
+            "close_flag"
+        ],
+        "packets":[
+            "CloseWhiteListTransNode"
         ]
     }
+    
 }

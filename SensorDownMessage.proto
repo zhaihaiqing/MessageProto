@@ -13,28 +13,37 @@ message SensorDownMessage {
   uint32 unix_time = 5;
 
   oneof msg {
-    GetCablePeaksHCF100 getcablepeakshcf100 = 20;
-    GetVibration getvibration = 21;
-    GetVibraWireHFS200 getvibrawirehfs200 = 22;
-    GetVibraWireHFS400 getvibrawirehfs400 = 23;
+    SetRfChannelInfo setrfchannelinfo = 20;
+    GetCablePeaksSampleData getcablepeakssampledata = 21;
+    GetVibSampleData getvibsampledata = 22;
+    GetVibraWireSampleData getvibrawiresampledata = 23;
     GetElectricityHIS100 getelectricityhis100 = 24;
     GetStressHIS300 getstresshis300 = 25;
     GetStressHIS500 getstresshis500 = 26;
-    GetVibraWireHFS316 getvibrawirehfs316 = 27;
-    GetPressHGR100B2 getpresshgr100b2 = 28;
-    GetVibraWireHFS500 getvibrawirehfs500 = 29;
-    GetAnemometerFC307 getanemometerfc307 = 30;
-    GetMonitorIncliHCF420 getmonitorinclihcf420 = 31;
-    SetMainDirectionHCF200 setmaindirectionhcf200 = 32;
-    ConfigClockTask configclocktask = 33;
-    SetTriggerConfigHCF300 settriggerconfighcf300 = 34;
-    OnceInstructionHIS700 onceinstructionhis700 = 35;
-    TwiceInstructionHIS700 twiceinstructionhis700 = 36;
-    HIS700AutoSample his700autosample = 37;
-    SetStdNodeHGR100B2 setstdnodehgr100b2 = 38;
-    SetBaudrateHIS700 setbaudratehis700 = 39;
-    SetChannelConfigHFS316 setchannelconfighfs316 = 40;
-    GetGatewayCtrlInfo getgatewayctrlinfo = 41;
-    AddCalibrationHCF2000 addcalibrationhcf2000 = 42;
+    GetPressHGR100B2 getpresshgr100b2 = 27;
+    GetAnemometerFC307 getanemometerfc307 = 28;
+    GetMonitorIncliHCF420 getmonitorinclihcf420 = 29;
+    SetMainDirectionHCF200 setmaindirectionhcf200 = 30;
+    ConfigClockTask configclocktask = 31;
+    SetTriggerConfigInfo settriggerconfiginfo = 32;
+    SimpleSampleHIS700 simplesamplehis700 = 33;
+    OnceInstructionHIS700 onceinstructionhis700 = 34;
+    TwiceInstructionHIS700 twiceinstructionhis700 = 35;
+    HIS700AutoSample his700autosample = 36;
+    SetStdNodeHGR100B2 setstdnodehgr100b2 = 37;
+    SetBaudrateHIS700 setbaudratehis700 = 38;
+    SetChannelConfigHFS316 setchannelconfighfs316 = 39;
+    GetGatewayCtrlInfo getgatewayctrlinfo = 40;
+    AddCalibrationHCF2000 addcalibrationhcf2000 = 41;
+    RegistryOpHCF700HGR100B2 registryophcf700hgr100b2 = 42;
+    SetHoldRegHCF700HGR100B2 setholdreghcf700hgr100b2 = 43;
+    SetIncliCalibration setinclicalibration = 44;
+    SetChannelFreqInfo setchannelfreqinfo = 45;
+    SetChannelConfigHIS100 setchannelconfighis100 = 46;
+    SetCaliHIS100 setcalihis100 = 47;
+    RemoveCaliHIS100 removecalihis100 = 48;
+    ChangeInstructionHIS700 changeinstructionhis700 = 49;
+    ChangeNodeWhiteListTransNode changenodewhitelisttransnode = 50;
+    CloseWhiteListTransNode closewhitelisttransnode = 51;
   }
 }
