@@ -40,7 +40,7 @@ message AnemometerData{
    int32 err_heat = 13;
    int32 err_ntc = 14;
    int32 heat_status = 15;
-   int32 worktime = 16;
+   int64 worktime = 16;
    string serial_number = 17;
 }
 
@@ -524,7 +524,7 @@ message GetMonitorIncliHCF420{
    int32 group = 6;
 }
 
-message SetMainDirectionHCF200{
+message SetMainDirectionInclination{
    int32 main_direction = 1;
 }
 

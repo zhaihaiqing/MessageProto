@@ -170,12 +170,12 @@
             "GetMonitorIncliHCF420"
         ]
     },
-    "SetMainDirectionHCF200":{
+    "SetMainDirectionInclination":{
         "fields":[
             "main_direction"
         ],
         "packets":[
-            "SetMainDirectionHCF200"
+            "SetMainDirectionInclination"
         ]
     },
     "ConfigClockTask":{

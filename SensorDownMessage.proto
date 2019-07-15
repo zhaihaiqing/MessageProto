@@ -23,7 +23,7 @@ message SensorDownMessage {
     GetPressHGR100B2 getpresshgr100b2 = 27;
     GetAnemometerFC307 getanemometerfc307 = 28;
     GetMonitorIncliHCF420 getmonitorinclihcf420 = 29;
-    SetMainDirectionHCF200 setmaindirectionhcf200 = 30;
+    SetMainDirectionInclination setmaindirectioninclination = 30;
     ConfigClockTask configclocktask = 31;
     SetTriggerConfigInfo settriggerconfiginfo = 32;
     SimpleSampleHIS700 simplesamplehis700 = 33;
