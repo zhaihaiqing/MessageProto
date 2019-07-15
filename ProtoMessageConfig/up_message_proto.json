@@ -337,7 +337,7 @@
         ],
         "packets":[
             "SoftVersion",
-            "SoftVersionTransNode"
+            "SoftwareVersionTransNode"
         ]
     },
     "ClockTaskTimeInfoSensorNode":{

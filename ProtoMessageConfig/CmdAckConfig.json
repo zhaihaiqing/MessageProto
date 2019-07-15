@@ -7,7 +7,7 @@
     "QuerySerialNumberSensorNode": "QuerySerialNumberSensorNodeAck",
     "QuerySerialNumberTransNode": "SerialNumberTransNode",
     "QuerySoftVersionSensorNode": "QuerySoftVersionSensorNodeAck",
-    "QuerySoftVersionTransNode": "SoftVersionTransNode",
+    "QuerySoftVersionTransNode": "SoftwareVersionTransNode",
     "QueryClockEntrySensorNode": "QueryClockEntrySensorNodeAck",
     "QueryClockEntryTransNode": "ClockEntryTransNode",
     "QuerySampleConfigSensorNode": "QuerySampleConfigSensorNode",
