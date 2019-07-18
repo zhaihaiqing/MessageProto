@@ -148,6 +148,7 @@ message Uart485ForHFS716Sample{
 message VoltageDataV1{
    double millivolt = 1;
    double temp = 2;
+   double voltage = 3;
 }
 
 message TopInfoNodeData{
@@ -320,7 +321,7 @@ message StdNodeHGR100B2{
    int32 reference_node = 1;
 }
 
-message ExistNodes1HGR100B2{
+message ExistNodesHGR100B2{
    repeated int32 node_bit = 1;
 }
 
@@ -460,6 +461,10 @@ message NodeWhiteListEntryTransNode{
    string serial_number = 1;
 }
 
+message CurrentDataV1{
+   double current = 1;
+}
+
 message SetRfChannelInfo{
    int32 rf_channel = 1;
 }
@@ -569,6 +574,8 @@ message ConfigClockTask{
    double k_value_s = 38;
    int32 local_channel_bit_s = 39;
    int32 ext_channel_bit_s = 40;
+   int32 running_mode = 41;
+   int32 analog_sample_type = 42;
 }
 
 message SetTriggerConfigInfo{
@@ -689,4 +696,65 @@ message ChangeNodeWhiteListTransNode{
 
 message CloseWhiteListTransNode{
    int32 close_flag = 1;
+}
+
+message AddNodeHIS900{
+   int32 sample_ins_type = 1;
+   int32 pro_ins_type = 2;
+   int32 pro_type = 3;
+   int32 node_type = 4;
+   int32 node_num = 5;
+   repeated int32 addr = 6;
+}
+
+message AddOneInsHIS900{
+   int32 pro_ins_type = 1;
+   int32 pro_type = 2;
+   int32 ins_len = 3;
+   repeated int32 ins = 4;
+}
+
+message AddTwoInsHIS900{
+   int32 pro_ins_type = 1;
+   int32 pro_type = 2;
+   int32 sample_ins_len = 3;
+   int32 retrieve_ins_len = 4;
+   repeated int32 ins = 5;
+}
+
+message DeleteNodeInfoHIS900{
+   int32 addr = 1;
+}
+
+message DeleteInstructHIS900{
+   int32 pro_type = 1;
+}
+
+message SetSampleParameterHIS900{
+   int32 pow_on_interval = 1;
+   int32 retrieve_interval = 2;
+   int32 pro_pow_sup_mode = 3;
+   int32 pro_pow_sup_vol = 4;
+}
+
+message TransparentInstructHIS900{
+   int32 pro_type = 1;
+   int32 pro_ins_type = 2;
+   int32 data_len = 3;
+   repeated int32 data = 4;
+}
+
+message GetSampleDataHIS900{
+   int32 addr = 1;
+   int32 sample_ins_type = 2;
+   int32 pro_ins_type = 3;
+   int32 pro_type = 4;
+}
+
+message GetAnalogDataHIS900{
+   int32 analog_sample_type = 1;
+}
+
+message SetCalibrationHIS900{
+   int32 analog_sample_type = 1;
 }

@@ -267,10 +267,12 @@
     "VoltageDataV1":{
         "fields":[
             "millivolt",
-            "temp"
+            "temp",
+            "voltage"
         ],
         "packets":[
-            "VoltageHIS800"
+            "VoltageHIS800",
+            "VoltageHIS900"
         ]
     },
     "TopInfoNodeData":{
@@ -511,7 +513,7 @@
             "StdNodeHGR100B2"
         ]
     },
-    "ExistNodes1HGR100B2":{
+    "ExistNodesHGR100B2":{
         "fields":[
             "node_bit"
         ],
@@ -723,6 +725,14 @@
         ],
         "packets":[
             "NodeWhiteListEntryTransNode"
+        ]
+    },
+    "CurrentDataV1":{
+        "fields":[
+            "current"
+        ],
+        "packets":[
+            "CurrentHIS900"
         ]
     }
 }

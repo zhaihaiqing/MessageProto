@@ -52,7 +52,7 @@ message SensorUpMessage {
     InitIncliHCF200Done initinclihcf200done = 51;
     ClockTaskSampleInfoAndTriggerSampleInfo clocktasksampleinfoandtriggersampleinfo = 52;
     StdNodeHGR100B2 stdnodehgr100b2 = 53;
-    ExistNodes1HGR100B2 existnodes1hgr100b2 = 54;
+    ExistNodesHGR100B2 existnodeshgr100b2 = 54;
     ClockTaskSampleInfo clocktasksampleinfo = 55;
     ChannelInfoHFS316 channelinfohfs316 = 56;
     ChannelInfoHIS100 channelinfohis100 = 57;
@@ -67,5 +67,6 @@ message SensorUpMessage {
     TransparentDataHIS900 transparentdatahis900 = 66;
     ChildNodeTransNode childnodetransnode = 67;
     NodeWhiteListEntryTransNode nodewhitelistentrytransnode = 68;
+    CurrentDataV1 currentdatav1 = 69;
   }
 }

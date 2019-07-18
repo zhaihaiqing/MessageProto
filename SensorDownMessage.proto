@@ -45,5 +45,15 @@ message SensorDownMessage {
     ChangeInstructionHIS700 changeinstructionhis700 = 49;
     ChangeNodeWhiteListTransNode changenodewhitelisttransnode = 50;
     CloseWhiteListTransNode closewhitelisttransnode = 51;
+    AddNodeHIS900 addnodehis900 = 52;
+    AddOneInsHIS900 addoneinshis900 = 53;
+    AddTwoInsHIS900 addtwoinshis900 = 54;
+    DeleteNodeInfoHIS900 deletenodeinfohis900 = 55;
+    DeleteInstructHIS900 deleteinstructhis900 = 56;
+    SetSampleParameterHIS900 setsampleparameterhis900 = 57;
+    TransparentInstructHIS900 transparentinstructhis900 = 58;
+    GetSampleDataHIS900 getsampledatahis900 = 59;
+    GetAnalogDataHIS900 getanalogdatahis900 = 60;
+    SetCalibrationHIS900 setcalibrationhis900 = 61;
   }
 }

@@ -219,7 +219,9 @@
             "is_user_init_s",
             "k_value_s",
             "local_channel_bit_s",
-            "ext_channel_bit_s"
+            "ext_channel_bit_s",
+            "running_mode",
+            "analog_sample_type"
         ],
         "packets":[
             "ConfigClockTaskHCF100",
@@ -244,7 +246,8 @@
             "ConfigClockTaskHCF910",
             "ConfigClockTaskGRTU1000",
             "ConfigClockTaskFC307",
-            "ConfigClockTaskHFS530"
+            "ConfigClockTaskHFS530",
+            "ConfigClockTaskHIS900"
         ]
     },
     "SetTriggerConfigInfo":{
@@ -461,6 +464,106 @@
         "packets":[
             "CloseWhiteListTransNode"
         ]
+    },
+    "AddNodeHIS900":{
+        "fields":[
+            "sample_ins_type",
+            "pro_ins_type",
+            "pro_type",
+            "node_type",
+            "node_num",
+            "addr"
+        ],
+        "packets":[
+            "AddNodeHIS900"
+        ]
+    },
+    "AddOneInsHIS900":{
+        "fields":[
+            "pro_ins_type",
+            "pro_type",
+            "ins_len",
+            "ins"
+        ],
+        "packets":[
+            "AddOneInsHIS900"
+        ]
+    },
+    "AddTwoInsHIS900":{
+        "fields":[
+            "pro_ins_type",
+            "pro_type",
+            "sample_ins_len",
+            "retrieve_ins_len",
+            "ins"
+        ],
+        "packets":[
+            "AddTwoInsHIS900"
+        ]
+    },
+    "DeleteNodeInfoHIS900":{
+        "fields":[
+            "addr"
+        ],
+        "packets":[
+            "DeleteNodeInfoHIS900"
+        ]
+    },
+    "DeleteInstructHIS900":{
+        "fields":[
+            "pro_type"
+        ],
+        "packets":[
+            "DeleteInstructHIS900"
+        ]
+    },
+    "SetSampleParameterHIS900":{
+        "fields":[
+            "pow_on_interval",
+            "retrieve_interval",
+            "pro_pow_sup_mode",
+            "pro_pow_sup_vol"
+        ],
+        "packets":[
+            "SetSampleParameterHIS900"
+        ]
+    },
+    "TransparentInstructHIS900":{
+        "fields":[
+            "pro_type",
+            "pro_ins_type",
+            "data_len",
+            "data"
+        ],
+        "packets":[
+            "TransparentInstructHIS900"
+        ]
+    },
+    "GetSampleDataHIS900":{
+        "fields":[
+            "addr",
+            "sample_ins_type",
+            "pro_ins_type",
+            "pro_type"
+        ],
+        "packets":[
+            "GetSampleDataHIS900"
+        ]
+    },
+    "GetAnalogDataHIS900":{
+        "fields":[
+            "analog_sample_type"
+        ],
+        "packets":[
+            "GetAnalogDataHIS900"
+        ]
+    },
+    "SetCalibrationHIS900":{
+        "fields":[
+            "analog_sample_type"
+        ],
+        "packets":[
+            "SetCalibrationHIS900"
+        ]
     }
-    
 }
