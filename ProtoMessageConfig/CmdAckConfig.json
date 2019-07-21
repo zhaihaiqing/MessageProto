@@ -1,7 +1,7 @@
 {
     "QueryAllInfoSensorNode": "QueryAllInfoSensorNodeAck",
     "QueryTopInfoSensorNode": "QueryTopInfoSensorNodeAck",
-    "QueryTopInfoTransNode": "QueryTopInfoTransNodeAck",
+    "QueryTopInfoTransNode": "TopInfoTransNode",
     "QueryPowerStateSensorNode": "QueryPowerStateSensorNodeAck",
     "QueryPowerStateTransNode": "QueryPowerStateTransNodeAck",
     "QuerySerialNumberSensorNode": "QuerySerialNumberSensorNodeAck",
@@ -10,7 +10,7 @@
     "QuerySoftVersionTransNode": "SoftwareVersionTransNode",
     "QueryClockEntrySensorNode": "QueryClockEntrySensorNodeAck",
     "QueryClockEntryTransNode": "ClockEntryTransNode",
-    "QuerySampleConfigSensorNode": "QuerySampleConfigSensorNode",
+    "QuerySampleConfigSensorNode": "QuerySampleConfigSensorNodeAck",
     "QueryClockTaskSensorNode": "QueryClockTaskSensorNodeAck",
     "QueryStdNodeHGR100B2": "QueryStdNodeHGR100B2Ack",
     "QueryExistNodesHGR100B2": "QueryExistNodesHGR100B2Ack",
@@ -139,5 +139,6 @@
     "DelCaliHCF2000": "DelCaliHCF2000Ack",
     "DeleteNodeInfoHIS900": "DeleteNodeInfoHIS900Ack",
     "DeleteInstructHIS900": "DeleteInstructHIS900Ack",
-    "TransparentInstructHIS900": "TransparentInstructHIS900Ack"
+    "TransparentInstructHIS900": "TransparentInstructHIS900Ack",
+    "AutoScanHGR100B2": "AutoScanHGR100B2Ack"
 }
