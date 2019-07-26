@@ -428,11 +428,11 @@ message ShapeArrayHCF1100{
 }
 
 message NodeInfoHIS900{
-   int32 addr = 1;
-   int32 sample_ins_type = 2;
-   int32 pro_ins_type = 3;
-   string pro_type = 4;
-   int32 node_type = 5;
+   repeated int32 addr = 1;
+   repeated int32 sample_ins_type = 2;
+   repeated int32 pro_ins_type = 3;
+   repeated string pro_type = 4;
+   repeated int32 node_type = 5;
 }
 
 message InstructInfoHIS900{
