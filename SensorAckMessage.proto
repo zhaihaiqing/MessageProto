@@ -21,15 +21,16 @@ message SensorAckMessage {
         CODE_UNCONNECT_ROUTER = 17;  //目标网关未连接SensorRouter
         CODE_INVAL_MESSAGE = 18; //message未非法消息，缺少字段或者参数错误
         CODE_DEVICE_BUSY = 19;   //设备繁忙，该设备指令队列中有未执行的下行指令
-        CODE_QUERY_FAIL = 20;   //查询指令时，指令列表为空，表示没有添加任何的节点或者指令,e.g. HIS900使用
+        CODE_EMPTY_ERR = 20;   //表示没有添加任何的节点或者指令,e.g. HIS900使用
         CODE_ADD_NODE_FAIL = 21;     //添加节点失败，e.g. HIS900添加节点数不在0-25内
-        CODE_NULL_INS_FAIL = 22;     //添加节点发现该节点的指令没有添加，会报此问题，添加指令产品类型不存在，也会报该问题. e.g. HIS900
-        CODE_NULL_TYPE_ERR = 23;    //添加节点发现没有该节点类型，e.g. HIS900
-        CODE_NULL_INS_FAIL_V2 = 24; //添加节点发现该节点的指令没有添加，会报此问题，指令长度过长，也会报此问题. e.g. HIS900
-        CODE_ADD_INS_MEM_FAIL = 25; //添加指令时发现缓冲区不足，e.g. HIS900  指令1添加失败
-        CODE_ADD_INS_MEM_FAIL_V2 = 26;  //添加指令时发现缓冲区不足，e.g. HIS900  指令2添加失败
-        CODE_TYPE_INVAILD = 27;     //类型错误  e.g. HIS900传入产品类型为0，会报该问题
-        CODE_SAMPLE_FAIL = 30;  //采样失败，e.g. HIS900从机采样失败，没有反应
+        CODE_EMPTY_INS_ERR = 22;     //没有添加任何的指令，也会报该问题. e.g. HIS900
+        CODE_LACK_ANYONE_INS_ERR = 23;    //缺少某条指令，e.g. HIS900
+        CODE_NULL_INS_ERR = 24;     //该产品类型没有添加该条指令，请查询指令信息. e.g. HIS900
+        CODE_NONE_NODE_ERR = 25; //总线上不存在该地址的设备，e.g. HIS900
+        CODE_NONE_TYPE_ERR = 26;  //产品类型不存在，e.g. HIS900
+        CODE_INS_TOO_LONG_ERR = 27;     //指令过长  e.g. HIS900
+        CODE_LACK_MEM_ERR = 28;     //存储空间不足  e.g. HIS900
+        CODE_GET_INFO_FAIL = 29;  //采样失败，e.g. HIS900从机采样失败，没有反应
     }
 
     string instruction_name = 1;    //下行指令的指令名
