@@ -29,7 +29,7 @@
         "packets":[
             "GetVibraHCF300",
             "GetVibraHCF3000",
-            "GetVibraHCF40000",
+            "GetVibraHCF4000",
             "GetVibraWireHFS400"
         ]
     },
@@ -462,7 +462,7 @@
             "close_flag"
         ],
         "packets":[
-            "CloseWhiteListTransNode"
+            "CloseNodeWhiteListTransNode"
         ]
     },
     "AddNodeHIS900":{
