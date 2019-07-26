@@ -461,8 +461,8 @@
             "origin_z"
         ],
         "packets":[
-            "InitIncliHCF200",
-            "InitIncliHCF4000"
+            "IncliCaliInfoHCF200",
+            "IncliCaliInfoHCF4000"
         ]
     },
     "InitIncliHCF200Done":{
