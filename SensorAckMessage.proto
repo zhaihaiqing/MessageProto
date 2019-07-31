@@ -31,6 +31,7 @@ message SensorAckMessage {
         CODE_INS_TOO_LONG_ERR = 27;     //指令过长  e.g. HIS900
         CODE_LACK_MEM_ERR = 28;     //存储空间不足  e.g. HIS900
         CODE_GET_INFO_FAIL = 29;  //采样失败，e.g. HIS900从机采样失败，没有反应
+        CODE_SERVER_RESPONSE_ERR = 101;  //服务端响应错误，e.g. 服务端发送Kafka失败
     }
 
     string instruction_name = 1;    //下行指令的指令名
