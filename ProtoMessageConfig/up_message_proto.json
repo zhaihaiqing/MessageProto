@@ -21,7 +21,8 @@
         "packets": [
             "TempHumiHCF600",
             "TempHumiHOS9010Uart485",
-            "TemperatureHCF500"
+            "TemperatureHCF500",
+            "TempHumiHOS9010I0RSHIS900"
         ]
     },
     "VibraWireData": {
@@ -74,7 +75,8 @@
             "Uart485ForHCF920SampleData",
             "Uart485ForHCF930SampleData",
             "WinderCupSampleHCF910",
-            "WindSpeedAndDirectionHCF920I0RSHIS900"
+            "WindSpeedAndDirectionHCF920I0RSHIS900",
+            "WindSpeedAndDirectionHOS915I0RSHIS900"
         ]
     },
     "InclinationData":{
@@ -191,7 +193,8 @@
         ],
         "packets":[
             "PressHCF700",
-            "Uart485ForHCF700SampleData"
+            "Uart485ForHCF700SampleData",
+            "PressHCF700I0RSHIS900"
         ]
     },
     "StressData":{
@@ -261,7 +264,8 @@
             "channel"
         ],
         "packets":[
-            "Uart485ForHFS716SampleData"
+            "Uart485ForHFS716SampleData",
+            "VibraWireResHFS716I0RSHIS900"
         ]
     },
     "VoltageDataV1":{
@@ -670,7 +674,8 @@
             "coordinate_init_z"
         ],
         "packets":[
-            "ShapeArrayHCF1100"
+            "ShapeArrayHCF1100",
+            "ShapeArrayHCF1100I0RSHIS900"
         ]
     },
     "NodeInfoHIS900":{
