@@ -465,6 +465,17 @@ message CurrentDataV1{
    double current = 1;
 }
 
+message SampleParameterDataHIS900{
+   int32 pro_pow_sup_mode = 1;
+   int32 voltage = 2;
+   int32 running_mode = 3;
+   int32 analog_sample_type = 4;
+   int32 odr = 5;
+   int32 period = 6;
+   int32 pow_on_interval = 7;
+   int32 retrieve_interval = 8;
+}
+
 message SetRfChannelInfo{
    int32 rf_channel = 1;
 }

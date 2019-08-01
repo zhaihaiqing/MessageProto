@@ -68,5 +68,6 @@ message SensorUpMessage {
     ChildNodeTransNode childnodetransnode = 67;
     NodeWhiteListEntryTransNode nodewhitelistentrytransnode = 68;
     CurrentDataV1 currentdatav1 = 69;
+    SampleParameterDataHIS900 sampleparameterdatahis900 = 70;
   }
 }

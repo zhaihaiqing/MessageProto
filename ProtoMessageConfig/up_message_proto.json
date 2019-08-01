@@ -739,5 +739,20 @@
         "packets":[
             "CurrentHIS900"
         ]
+    },
+    "SampleParameterDataHIS900":{
+        "fields":[
+            "pro_pow_sup_mode",
+            "voltage",
+            "running_mode",
+            "analog_sample_type",
+            "odr",
+            "period",
+            "pow_on_interval",
+            "retrieve_interval"
+        ],
+        "packets":[
+            "SampleParameterDataHIS900"
+        ]
     }
 }
