@@ -34,7 +34,8 @@
             "voltage",
             "sample_interval",
             "microsecond",
-            "channel"
+            "channel",
+            "addr"
         ],
         "packets": [
             "VibraWireHFS316",
@@ -66,7 +67,8 @@
             "err_ntc",
             "heat_status",
             "worktime",
-            "serial_number"
+            "serial_number",
+            "version"
         ],
         "packets":[
             "AnemometerHCF900",
@@ -261,7 +263,10 @@
             "temperature_or_ressum",
             "Hz_or_resratio",
             "channel_unixtime",
-            "channel"
+            "channel",
+            "addr",
+            "serial_number",
+            "version"
         ],
         "packets":[
             "Uart485ForHFS716SampleData",

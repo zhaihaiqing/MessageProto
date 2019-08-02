@@ -22,6 +22,7 @@ message VibraWireData{
    double data = 4;
    double voltage = 5;
    double sample_interval = 6;
+   int32 addr = 7;
 }
 
 message AnemometerData{
@@ -42,6 +43,7 @@ message AnemometerData{
    int32 heat_status = 15;
    int32 worktime = 16;
    string serial_number = 17;
+   int32 version = 18;
 }
 
 message InclinationData{
@@ -143,6 +145,9 @@ message Uart485ForHFS716Sample{
    double temperature_or_ressum = 1;
    double Hz_or_resratio = 2;
    int32 channel_unixtime = 3;
+   int32 addr = 4;
+   string serial_number = 5;
+   int32 version = 6;
 }
 
 message VoltageDataV1{
