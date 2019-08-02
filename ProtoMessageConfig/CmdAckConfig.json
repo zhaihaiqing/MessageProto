@@ -105,7 +105,7 @@
     "ClearInstructionHIS700": "ClearInstructionHIS700Ack",
     "CloseNodeWhiteListTransNode": "CloseNodeWhiteListTransNodeAck",
     "ChangeBaseSinkTransNode": "ChangeNodeTypeAck",
-    "ChangeUnclockBaseTransNode": "ChangeNodeTypeAck",
+    "ChangeUnClockBaseTransNode": "ChangeNodeTypeAck",
     "ChangeCableRelayTransNode": "ChangeNodeTypeAck",
     "ConfigClockTaskHIS900": "ConfigClockTaskAck",
     "AddCaliHCF2000": "AddCaliHCF2000Ack",
