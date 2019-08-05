@@ -78,7 +78,9 @@
             "Uart485ForHCF930SampleData",
             "WinderCupSampleHCF910",
             "WindSpeedAndDirectionHCF920I0RSHIS900",
-            "WindSpeedAndDirectionHOS915I0RSHIS900"
+            "WindSpeedAndDirectionHOS915I0RSHIS900",
+            "WindSpeedHOS915I1RSHIS900",
+            "WindDirectionHOS915I2RSHIS900"
         ]
     },
     "InclinationData":{
