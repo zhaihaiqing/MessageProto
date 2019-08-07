@@ -1,6 +1,7 @@
 {
     "temperature": "temp",
     "humidity": "humi",
+    "frequency": "freq",
     "WindSpeed": "wind_speed",
     "WindDirection": "wind_direction",
     "Dampness": "humi",
