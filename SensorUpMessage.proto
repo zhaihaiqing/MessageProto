@@ -16,6 +16,7 @@ message SensorUpMessage {
   string project_name = 8;
   string module_name = 9;
   string sensor_id = 10;
+  uint32 ver = 11;
 
   oneof msg {
     HighPrecisionIncliData highprecisioninclidata = 20;
