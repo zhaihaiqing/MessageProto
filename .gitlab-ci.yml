@@ -19,8 +19,9 @@ translate_protobuf:
     - git clone http://songxiaopeng:1016593219Sxp@git.thunics.org/dp/MessageProto.git
     - mkdir .output
     - ls -l
+    - ls -lR
     - echo $PWD/MessageProto
-    - docker run -i --name BStack2Proto3 -v $PWD/MessageProto:/home/work/bstack2proto3/MessageProto -v $PWD/wsn-data:/home/work/bstack2proto3/wsn-data -v $PWD/.output:/home/work/bstack2proto3/output ${DOCKER_IMAGE} /home/work/bstack2proto3/BStack2Proto3.sh || if [ $? -eq 0 ]; then echo "translate success"; else docker rm BStack2Proto3; docker rmi -f ${DOCKER_IMAGE}; exit 255; fi
+    - sudo docker run -i --name BStack2Proto3 -v ./MessageProto:/home/work/bstack2proto3/MessageProto -v ./wsn-data:/home/work/bstack2proto3/wsn-data -v ./.output:/home/work/bstack2proto3/output ${DOCKER_IMAGE} /home/work/bstack2proto3/BStack2Proto3.sh || if [ $? -eq 0 ]; then echo "translate success"; else docker rm BStack2Proto3; docker rmi -f ${DOCKER_IMAGE}; exit 255; fi
     - cd MessageProto
     #- docker push origin master
     - docker rm BStack2Proto3
