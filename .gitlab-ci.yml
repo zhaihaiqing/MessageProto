@@ -17,7 +17,7 @@ translate_protobuf:
     - tar xzvf libs.tar.gz
     - git clone http://songxiaopeng:1016593219Sxp@git.thunics.org/embedded/wsn-data.git
     - git clone http://songxiaopeng:1016593219Sxp@git.thunics.org/dp/MessageProto.git
-    - ./BStack2Proto3.sh || if [ $? -eq 0 ]; then echo "translate success"; else exit 255; fi
+    - $PWD/BStack2Proto3.sh
   when: manual
   only: 
     - master
