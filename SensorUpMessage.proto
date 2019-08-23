@@ -70,5 +70,9 @@ message SensorUpMessage {
     NodeWhiteListEntryTransNode nodewhitelistentrytransnode = 68;
     CurrentDataV1 currentdatav1 = 69;
     SampleParameterDataHIS900 sampleparameterdatahis900 = 70;
+    SensorConfigInfoHIS400 sensorconfiginfohis400 = 71;
+    VirtualModuleNAODU virtualmodulenaodu = 72;
+    VirtualModuleHCF700_485_Naodu virtualmodulehcf700_485_naodu = 73;
+    VirtualModuleHCF1100 virtualmodulehcf1100 = 74;
   }
 }

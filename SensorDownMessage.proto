@@ -55,5 +55,7 @@ message SensorDownMessage {
     GetSampleDataHIS900 getsampledatahis900 = 59;
     GetAnalogDataHIS900 getanalogdatahis900 = 60;
     SetCalibrationHIS900 setcalibrationhis900 = 61;
+    SetSensorConfigHIS400 setsensorconfighis400 = 62;
+    GetStressData getstressdata = 63;
   }
 }

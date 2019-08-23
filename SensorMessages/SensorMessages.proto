@@ -481,6 +481,32 @@ message SampleParameterDataHIS900{
    int32 retrieve_interval = 8;
 }
 
+message SensorConfigInfoHIS400{
+   double k_value = 1;
+   double s_value = 2;
+   double value_0 = 3;
+}
+
+message VirtualModuleNAODU{
+   double val = 101;
+   repeated double kx = 102;
+   repeated double kk = 103;
+}
+
+message VirtualModuleHCF700_485_Naodu{
+   double val = 101;
+}
+
+message VirtualModuleHCF1100{
+   int32 group = 101;
+   repeated double x1_0 = 102;
+   repeated double x2_0 = 103;
+   repeated double z_0 = 104;
+   repeated double x1_1 = 105;
+   repeated double x2_1 = 106;
+   repeated double z_1 = 107;
+}
+
 message SetRfChannelInfo{
    int32 rf_channel = 1;
 }
@@ -773,4 +799,13 @@ message GetAnalogDataHIS900{
 
 message SetCalibrationHIS900{
    int32 analog_sample_type = 1;
+}
+
+message SetSensorConfigHIS400{
+   int32 k_value = 1;
+   int32 s_value = 2;
+}
+
+message GetStressData{
+   int32 odr = 1;
 }
