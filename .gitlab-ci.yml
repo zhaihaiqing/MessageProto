@@ -24,5 +24,7 @@ translate_protobuf:
     - cd MessageProto
     #- docker push origin master
   when: manual
-  only: master
-  tags: gitlab-runner-sb4
+  only: 
+    - master
+  tags: 
+    - gitlab-runner-sb4
