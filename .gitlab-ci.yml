@@ -2,8 +2,6 @@
 before_script:
   - sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
   - apk add --no-cache tzdata git gettext
-  - export DOCKER_VERSION=v1.0.0
-  - export DOCKER_IMAGE=docker-registry.thunics.org:5000/bstack2proto3:${DOCKER_VERSION}
 
 stages:
   - build
@@ -14,18 +12,12 @@ translate_protobuf:
   script:
     - mkdir make
     - cd make
-    - docker pull ${DOCKER_IMAGE}
+    - git clone http://songxiaopeng:1016593219Sxp@git.thunics.org/dp/BStack2Proto3.git
+    - cd BStack2Proto3/make
+    - tar xzvf libs.tar.gz
     - git clone http://songxiaopeng:1016593219Sxp@git.thunics.org/embedded/wsn-data.git
     - git clone http://songxiaopeng:1016593219Sxp@git.thunics.org/dp/MessageProto.git
-    - mkdir .output
-    - ls -l
-    - ls -lR
-    - echo $PWD/MessageProto
-    - docker run -i --name BStack2Proto3 --privileged=true -v $PWD/MessageProto:/home/work/bstack2proto3/MessageProto -v $PWD/wsn-data:/home/work/bstack2proto3/wsn-data -v $PWD/.output:/home/work/bstack2proto3/output ${DOCKER_IMAGE} /home/work/bstack2proto3/BStack2Proto3.sh || if [ $? -eq 0 ]; then echo "translate success"; else docker rm BStack2Proto3; docker rmi -f ${DOCKER_IMAGE}; exit 255; fi
-    - cd MessageProto
-    #- docker push origin master
-    - docker rm BStack2Proto3
-    - docker rmi -f ${DOCKER_IMAGE}
+    - ./BStack2Proto3.sh || if [ $? -eq 0 ]; then echo "translate success"; else exit 255; fi
   when: manual
   only: 
     - master
