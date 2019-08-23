@@ -247,7 +247,8 @@
             "ConfigClockTaskGRTU1000",
             "ConfigClockTaskFC307",
             "ConfigClockTaskHFS530",
-            "ConfigClockTaskHIS900"
+            "ConfigClockTaskHIS900",
+            "ConfigClockTaskHIS400"
         ]
     },
     "SetTriggerConfigInfo":{
@@ -564,6 +565,23 @@
         ],
         "packets":[
             "SetCalibrationHIS900"
+        ]
+    },
+    "SetSensorConfigHIS400":{
+        "fields":[
+            "k_value",
+            "s_value"
+        ],
+        "packets":[
+            "SetSensorConfigHIS400"
+        ]
+    },
+    "GetStressData":{
+        "fields":[
+            "odr"
+        ],
+        "packets":[
+            "GetStressHIS400"
         ]
     }
 }

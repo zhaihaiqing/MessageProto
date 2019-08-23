@@ -210,7 +210,8 @@
         ],
         "packets":[
             "StressHIS300Cont",
-            "StressHIS500"
+            "StressHIS500",
+            "StressHIS400"
         ]
     },
     "IncliHCF410V1":{
@@ -572,7 +573,8 @@
             "ClockTaskSampleInfoHFS400",
             "ClockTaskSampleInfoHFS500",
             "ClockTaskSampleInfoHFS530",
-            "ClockTaskSampleInfoHIS100"
+            "ClockTaskSampleInfoHIS100",
+            "ClockTaskSampleInfoHIS400"
 
         ]
     },
@@ -760,6 +762,53 @@
         ],
         "packets":[
             "SampleParameterDataHIS900"
+        ]
+    },
+    "SensorConfigInfoHIS400":{
+        "fields":[
+            "k_value",
+            "s_value",
+            "value_0"
+        ],
+        "packets":[
+            "SensorConfigInfoHIS400"
+        ]
+    },
+    "VirtualModuleNAODU": {
+        "fields": null,
+        "extension": {
+            "val": "double",
+            "kx": "repeated double",
+            "kk": "repeated double"
+        },
+        "packets": [
+            "IncliHCF200",
+            "IncliHCF2000",
+            "IncliHCF410"
+        ]
+    },
+    "VirtualModuleHCF700_485_Naodu": {
+        "fields": null,
+        "extension": {
+            "val": "double"
+        },
+        "packets": [
+            "HCF700_485"
+        ]
+    },
+    "VirtualModuleHCF1100": {
+        "fields": null,
+        "extension": {
+            "group": "int32",
+            "x1_0": "repeated double",
+            "x2_0": "repeated double",
+            "z_0": "repeated double",
+            "x1_1": "repeated double",
+            "x2_1": "repeated double",
+            "z_1": "repeated double"
+        },
+        "packets": [
+            "Uart485ForHCF1100SampleData"
         ]
     }
 }
