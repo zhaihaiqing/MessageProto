@@ -2,8 +2,8 @@
 before_script:
   - sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
   - apk add --no-cache tzdata git gettext
-  - export TZ=Asia/Shanghai
-  - export DOCKER_IMAGE=docker-registry.thunics.org:5000/bstack2proto3:latest
+  - export DOCKER_VERSION=v1.0.0
+  - export DOCKER_IMAGE=docker-registry.thunics.org:5000/bstack2proto3:${DOCKER_VERSION}
 
 stages:
   - build
