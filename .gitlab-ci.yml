@@ -17,6 +17,7 @@ translate_protobuf:
     - tar xzvf libs.tar.gz
     - git clone http://songxiaopeng:1016593219Sxp@git.thunics.org/embedded/wsn-data.git
     - git clone http://songxiaopeng:1016593219Sxp@git.thunics.org/dp/MessageProto.git
+    - chmod 777 BStack2Proto3
     - $PWD/BStack2Proto3.sh
   when: manual
   only: 
