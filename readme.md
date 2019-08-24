@@ -159,3 +159,8 @@ Message定义中的每个字段都有一个unique number，这个编号用来在
 到MessageProto路径下操作：
 ```
 protoc --proto_path=$PWD --cpp_out=$PWD/compiling $PWD/SensorUpRawData.proto $PWD/SensorPackets/SensorPackets.proto
+```
+
+# 生效配置
+
+请到make目录下按照readme.md文件描述使用
