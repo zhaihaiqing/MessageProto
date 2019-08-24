@@ -4,23 +4,20 @@ before_script:
   - apk add --no-cache tzdata git gettext
   - export DOCKER_VERSION=v1.0.0
   - export DOCKER_IMAGE=docker-registry.thunics.org:5000/bstack2proto3:${DOCKER_VERSION}
+  - mkdir -p /home/sb/bstack2proto3_volumn/.output
+  - cd /home/sb/bstack2proto3_volumn
+  - git clone http://songxiaopeng:1016593219Sxp@git.thunics.org/embedded/wsn-data.git
+  - git clone http://songxiaopeng:1016593219Sxp@git.thunics.org/dp/MessageProto.git
 
 stages:
   - build
 
 translate_protobuf:
   stage: build
-  image: docker:latest
   script:
     - docker pull ${DOCKER_IMAGE}
-    - mkdir -p /home/sb/bstack2proto3_volumn
-    - cd /home/sb/bstack2proto3_volumn
-    - git clone http://songxiaopeng:1016593219Sxp@git.thunics.org/embedded/wsn-data.git
-    - git clone http://songxiaopeng:1016593219Sxp@git.thunics.org/dp/MessageProto.git
-    - mkdir .output
     - ls -lR
-    - echo $PWD/MessageProto
-    - docker run -i --name BStack2Proto3 -v $PWD/MessageProto:/home/work/bstack2proto3/MessageProto -v $PWD/wsn-data:/home/work/bstack2proto3/wsn-data -v $PWD/.output:/home/work/bstack2proto3/output ${DOCKER_IMAGE} /home/work/bstack2proto3/BStack2Proto3.sh || if [ $? -eq 0 ]; then echo "translate success"; else exit 255; fi
+    - docker run -i --name BStack2Proto3 -v /home/sb/bstack2proto3_volumn/MessageProto:/home/work/bstack2proto3/MessageProto -v /home/sb/bstack2proto3_volumn/wsn-data:/home/work/bstack2proto3/wsn-data -v /home/sb/bstack2proto3_volumn/.output:/home/work/bstack2proto3/output ${DOCKER_IMAGE} /home/work/bstack2proto3/BStack2Proto3.sh || if [ $? -eq 0 ]; then echo "translate success"; else exit 255; fi
     - docker rm BStack2Proto3
     - docker rmi -f ${DOCKER_IMAGE}
 
