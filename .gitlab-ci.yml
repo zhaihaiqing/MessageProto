@@ -13,7 +13,7 @@ translate_protobuf:
   image: docker:latest
   script:
     - docker pull ${DOCKER_IMAGE}
-    - mkdir /home/sb/bstack2proto3_volumn
+    - mkdir -p /home/sb/bstack2proto3_volumn
     - cd /home/sb/bstack2proto3_volumn
     - git clone http://songxiaopeng:1016593219Sxp@git.thunics.org/embedded/wsn-data.git
     - git clone http://songxiaopeng:1016593219Sxp@git.thunics.org/dp/MessageProto.git
