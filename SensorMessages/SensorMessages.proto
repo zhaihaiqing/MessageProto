@@ -435,21 +435,21 @@ message ShapeArrayHCF1100{
 message NodeInfoHIS900{
    repeated int32 addr = 1;
    repeated int32 sample_ins_type = 2;
-   repeated int32 pro_ins_type = 3;
-   repeated string pro_type = 4;
+   repeated int32 product_ins_type = 3;
+   repeated string product_type = 4;
    repeated int32 node_type = 5;
 }
 
-message InstructInfoHIS900{
+message InstructionInfoHIS900{
    string product_type = 1;
-   int32 pro_ins_type = 2;
-   int32 pro_ins_type_index = 3;
+   int32 product_ins_type = 2;
+   int32 product_ins_type_index = 3;
    repeated int32 ins_buf = 4;
 }
 
 message TransparentDataHIS900{
-   int32 pro_type = 1;
-   int32 pro_ins_type = 2;
+   int32 product_type = 1;
+   int32 product_ins_type = 2;
    int32 data_len = 3;
    repeated int32 data = 4;
 }
@@ -471,7 +471,7 @@ message CurrentDataV1{
 }
 
 message SampleParameterDataHIS900{
-   int32 pro_pow_sup_mode = 1;
+   int32 product_pow_sup_mode = 1;
    int32 voltage = 2;
    int32 running_mode = 3;
    int32 analog_sample_type = 4;
@@ -742,23 +742,23 @@ message CloseWhiteListTransNode{
 
 message AddNodeHIS900{
    int32 sample_ins_type = 1;
-   int32 pro_ins_type = 2;
-   int32 pro_type = 3;
+   int32 product_ins_type = 2;
+   int32 product_type = 3;
    int32 node_type = 4;
    int32 node_num = 5;
    repeated int32 addr = 6;
 }
 
 message AddOneInsHIS900{
-   int32 pro_ins_type = 1;
-   int32 pro_type = 2;
+   int32 product_ins_type = 1;
+   int32 product_type = 2;
    int32 ins_len = 3;
    repeated int32 ins = 4;
 }
 
 message AddTwoInsHIS900{
-   int32 pro_ins_type = 1;
-   int32 pro_type = 2;
+   int32 product_ins_type = 1;
+   int32 product_type = 2;
    int32 sample_ins_len = 3;
    int32 retrieve_ins_len = 4;
    repeated int32 ins = 5;
@@ -768,20 +768,20 @@ message DeleteNodeInfoHIS900{
    int32 addr = 1;
 }
 
-message DeleteInstructHIS900{
-   int32 pro_type = 1;
+message DeleteInstructionHIS900{
+   int32 product_type = 1;
 }
 
 message SetSampleParameterHIS900{
    int32 pow_on_interval = 1;
    int32 retrieve_interval = 2;
-   int32 pro_pow_sup_mode = 3;
-   int32 pro_pow_sup_vol = 4;
+   int32 product_pow_sup_mode = 3;
+   int32 product_pow_sup_vol = 4;
 }
 
-message TransparentInstructHIS900{
-   int32 pro_type = 1;
-   int32 pro_ins_type = 2;
+message TransparentInstructionHIS900{
+   int32 product_type = 1;
+   int32 product_ins_type = 2;
    int32 data_len = 3;
    repeated int32 data = 4;
 }
@@ -789,8 +789,8 @@ message TransparentInstructHIS900{
 message GetSampleDataHIS900{
    int32 addr = 1;
    int32 sample_ins_type = 2;
-   int32 pro_ins_type = 3;
-   int32 pro_type = 4;
+   int32 product_ins_type = 3;
+   int32 product_type = 4;
 }
 
 message GetAnalogDataHIS900{

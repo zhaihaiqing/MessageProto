@@ -77,8 +77,8 @@
             "Uart485ForHCF920SampleData",
             "Uart485ForHCF930SampleData",
             "WinderCupSampleHCF910",
-            "WindSpeedAndDirectionHCF920I0RSHIS900",
-            "WindSpeedAndDirectionHOS915I0RSHIS900",
+            "AnemometerHCF920I0RSHIS900",
+            "AnemometerHOS915I0RSHIS900",
             "WindSpeedHOS915I1RSHIS900",
             "WindDirectionHOS915I2RSHIS900"
         ]
@@ -691,29 +691,29 @@
         "fields": [
             "addr",
             "sample_ins_type",
-            "pro_ins_type",
-            "pro_type",
+            "product_ins_type",
+            "product_type",
             "node_type"
         ],
         "packets":[
             "NodeInfoHIS900"
         ]
     },
-    "InstructInfoHIS900":{
+    "InstructionInfoHIS900":{
         "fields":[
             "product_type",
-            "pro_ins_type",
-            "pro_ins_type_index",
+            "product_ins_type",
+            "product_ins_type_index",
             "ins_buf"
         ],
         "packets":[
-            "InstructInfoHIS900"
+            "InstructionInfoHIS900"
         ]
     },
     "TransparentDataHIS900":{
         "fields":[
-            "pro_type",
-            "pro_ins_type",
+            "product_type",
+            "product_ins_type",
             "data_len",
             "data"
         ],
@@ -751,7 +751,7 @@
     },
     "SampleParameterDataHIS900":{
         "fields":[
-            "pro_pow_sup_mode",
+            "product_pow_sup_mode",
             "voltage",
             "running_mode",
             "analog_sample_type",

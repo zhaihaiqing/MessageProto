@@ -469,8 +469,8 @@
     "AddNodeHIS900":{
         "fields":[
             "sample_ins_type",
-            "pro_ins_type",
-            "pro_type",
+            "product_ins_type",
+            "product_type",
             "node_type",
             "node_num",
             "addr"
@@ -481,8 +481,8 @@
     },
     "AddOneInsHIS900":{
         "fields":[
-            "pro_ins_type",
-            "pro_type",
+            "product_ins_type",
+            "product_type",
             "ins_len",
             "ins"
         ],
@@ -492,8 +492,8 @@
     },
     "AddTwoInsHIS900":{
         "fields":[
-            "pro_ins_type",
-            "pro_type",
+            "product_ins_type",
+            "product_type",
             "sample_ins_len",
             "retrieve_ins_len",
             "ins"
@@ -510,42 +510,42 @@
             "DeleteNodeInfoHIS900"
         ]
     },
-    "DeleteInstructHIS900":{
+    "DeleteInstructionHIS900":{
         "fields":[
-            "pro_type"
+            "product_type"
         ],
         "packets":[
-            "DeleteInstructHIS900"
+            "DeleteInstructionHIS900"
         ]
     },
     "SetSampleParameterHIS900":{
         "fields":[
             "pow_on_interval",
             "retrieve_interval",
-            "pro_pow_sup_mode",
-            "pro_pow_sup_vol"
+            "product_pow_sup_mode",
+            "product_pow_sup_vol"
         ],
         "packets":[
             "SetSampleParameterHIS900"
         ]
     },
-    "TransparentInstructHIS900":{
+    "TransparentInstructionHIS900":{
         "fields":[
-            "pro_type",
-            "pro_ins_type",
+            "product_type",
+            "product_ins_type",
             "data_len",
             "data"
         ],
         "packets":[
-            "TransparentInstructHIS900"
+            "TransparentInstructionHIS900"
         ]
     },
     "GetSampleDataHIS900":{
         "fields":[
             "addr",
             "sample_ins_type",
-            "pro_ins_type",
-            "pro_type"
+            "product_ins_type",
+            "product_type"
         ],
         "packets":[
             "GetSampleDataHIS900"

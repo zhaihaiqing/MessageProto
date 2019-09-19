@@ -24,7 +24,7 @@
     "QueryChildNodeTransNode": "QueryChildNodeTransNodeAck",
     "QueryNodeWhiteListTransNode": "QueryNodeWhiteListTransNodeAck",
     "QueryNodeInfoHIS900": "QueryNodeInfoHIS900Ack",
-    "QueryInstructHIS900": "QueryInstructHIS900Ack",
+    "QueryInstructionHIS900": "QueryInstructionHIS900Ack",
     "QuerySampleParameterHIS900": "QuerySampleParameterHIS900Ack",
     "GetCablePeaksHCF100": "SampleAck",
     "GetIncliHCF200": "SampleAck",
@@ -144,7 +144,7 @@
     "HIS700AutoSample": "AddrTwiceSampleAck",
     "DelCaliHCF2000": "DelCaliHCF2000Ack",
     "DeleteNodeInfoHIS900": "DeleteNodeInfoHIS900Ack",
-    "DeleteInstructHIS900": "DeleteInstructHIS900Ack",
-    "TransparentInstructHIS900": "TransparentInstructHIS900Ack",
+    "DeleteInstructionHIS900": "DeleteInstructionHIS900Ack",
+    "TransparentInstructionHIS900": "TransparentInstructionHIS900Ack",
     "AutoScanHGR100B2": "AutoScanHGR100B2Ack"
 }

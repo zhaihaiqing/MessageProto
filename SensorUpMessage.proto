@@ -64,7 +64,7 @@ message SensorUpMessage {
     Uart485TypeList uart485typelist = 62;
     ShapeArrayHCF1100 shapearrayhcf1100 = 63;
     NodeInfoHIS900 nodeinfohis900 = 64;
-    InstructInfoHIS900 instructinfohis900 = 65;
+    InstructionInfoHIS900 instructioninfohis900 = 65;
     TransparentDataHIS900 transparentdatahis900 = 66;
     ChildNodeTransNode childnodetransnode = 67;
     NodeWhiteListEntryTransNode nodewhitelistentrytransnode = 68;
