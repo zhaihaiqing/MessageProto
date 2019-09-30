@@ -6,7 +6,7 @@
     "WindDirection": "wind_direction",
     "Dampness": "humi",
     "Temperature": "temp",
-    "SmoothWindSpeed": "smooth_wind_direction",
+    "SmoothWindSpeed": "smooth_wind_speed",
     "SmoothWindDirection": "smooth_wind_direction",
     "DevTemp": "dev_temp",
     "EvnTemp": "temp",
