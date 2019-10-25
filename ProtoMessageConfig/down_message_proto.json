@@ -247,7 +247,7 @@
             "ConfigClockTaskGRTU1000",
             "ConfigClockTaskFC307",
             "ConfigClockTaskHFS530",
-            "ConfigClockTaskHIS900",
+            "ConfigClockTaskDTUC",
             "ConfigClockTaskHIS400"
         ]
     },
@@ -582,6 +582,119 @@
         ],
         "packets":[
             "GetStressHIS400"
+        ]
+    },
+    "GetSampleDataRSUC":{
+        "fields":[
+            "addr",
+            "sample_ins_type",
+            "product_ins_type",
+            "product_type"
+        ],
+        "packets":[
+            "GetSampleDataRSUC"
+        ]
+    },
+    "TransparentInstructionRSUC":{
+        "fields":[
+            "product_type",
+            "product_ins_type",
+            "data_len",
+            "data"
+        ],
+        "packets":[
+            "TransparentInstructionRSUC"
+        ]
+    },
+    "AddNodeRSUC":{
+        "fields":[
+            "sample_ins_type",
+            "product_ins_type",
+            "product_type",
+            "node_type",
+            "node_num",
+            "addr"
+        ],
+        "packets":[
+            "AddNodeRSUC"
+        ]
+    },
+    "AddOneInsRSUC":{
+        "fields":[
+            "product_ins_type",
+            "product_type",
+            "ins_len",
+            "ins"
+        ],
+        "packets":[
+            "AddOneIns"
+        ]
+    },
+    "AddTwoInsRSUC":{
+        "fields":[
+            "product_ins_type",
+            "product_type",
+            "sample_ins_len",
+            "retrieve_ins_len",
+            "ins"
+        ],
+        "packets":[
+            "AddTwoIns"
+        ]
+    },
+    "DeleteNodeInfoRSUC":{
+        "fields":[
+            "addr"
+        ],
+        "packets":[
+            "DeleteNodeInfoRSUC"
+        ]
+    },
+    "DeleteInstructionRSUC":{
+        "fields":[
+            "product_type"
+        ],
+        "packets":[
+            "DeleteInstructionRSUC"
+        ]
+    },
+    "SetSampleParameterRSUC":{
+        "fields":[
+            "pow_on_interval",
+            "retrieve_interval",
+            "product_pow_sup_mode",
+            "product_pow_sup_vol"
+        ],
+        "packets":[
+            "SetSampleParameterRSUC"
+        ]
+    },
+    "GetRS485DataRSUCCont":{
+        "fields":[
+            "odr",
+            "period"
+        ],
+        "packets":[
+            "GetRS485DataRSUCCont"
+        ]
+    },
+    "GetAnalogDataALUC":{
+        "fields":[
+            "analog_sample_type",
+            "odr",
+            "period"
+        ],
+        "packets":[
+            "GetAnalogDataALCUCont",
+            "GetAnalogDataALCU"
+        ]
+    },
+    "SetCalibrationALUC":{
+        "fields":[
+            "analog_sample_type"
+        ],
+        "packets":[
+            "SetCalibrationALUC"
         ]
     }
 }

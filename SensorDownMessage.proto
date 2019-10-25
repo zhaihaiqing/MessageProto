@@ -57,5 +57,16 @@ message SensorDownMessage {
     SetCalibrationHIS900 setcalibrationhis900 = 61;
     SetSensorConfigHIS400 setsensorconfighis400 = 62;
     GetStressData getstressdata = 63;
+    GetSampleDataRSUC getsampledatarsuc = 64;
+    TransparentInstructionRSUC transparentinstructionrsuc = 65;
+    AddNodeRSUC addnodersuc = 66;
+    AddOneInsRSUC addoneinsrsuc = 67;
+    AddTwoInsRSUC addtwoinsrsuc = 68;
+    DeleteNodeInfoRSUC deletenodeinforsuc = 69;
+    DeleteInstructionRSUC deleteinstructionrsuc = 70;
+    SetSampleParameterRSUC setsampleparameterrsuc = 71;
+    GetRS485DataRSUCCont getrs485datarsuccont = 72;
+    GetAnalogDataALUC getanalogdataaluc = 73;
+    SetCalibrationALUC setcalibrationaluc = 74;
   }
 }
