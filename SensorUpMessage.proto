@@ -74,5 +74,11 @@ message SensorUpMessage {
     VirtualModuleNAODU virtualmodulenaodu = 72;
     VirtualModuleHCF700_485_Naodu virtualmodulehcf700_485_naodu = 73;
     VirtualModuleHCF1100 virtualmodulehcf1100 = 74;
+    InstructionInfoRSUC instructioninforsuc = 75;
+    TransparentDataRSUC transparentdatarsuc = 76;
+    NodeInfoRSUC nodeinforsuc = 77;
+    SampleParameterDataRSUC sampleparameterdatarsuc = 78;
+    DistanceHOS9100301RSUCCont distancehos9100301rsuccont = 79;
+    AnalogSampleDataCont analogsampledatacont = 80;
   }
 }

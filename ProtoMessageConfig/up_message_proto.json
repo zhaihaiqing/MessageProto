@@ -22,7 +22,7 @@
             "TempHumiHCF600",
             "TempHumiHOS9010Uart485",
             "TemperatureHCF500",
-            "TempHumiHOS9010I0RSHIS900"
+            "TempHumiHOS9010I0RSRSUC"
         ]
     },
     "VibraWireData": {
@@ -77,10 +77,10 @@
             "Uart485ForHCF920SampleData",
             "Uart485ForHCF930SampleData",
             "WinderCupSampleHCF910",
-            "AnemometerHCF920I0RSHIS900",
-            "AnemometerHOS915I0RSHIS900",
-            "WindSpeedHOS915I1RSHIS900",
-            "WindDirectionHOS915I2RSHIS900"
+            "AnemometerHCF920I0RSRSUC",
+            "AnemometerHOS915I0RSRSUC",
+            "WindSpeedHOS915I1RSRSUC",
+            "WindDirectionHOS915I2RSRSUC"
         ]
     },
     "InclinationData":{
@@ -198,7 +198,7 @@
         "packets":[
             "PressHCF700",
             "Uart485ForHCF700SampleData",
-            "PressHCF700I0RSHIS900"
+            "PressHCF700I0RSRSUC"
         ]
     },
     "StressData":{
@@ -256,9 +256,9 @@
         ],
         "packets":[
             "Uart485ForHOS910030SampleData",
-            "DistanceHOS910030I0RSHIS900",
-            "DistanceHOS910030I1RSHIS900",
-            "DistanceHOS910030I2RSHIS900"
+            "DistanceHOS910030I0RSRSUC",
+            "DistanceHOS910030I1RSRSUC",
+            "DistanceHOS910030I2RSRSUC"
         ]
     },
     "Uart485ForHFS716Sample":{
@@ -273,7 +273,7 @@
         ],
         "packets":[
             "Uart485ForHFS716SampleData",
-            "VibraWireResHFS716I0RSHIS900"
+            "VibraWireResHFS716I0RSRSUC"
         ]
     },
     "VoltageDataV1":{
@@ -284,7 +284,7 @@
         ],
         "packets":[
             "VoltageHIS800",
-            "VoltageHIS900"
+            "VoltageALUC"
         ]
     },
     "TopInfoNodeData":{
@@ -684,7 +684,7 @@
         ],
         "packets":[
             "ShapeArrayHCF1100",
-            "ShapeArrayHCF1100I0RSHIS900"
+            "ShapeArrayHCF1100I0RSRSUC"
         ]
     },
     "NodeInfoHIS900":{
@@ -746,7 +746,7 @@
             "current"
         ],
         "packets":[
-            "CurrentHIS900"
+            "CurrentALUC"
         ]
     },
     "SampleParameterDataHIS900":{
@@ -809,6 +809,79 @@
         },
         "packets": [
             "Uart485ForHCF1100SampleData"
+        ]
+    },
+    "TransparentDataRSUC":{
+        "fields":[
+            "product_type",
+            "product_ins_type",
+            "data_len",
+            "data"
+        ],
+        "packets":[
+            "TransparentDataRSUC"
+        ]
+    },
+    "NodeInfoRSUC":{
+        "fields": [
+            "addr",
+            "sample_ins_type",
+            "product_ins_type",
+            "product_type",
+            "node_type"
+        ],
+        "packets":[
+            "NodeInfoRSUC"
+        ]
+    },
+    "InstructionInfoRSUC":{
+        "fields":[
+            "product_type",
+            "product_ins_type",
+            "product_ins_type_index",
+            "ins_buf"
+        ],
+        "packets":[
+            "InstructionInfoRSUC"
+        ]
+    },
+    "SampleParameterDataRSUC":{
+        "fields":[
+            "product_pow_sup_mode",
+            "voltage",
+            "running_mode",
+            "analog_sample_type",
+            "odr",
+            "period",
+            "pow_on_interval",
+            "retrieve_interval"
+        ],
+        "packets":[
+            "SampleParameterDataRSUC"
+        ]
+    },
+    "DistanceHOS9100301RSUCCont":{
+        "fields":[
+            "data",
+            "channel",
+            "addr",
+            "sample_interval",
+            "microsecond"
+        ],
+        "packets":[
+            "DistanceHOS9100301RSUCCont"
+        ] 
+    },
+    "AnalogSampleDataCont":{
+        "fields":[
+            "data",
+            "channel",
+            "sample_interval",
+            "microsecond"
+        ],
+        "packets":[
+            "VoltageALUCCont",
+            "CurrentALUCCont"
         ]
     }
 }
