@@ -696,7 +696,7 @@
             "node_type"
         ],
         "packets":[
-            "NodeInfoHIS900"
+            "NodeInfoRSUC"
         ]
     },
     "InstructionInfoHIS900":{
@@ -707,7 +707,7 @@
             "ins_buf"
         ],
         "packets":[
-            "InstructionInfoHIS900"
+            "InstructionInfoRSUC"
         ]
     },
     "TransparentDataHIS900":{
@@ -718,7 +718,7 @@
             "data"
         ],
         "packets":[
-            "TransparentDataHIS900"
+            "TransparentDataRSUC"
         ]
     },
     "ChildNodeTransNode":{
@@ -761,7 +761,7 @@
             "retrieve_interval"
         ],
         "packets":[
-            "SampleParameterDataHIS900"
+            "SampleParameterDataRSUC"
         ]
     },
     "SensorConfigInfoHIS400":{
@@ -860,7 +860,7 @@
             "SampleParameterDataRSUC"
         ]
     },
-    "DistanceHOS9100301RSUCCont":{
+    "DistanceHOS910030I1RSUCCont":{
         "fields":[
             "data",
             "channel",
@@ -869,7 +869,7 @@
             "microsecond"
         ],
         "packets":[
-            "DistanceHOS9100301RSUCCont"
+            "DistanceHOS910030I1RSUCCont"
         ] 
     },
     "AnalogSampleDataCont":{

@@ -476,7 +476,7 @@
             "addr"
         ],
         "packets":[
-            "AddNodeHIS900"
+            "AddNodeRSUC"
         ]
     },
     "AddOneInsHIS900":{
@@ -487,7 +487,7 @@
             "ins"
         ],
         "packets":[
-            "AddOneInsHIS900"
+            "AddOneInsRSUC"
         ]
     },
     "AddTwoInsHIS900":{
@@ -499,7 +499,7 @@
             "ins"
         ],
         "packets":[
-            "AddTwoInsHIS900"
+            "AddTwoInsRSUC"
         ]
     },
     "DeleteNodeInfoHIS900":{
@@ -507,7 +507,7 @@
             "addr"
         ],
         "packets":[
-            "DeleteNodeInfoHIS900"
+            "DeleteNodeInfoRSUC"
         ]
     },
     "DeleteInstructionHIS900":{
@@ -515,7 +515,7 @@
             "product_type"
         ],
         "packets":[
-            "DeleteInstructionHIS900"
+            "DeleteInstructionRSUC"
         ]
     },
     "SetSampleParameterHIS900":{
@@ -526,7 +526,7 @@
             "product_pow_sup_vol"
         ],
         "packets":[
-            "SetSampleParameterHIS900"
+            "SetSampleParameterRSUC"
         ]
     },
     "TransparentInstructionHIS900":{
@@ -537,7 +537,7 @@
             "data"
         ],
         "packets":[
-            "TransparentInstructionHIS900"
+            "TransparentInstructionRSUC"
         ]
     },
     "GetSampleDataHIS900":{
@@ -548,7 +548,7 @@
             "product_type"
         ],
         "packets":[
-            "GetSampleDataHIS900"
+            "GetSampleDataRSUC"
         ]
     },
     "GetAnalogDataHIS900":{
@@ -556,7 +556,7 @@
             "analog_sample_type"
         ],
         "packets":[
-            "GetAnalogDataHIS900"
+            "GetAnalogDataALUC"
         ]
     },
     "SetCalibrationHIS900":{
@@ -564,7 +564,7 @@
             "analog_sample_type"
         ],
         "packets":[
-            "SetCalibrationHIS900"
+            "SetCalibrationALUC"
         ]
     },
     "SetSensorConfigHIS400":{
@@ -627,7 +627,7 @@
             "ins"
         ],
         "packets":[
-            "AddOneIns"
+            "AddOneInsRSUC"
         ]
     },
     "AddTwoInsRSUC":{
@@ -639,7 +639,7 @@
             "ins"
         ],
         "packets":[
-            "AddTwoIns"
+            "AddTwoInsRSUC"
         ]
     },
     "DeleteNodeInfoRSUC":{
@@ -685,8 +685,8 @@
             "period"
         ],
         "packets":[
-            "GetAnalogDataALCUCont",
-            "GetAnalogDataALCU"
+            "GetAnalogDataALUCCont",
+            "GetAnalogDataALUC"
         ]
     },
     "SetCalibrationALUC":{
