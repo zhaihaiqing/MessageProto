@@ -687,7 +687,7 @@
             "ShapeArrayHCF1100I0RSRSUC"
         ]
     },
-    "NodeInfoHIS900":{
+    "NodeInfoRSUC":{
         "fields": [
             "addr",
             "sample_ins_type",
@@ -699,7 +699,7 @@
             "NodeInfoRSUC"
         ]
     },
-    "InstructionInfoHIS900":{
+    "InstructionInfoRSUC":{
         "fields":[
             "product_type",
             "product_ins_type",
@@ -710,7 +710,7 @@
             "InstructionInfoRSUC"
         ]
     },
-    "TransparentDataHIS900":{
+    "TransparentDataRSUC":{
         "fields":[
             "product_type",
             "product_ins_type",
@@ -749,7 +749,7 @@
             "CurrentALUC"
         ]
     },
-    "SampleParameterDataHIS900":{
+    "SampleParameterDataRSUC":{
         "fields":[
             "product_pow_sup_mode",
             "voltage",
@@ -811,55 +811,6 @@
             "Uart485ForHCF1100SampleData"
         ]
     },
-    "TransparentDataRSUC":{
-        "fields":[
-            "product_type",
-            "product_ins_type",
-            "data_len",
-            "data"
-        ],
-        "packets":[
-            "TransparentDataRSUC"
-        ]
-    },
-    "NodeInfoRSUC":{
-        "fields": [
-            "addr",
-            "sample_ins_type",
-            "product_ins_type",
-            "product_type",
-            "node_type"
-        ],
-        "packets":[
-            "NodeInfoRSUC"
-        ]
-    },
-    "InstructionInfoRSUC":{
-        "fields":[
-            "product_type",
-            "product_ins_type",
-            "product_ins_type_index",
-            "ins_buf"
-        ],
-        "packets":[
-            "InstructionInfoRSUC"
-        ]
-    },
-    "SampleParameterDataRSUC":{
-        "fields":[
-            "product_pow_sup_mode",
-            "voltage",
-            "running_mode",
-            "analog_sample_type",
-            "odr",
-            "period",
-            "pow_on_interval",
-            "retrieve_interval"
-        ],
-        "packets":[
-            "SampleParameterDataRSUC"
-        ]
-    },
     "DistanceHOS910030I1RSUCCont":{
         "fields":[
             "data",
@@ -868,9 +819,9 @@
             "sample_interval",
             "microsecond"
         ],
-        "packets":[
+        "packets": [
             "DistanceHOS910030I1RSUCCont"
-        ] 
+        ]
     },
     "AnalogSampleDataCont":{
         "fields":[

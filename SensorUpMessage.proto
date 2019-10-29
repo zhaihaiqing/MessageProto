@@ -63,22 +63,18 @@ message SensorUpMessage {
     Uart485CmdList uart485cmdlist = 61;
     Uart485TypeList uart485typelist = 62;
     ShapeArrayHCF1100 shapearrayhcf1100 = 63;
-    NodeInfoHIS900 nodeinfohis900 = 64;
-    InstructionInfoHIS900 instructioninfohis900 = 65;
-    TransparentDataHIS900 transparentdatahis900 = 66;
+    NodeInfoRSUC nodeinforsuc = 64;
+    InstructionInfoRSUC instructioninforsuc = 65;
+    TransparentDataRSUC transparentdatarsuc = 66;
     ChildNodeTransNode childnodetransnode = 67;
     NodeWhiteListEntryTransNode nodewhitelistentrytransnode = 68;
     CurrentDataV1 currentdatav1 = 69;
-    SampleParameterDataHIS900 sampleparameterdatahis900 = 70;
+    SampleParameterDataRSUC sampleparameterdatarsuc = 70;
     SensorConfigInfoHIS400 sensorconfiginfohis400 = 71;
     VirtualModuleNAODU virtualmodulenaodu = 72;
     VirtualModuleHCF700_485_Naodu virtualmodulehcf700_485_naodu = 73;
     VirtualModuleHCF1100 virtualmodulehcf1100 = 74;
-    TransparentDataRSUC transparentdatarsuc = 75;
-    NodeInfoRSUC nodeinforsuc = 76;
-    InstructionInfoRSUC instructioninforsuc = 77;
-    SampleParameterDataRSUC sampleparameterdatarsuc = 78;
-    DistanceHOS910030I1RSUCCont distancehos910030i1rsuccont = 79;
-    AnalogSampleDataCont analogsampledatacont = 80;
+    DistanceHOS910030I1RSUCCont distancehos910030i1rsuccont = 75;
+    AnalogSampleDataCont analogsampledatacont = 76;
   }
 }

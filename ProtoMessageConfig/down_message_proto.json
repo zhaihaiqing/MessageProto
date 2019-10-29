@@ -466,146 +466,6 @@
             "CloseNodeWhiteListTransNode"
         ]
     },
-    "AddNodeHIS900":{
-        "fields":[
-            "sample_ins_type",
-            "product_ins_type",
-            "product_type",
-            "node_type",
-            "node_num",
-            "addr"
-        ],
-        "packets":[
-            "AddNodeRSUC"
-        ]
-    },
-    "AddOneInsHIS900":{
-        "fields":[
-            "product_ins_type",
-            "product_type",
-            "ins_len",
-            "ins"
-        ],
-        "packets":[
-            "AddOneInsRSUC"
-        ]
-    },
-    "AddTwoInsHIS900":{
-        "fields":[
-            "product_ins_type",
-            "product_type",
-            "sample_ins_len",
-            "retrieve_ins_len",
-            "ins"
-        ],
-        "packets":[
-            "AddTwoInsRSUC"
-        ]
-    },
-    "DeleteNodeInfoHIS900":{
-        "fields":[
-            "addr"
-        ],
-        "packets":[
-            "DeleteNodeInfoRSUC"
-        ]
-    },
-    "DeleteInstructionHIS900":{
-        "fields":[
-            "product_type"
-        ],
-        "packets":[
-            "DeleteInstructionRSUC"
-        ]
-    },
-    "SetSampleParameterHIS900":{
-        "fields":[
-            "pow_on_interval",
-            "retrieve_interval",
-            "product_pow_sup_mode",
-            "product_pow_sup_vol"
-        ],
-        "packets":[
-            "SetSampleParameterRSUC"
-        ]
-    },
-    "TransparentInstructionHIS900":{
-        "fields":[
-            "product_type",
-            "product_ins_type",
-            "data_len",
-            "data"
-        ],
-        "packets":[
-            "TransparentInstructionRSUC"
-        ]
-    },
-    "GetSampleDataHIS900":{
-        "fields":[
-            "addr",
-            "sample_ins_type",
-            "product_ins_type",
-            "product_type"
-        ],
-        "packets":[
-            "GetSampleDataRSUC"
-        ]
-    },
-    "GetAnalogDataHIS900":{
-        "fields":[
-            "analog_sample_type"
-        ],
-        "packets":[
-            "GetAnalogDataALUC"
-        ]
-    },
-    "SetCalibrationHIS900":{
-        "fields":[
-            "analog_sample_type"
-        ],
-        "packets":[
-            "SetCalibrationALUC"
-        ]
-    },
-    "SetSensorConfigHIS400":{
-        "fields":[
-            "k_value",
-            "s_value"
-        ],
-        "packets":[
-            "SetSensorConfigHIS400"
-        ]
-    },
-    "GetStressData":{
-        "fields":[
-            "odr"
-        ],
-        "packets":[
-            "GetStressHIS400"
-        ]
-    },
-    "GetSampleDataRSUC":{
-        "fields":[
-            "addr",
-            "sample_ins_type",
-            "product_ins_type",
-            "product_type"
-        ],
-        "packets":[
-            "GetSampleDataRSUC"
-        ]
-    },
-    "TransparentInstructionRSUC":{
-        "fields":[
-            "product_type",
-            "product_ins_type",
-            "data_len",
-            "data"
-        ],
-        "packets":[
-            "TransparentInstructionRSUC"
-        ]
-    },
     "AddNodeRSUC":{
         "fields":[
             "sample_ins_type",
@@ -669,13 +529,26 @@
             "SetSampleParameterRSUC"
         ]
     },
-    "GetRS485DataRSUCCont":{
+    "TransparentInstructionRSUC":{
         "fields":[
-            "odr",
-            "period"
+            "product_type",
+            "product_ins_type",
+            "data_len",
+            "data"
         ],
         "packets":[
-            "GetRS485DataRSUCCont"
+            "TransparentInstructionRSUC"
+        ]
+    },
+    "GetSampleDataRSUC":{
+        "fields":[
+            "addr",
+            "sample_ins_type",
+            "product_ins_type",
+            "product_type"
+        ],
+        "packets":[
+            "GetSampleDataRSUC"
         ]
     },
     "GetAnalogDataALUC":{
@@ -685,8 +558,8 @@
             "period"
         ],
         "packets":[
-            "GetAnalogDataALUCCont",
-            "GetAnalogDataALUC"
+            "GetAnalogDataALUC",
+            "GetAnalogDataALUCCont"
         ]
     },
     "SetCalibrationALUC":{
@@ -695,6 +568,32 @@
         ],
         "packets":[
             "SetCalibrationALUC"
+        ]
+    },
+    "SetSensorConfigHIS400":{
+        "fields":[
+            "k_value",
+            "s_value"
+        ],
+        "packets":[
+            "SetSensorConfigHIS400"
+        ]
+    },
+    "GetStressData":{
+        "fields":[
+            "odr"
+        ],
+        "packets":[
+            "GetStressHIS400"
+        ]
+    },
+    "GetRS485DataRSUCCont":{
+        "fields":[
+            "odr",
+            "period"
+        ],
+        "packets":[
+            "GetRS485DataRSUCCont"
         ]
     }
 }
