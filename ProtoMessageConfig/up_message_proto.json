@@ -198,7 +198,7 @@
         "packets":[
             "PressHCF700",
             "Uart485ForHCF700SampleData",
-            "PressHCF700I0RSRSUC"
+            "PressHCF700I0RSUC"
         ]
     },
     "StressData":{
@@ -256,9 +256,9 @@
         ],
         "packets":[
             "Uart485ForHOS910030SampleData",
-            "DistanceHOS910030I0RSRSUC",
-            "DistanceHOS910030I1RSRSUC",
-            "DistanceHOS910030I2RSRSUC"
+            "DistanceHOS910030I0RSUC",
+            "DistanceHOS910030I1RSUC",
+            "DistanceHOS910030I2RSUC"
         ]
     },
     "Uart485ForHFS716Sample":{
@@ -273,7 +273,7 @@
         ],
         "packets":[
             "Uart485ForHFS716SampleData",
-            "VibraWireResHFS716I0RSRSUC"
+            "VibraWireResHFS716I0RSUC"
         ]
     },
     "VoltageDataV1":{
@@ -684,7 +684,7 @@
         ],
         "packets":[
             "ShapeArrayHCF1100",
-            "ShapeArrayHCF1100I0RSRSUC"
+            "ShapeArrayHCF1100I0RSUC"
         ]
     },
     "NodeInfoRSUC":{
