@@ -22,7 +22,7 @@
             "TempHumiHCF600",
             "TempHumiHOS9010Uart485",
             "TemperatureHCF500",
-            "TempHumiHOS9010I0RSRSUC"
+            "TempHumiHOS9010I0RSUC"
         ]
     },
     "VibraWireData": {
@@ -77,10 +77,10 @@
             "Uart485ForHCF920SampleData",
             "Uart485ForHCF930SampleData",
             "WinderCupSampleHCF910",
-            "AnemometerHCF920I0RSRSUC",
-            "AnemometerHOS915I0RSRSUC",
-            "WindSpeedHOS915I1RSRSUC",
-            "WindDirectionHOS915I2RSRSUC"
+            "AnemometerHCF920I0RSUC",
+            "AnemometerHOS915I0RSUC",
+            "WindSpeedHOS915I1RSUC",
+            "WindDirectionHOS915I2RSUC"
         ]
     },
     "InclinationData":{
