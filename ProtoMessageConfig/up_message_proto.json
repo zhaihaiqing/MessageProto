@@ -193,12 +193,15 @@
             "adc_value",
             "raw_press",
             "worktime",
-            "system_status"
+            "system_status",
+            "pre_cali_raw_value",
+            "pre_cali_relative_value"
         ],
         "packets":[
             "PressHCF700",
             "Uart485ForHCF700SampleData",
-            "PressHCF700I0RSUC"
+            "PressHCF700I0RSUC",
+            "PressHCF710I0RSUC"
         ]
     },
     "StressData":{
@@ -721,7 +724,7 @@
             "TransparentDataRSUC"
         ]
     },
-    "ChildNodeTransNode":{
+   "ChildNodeTransNode":{
         "fields":[
             "is_snoop",
             "total",
@@ -831,6 +834,15 @@
         "packets":[
             "VoltageALUCCont",
             "CurrentALUCCont"
+        ]
+    },
+    "TopInfoHCF710RSUC":{
+        "fields":[
+            "version",
+            "serial_number"
+        ],
+        "packets":[
+            "TopInfoHCF710RSUC"
         ]
     }
 }

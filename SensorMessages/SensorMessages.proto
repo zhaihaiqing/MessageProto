@@ -106,6 +106,8 @@ message SettlementData{
    double raw_press = 7;
    int32 worktime = 8;
    int32 system_status = 9;
+   double pre_cali_raw_value = 10;
+   double pre_cali_relative_value = 11;
 }
 
 message StressData{
@@ -516,6 +518,11 @@ message DistanceHOS910030I1RSUCCont{
 message AnalogSampleDataCont{
    double data = 1;
    double sample_interval = 2;
+}
+
+message TopInfoHCF710RSUC{
+   int32 version = 1;
+   string serial_number = 2;
 }
 
 message SetRfChannelInfo{
