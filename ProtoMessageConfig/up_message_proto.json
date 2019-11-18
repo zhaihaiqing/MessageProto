@@ -836,7 +836,7 @@
             "CurrentALUCCont"
         ]
     },
-    "TopInfoHCF710RSUC":{
+    "TopInfoRSUC":{
         "fields":[
             "version",
             "serial_number"

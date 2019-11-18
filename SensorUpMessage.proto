@@ -76,6 +76,6 @@ message SensorUpMessage {
     VirtualModuleHCF1100 virtualmodulehcf1100 = 74;
     DistanceHOS910030I1RSUCCont distancehos910030i1rsuccont = 75;
     AnalogSampleDataCont analogsampledatacont = 76;
-    TopInfoHCF710RSUC topinfohcf710rsuc = 77;
+    TopInfoRSUC topinforsuc = 77;
   }
 }
