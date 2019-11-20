@@ -844,5 +844,15 @@
         "packets":[
             "TopInfoHCF710RSUC"
         ]
+    },
+    "InclinationRSUC":{
+        "fields":[
+            "angle_x",
+            "angle_y",
+            "angle_z"
+        ],
+        "packets":[
+            "IncliHCF2100I0RSUC"
+        ]
     }
 }

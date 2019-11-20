@@ -525,6 +525,12 @@ message TopInfoRSUC{
    string serial_number = 2;
 }
 
+message InclinationRSUC{
+   double angle_x = 1;
+   double angle_y = 2;
+   double angle_z = 3;
+}
+
 message SetRfChannelInfo{
    int32 rf_channel = 1;
 }

@@ -77,5 +77,6 @@ message SensorUpMessage {
     DistanceHOS910030I1RSUCCont distancehos910030i1rsuccont = 75;
     AnalogSampleDataCont analogsampledatacont = 76;
     TopInfoRSUC topinforsuc = 77;
+    InclinationRSUC inclinationrsuc = 78;
   }
 }
