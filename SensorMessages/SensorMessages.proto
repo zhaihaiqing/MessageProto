@@ -531,6 +531,12 @@ message InclinationRSUC{
    double angle_z = 3;
 }
 
+message DistanceRSUCCont{
+   double data = 1;
+   double addr = 2;
+   double sample_interval = 3;
+}
+
 message SetRfChannelInfo{
    int32 rf_channel = 1;
 }

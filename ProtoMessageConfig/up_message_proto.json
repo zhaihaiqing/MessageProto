@@ -261,7 +261,9 @@
             "Uart485ForHOS910030SampleData",
             "DistanceHOS910030I0RSUC",
             "DistanceHOS910030I1RSUC",
-            "DistanceHOS910030I2RSUC"
+            "DistanceHOS910030I2RSUC",
+            "DistanceHOS9120I0RSUC",
+            "DistanceHOS9120I1RSUC"
         ]
     },
     "Uart485ForHFS716Sample":{
@@ -853,6 +855,17 @@
         ],
         "packets":[
             "IncliHCF2100I0RSUC"
+        ]
+    },
+    "DistanceRSUCCont":{
+        "fields":[
+            "data",
+            "addr",
+            "sample_interval",
+            "microsecond"
+        ],
+        "packets": [
+            "DistanceHOS9120I1RSUCCont"
         ]
     }
 }
