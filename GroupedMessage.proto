@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package GroupedMessage;
+
+import "SensorUpMessage.proto";
+
+message GroupedMessage {
+    string project_name = 1;
+    string module_name = 2;
+    string master_id = 3;   //主体，计算引擎中表示测点，事件引擎中表示事件规则id
+    repeated SensorMessages.SensorUpMessage group = 4;
+}

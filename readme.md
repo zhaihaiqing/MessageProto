@@ -157,10 +157,26 @@ Message定义中的每个字段都有一个unique number，这个编号用来在
 ## 编译.proto文件
 
 到MessageProto路径下操作：
+
+### Cpp编译
+
 ```
-protoc --proto_path=$PWD --cpp_out=$PWD/compiling $PWD/SensorUpRawData.proto $PWD/SensorPackets/SensorPackets.proto
+安装gRPC插件：https://grpc.io/docs/quickstart/cpp/
+```
+**参照项目主目录/test/CppProto/gen_proto.sh**
+
+### python编译
+
+```
+安装grpc插件：https://grpc.io/docs/quickstart/python/
 ```
 
-# 生效配置
+**参照项目主目录/test/PyProto/gen_proto.sh**
 
-请到make目录下按照readme.md文件描述使用
+### Go编译
+
+```
+安装grpc插件：https://grpc.io/docs/quickstart/go/
+```
+
+**参照项目主目录/test/GoProto/gen_proto.sh**
