@@ -2,6 +2,23 @@
 
 > 本目录下的文件为数据中台使用的传感类型定义文件
 
+# proto结构图
+
+```mermaid
+graph TB
+
+A(MessageProto.proto)-->B(SensorUpMessage.proto)
+C(SensorDownMessage.proto)
+D(SensorAckMessage.proto)
+C-->E(SensorGrpcProto.proto)
+D-->E
+B-->F(GroupedMessage.proto)
+B-->G(EventMessage.proto)
+F-->H(EventEngine.proto)
+G-->H
+
+```
+
 # 名词解释
 
 - 传感类型: 同类物理量的设备称之为传感类型，比如：温湿度传感类型应该包括温度计，湿度计，温湿度计传感器的数据包
@@ -154,29 +171,29 @@ Message定义中的每个字段都有一个unique number，这个编号用来在
 
 字段编号最小为1，最大为2^29-1。你不能使用19000-19999的编号（FieldDescriptor::kFirstReservedNumber through FieldDescriptor::kLastReservedNumber）因为它们为protocol buffer的实现保留。如果你是用了保留的编号，编译.proto的时候，会报错，类似的，你不能使用任何之前保留的编号。
 
-## 编译.proto文件
+# 编译.proto文件
 
 到MessageProto路径下操作：
 
-### Cpp编译
+## Cpp编译
 
 ```
 安装gRPC插件：https://grpc.io/docs/quickstart/cpp/
 ```
-**参照项目主目录/test/CppProto/gen_proto.sh**
+**参照项目主目录/make/CppProto/gen_proto.sh**
 
-### python编译
+## python编译
 
 ```
 安装grpc插件：https://grpc.io/docs/quickstart/python/
 ```
 
-**参照项目主目录/test/PyProto/gen_proto.sh**
+**参照项目主目录/make/PyProto/gen_proto.sh**
 
-### Go编译
+## Go编译
 
 ```
 安装grpc插件：https://grpc.io/docs/quickstart/go/
 ```
 
-**参照项目主目录/test/GoProto/gen_proto.sh**
+**参照项目主目录/make/GoProto/gen_proto.sh**
