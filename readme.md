@@ -39,9 +39,6 @@ F-->H(EventMessage.proto)
 
 # 其他项目使用MessageProto指南
 
-**如果新增了自己的protobuf，请参照gen_proto.sh进行编写**
-**如果没有创建自己的protobuf，直接把脚本中无用的命令注释掉，然后运行gen_proto.sh**
-
 - 首先添加MessageProto为子模块
 - 拷贝MessageProto/make/${对应开发语言}/gen_proto.sh到项目根目录
 - 创建目标目录，然后修改脚本
@@ -58,11 +55,17 @@ F-->H(EventMessage.proto)
 
 ## python编译
 
+**参照gen_proto.sh示例编写编译脚本**
+
 ```
 安装grpc插件：https://grpc.io/docs/quickstart/python/
 ```
 
 ## Go编译
+
+**如果新增了自己的protobuf，请参照gen_proto.sh进行编写**
+
+**如果没有创建自己的protobuf，直接把脚本中无用的命令注释掉，然后运行gen_proto.sh**
 
 ```
 安装grpc插件：https://grpc.io/docs/quickstart/go/
