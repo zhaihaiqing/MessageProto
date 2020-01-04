@@ -1,8 +1,11 @@
 syntax = "proto3";
 
-package EventMessage;
+package EventEngine;
 
 import "SensorUpMessage.proto";
+
+//golang结果的编译路径为${go_out}/./EventEngine,命名空间为EventEngine
+option go_package = "./EventEngine;EventEngine";
 
 message EventMessage {
     enum EventType{

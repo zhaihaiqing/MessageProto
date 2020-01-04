@@ -2,6 +2,9 @@ syntax = "proto3";
 
 package SensorMessages;
 
+// golang编译结果路径${go_out}/./SensorMessages/,命名空间：SensorMessages
+option go_package = "./SensorMessages;SensorMessages";
+
 message SensorAckMessage {
     enum ErrCode {
         CODE_SUCCESS = 0;
@@ -16,7 +19,7 @@ message SensorAckMessage {
         CODE_EALREADY = 9;   //The device state you are requesting is already set
         CODE_ENOMEM = 10;    //Memory required not available
         CODE_ENOACK = 11;    //A packet was not ackonwledged
-        reserved 12 to 15;  //1-11为传感网的错误码，12-15保留字段用作传感错误类型的扩展
+        // reserved 12 to 15;  //1-11为传感网的错误码，12-15保留字段用作传感错误类型的扩展
         CODE_TIME_OUT = 16;  //指令执行超时
         CODE_UNCONNECT_ROUTER = 17;  //目标网关未连接SensorRouter
         CODE_INVAL_MESSAGE = 18; //message未非法消息，缺少字段或者参数错误

@@ -19,6 +19,76 @@ G-->H
 
 ```
 
+# proto命名空间架构图
+
+```mermaid
+graph TB
+
+A(SensorMessages)-->B(SensorUpMessage.proto)
+A-->C(SensorMessages.proto)
+A-->I(SensorAckMessage.proto)
+A-->J(SensorDownMessage.proto)
+A-->K(SensorGrpcProto.proto)
+
+D(GroupedMessage)-->E(GroupedMessage.proto)
+
+F(EventEngine)-->G(EventEngine.proto)
+F-->H(EventMessage.proto)
+
+```
+
+# 其他项目使用MessageProto指南
+
+**如果新增了自己的protobuf，请参照gen_proto.sh进行编写**
+**如果没有创建自己的protobuf，直接把脚本中无用的命令注释掉，然后运行gen_proto.sh**
+
+- 首先添加MessageProto为子模块
+- 拷贝MessageProto/make/${对应开发语言}/gen_proto.sh到项目根目录
+- 创建目标目录，然后修改脚本
+
+## Cpp编译
+
+```
+安装gRPC插件：https://grpc.io/docs/quickstart/cpp/
+```
+
+```
+//TOOD：添加C++版本的编译指令
+```
+
+## python编译
+
+```
+安装grpc插件：https://grpc.io/docs/quickstart/python/
+```
+
+## Go编译
+
+```
+安装grpc插件：https://grpc.io/docs/quickstart/go/
+```
+
+```
+./gen_proto.sh ${目标路径} ${项目所属模块}
+e.g.
+./gen_proto.sh protofiles smartbow.net/dp/gogateway2project
+```
+
+生成的目录结构如下（相对于目标路径）：
+
+```mermaid
+graph TB
+H(目标目录)-->A
+H-->C
+H-->E
+H-->G
+A(GroupedMessage)-->B(GroupedMessage.proto生成的文件)
+C(EventEngine)-->D(EventEngine.proto和EventMessage.proto生成的文件)
+E(SensorMessages)-->F(SensorMessages/SensorMessage.proto,SensorUpMessage.proto,SensorDownMessage.proto,SensorAckMessage.proto,SensorGrpcProto.proto生成的文件)
+G(项目自定义的Proto生成的文件)
+```
+
+
 # 名词解释
 
 - 传感类型: 同类物理量的设备称之为传感类型，比如：温湿度传感类型应该包括温度计，湿度计，温湿度计传感器的数据包
@@ -170,30 +240,3 @@ service FooService {
 Message定义中的每个字段都有一个unique number，这个编号用来在消息的二进制格式中辨识你的字段，并且一旦使用了就不能再更改这个字段编号。注意1-15的字段编号会使用1个字节进行编码，16-2047的编号需要两个字节。所以，你应该为频繁出现的message元素保留1-15。请记住为将来可能频繁出现的元素保留空间。
 
 字段编号最小为1，最大为2^29-1。你不能使用19000-19999的编号（FieldDescriptor::kFirstReservedNumber through FieldDescriptor::kLastReservedNumber）因为它们为protocol buffer的实现保留。如果你是用了保留的编号，编译.proto的时候，会报错，类似的，你不能使用任何之前保留的编号。
-
-# 编译.proto文件
-
-到MessageProto路径下操作：
-
-## Cpp编译
-
-```
-安装gRPC插件：https://grpc.io/docs/quickstart/cpp/
-```
-**参照项目主目录/make/CppProto/gen_proto.sh**
-
-## python编译
-
-```
-安装grpc插件：https://grpc.io/docs/quickstart/python/
-```
-
-**参照项目主目录/make/PyProto/gen_proto.sh**
-
-## Go编译
-
-```
-安装grpc插件：https://grpc.io/docs/quickstart/go/
-```
-
-**参照项目主目录/make/GoProto/gen_proto.sh**
