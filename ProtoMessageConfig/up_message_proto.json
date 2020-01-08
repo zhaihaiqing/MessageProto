@@ -867,5 +867,13 @@
         "packets": [
             "DistanceHOS9120I1RSUCCont"
         ]
+    },
+    "SampleMode":{
+        "fields":[
+            "sample_mode"
+        ],
+        "packets":[
+            "SampleMode"
+        ]
     }
 }

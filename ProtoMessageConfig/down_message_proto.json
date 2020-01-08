@@ -595,5 +595,13 @@
         "packets":[
             "GetRS485DataRSUCCont"
         ]
+    },
+    "SetSampleMode":{
+        "fields":[
+            "sample_mode"
+        ],
+        "packets":[
+            "SetSampleMode"
+        ]
     }
 }
