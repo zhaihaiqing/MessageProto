@@ -537,6 +537,10 @@ message DistanceRSUCCont{
    double sample_interval = 3;
 }
 
+message SampleMode{
+   int32 sample_mode = 1;
+}
+
 message SetRfChannelInfo{
    int32 rf_channel = 1;
 }
@@ -845,4 +849,8 @@ message GetStressData{
 message GetRS485DataRSUCCont{
    int32 odr = 1;
    int32 period = 2;
+}
+
+message SetSampleMode{
+   int32 sample_mode = 1;
 }

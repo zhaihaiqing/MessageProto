@@ -79,5 +79,6 @@ message SensorUpMessage {
     TopInfoRSUC topinforsuc = 77;
     InclinationRSUC inclinationrsuc = 78;
     DistanceRSUCCont distancersuccont = 79;
+    SampleMode samplemode = 80;
   }
 }

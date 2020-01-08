@@ -58,5 +58,6 @@ message SensorDownMessage {
     SetSensorConfigHIS400 setsensorconfighis400 = 62;
     GetStressData getstressdata = 63;
     GetRS485DataRSUCCont getrs485datarsuccont = 64;
+    SetSampleMode setsamplemode = 65;
   }
 }
