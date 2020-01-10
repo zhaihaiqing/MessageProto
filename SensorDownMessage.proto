@@ -59,5 +59,6 @@ message SensorDownMessage {
     GetStressData getstressdata = 63;
     GetRS485DataRSUCCont getrs485datarsuccont = 64;
     SetSampleMode setsamplemode = 65;
+    SetTriggerConfig settriggerconfig = 66;
   }
 }

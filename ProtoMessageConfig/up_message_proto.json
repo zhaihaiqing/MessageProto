@@ -875,5 +875,25 @@
         "packets":[
             "SampleMode"
         ]
+    },
+    "TriggerSampleConfigInfo":{
+        "fields":[
+            "send_mode",
+            "is_trigger_set",
+            "is_triggered",
+            "wind_threshold",
+            "wind_debounce"  
+        ],
+        "packets":[
+            "TriggerConfigHCF910"
+        ]
+    },
+    "TriggerEvent":{
+        "fields":[
+            "sample_type"
+        ],
+        "packets":[
+            "TriggerEvent"
+        ]
     }
 }

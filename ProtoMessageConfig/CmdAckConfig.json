@@ -148,5 +148,10 @@
     "DeleteNodeInfoRSUC": "DeleteNodeInfoRSUCAck",
     "DeleteInstructionRSUC": "DeleteInstructionRSUCAck",
     "TransparentInstructionRSUC": "TransparentInstructionRSUCAck",
-    "AutoScanHGR100B2": "AutoScanHGR100B2Ack"
+    "AutoScanHGR100B2": "AutoScanHGR100B2Ack",
+    "SetSampleMode": "SetSampleModeAck",
+    "QuerySampleMode": "QuerySampleModeAck",
+    "SetTrasMode": "SetTransModeAck",
+    "SetTriggerConfigHCF910": "SetTriggerConfigAck",
+    "QueryTriggerConfig": "QueryTriggerConfigAck"
 }
