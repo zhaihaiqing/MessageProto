@@ -80,7 +80,7 @@ message SensorUpMessage {
     InclinationRSUC inclinationrsuc = 78;
     DistanceRSUCCont distancersuccont = 79;
     SampleMode samplemode = 80;
-    TriggerEvent triggerevent = 81;
-    TriggerSampleConfigInfo triggersampleconfiginfo = 82;
+    TriggerSampleConfigInfo triggersampleconfiginfo = 81;
+    TriggerEvent triggerevent = 82;
   }
 }

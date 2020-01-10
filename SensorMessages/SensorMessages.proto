@@ -541,6 +541,18 @@ message SampleMode{
    int32 sample_mode = 1;
 }
 
+message TriggerSampleConfigInfo{
+   int32 send_mode = 1;
+   int32 is_trigger_set = 2;
+   int32 is_triggered = 3;
+   int32 wind_threshold = 4;
+   int32 wind_debounce = 5;
+}
+
+message TriggerEvent{
+   int32 sample_type = 1;
+}
+
 message SetRfChannelInfo{
    int32 rf_channel = 1;
 }
@@ -853,4 +865,13 @@ message GetRS485DataRSUCCont{
 
 message SetSampleMode{
    int32 sample_mode = 1;
+}
+
+message SetTransMode{
+   int32 send_mode = 1;
+}
+
+message SetTriggerConfig{
+   int32 wind_threshold = 1;
+   int32 wind_debounce = 2;
 }
