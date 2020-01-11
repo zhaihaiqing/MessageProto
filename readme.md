@@ -65,7 +65,7 @@ F-->H(EventMessage.proto)
 
 **如果新增了自己的protobuf，请参照gen_proto.sh进行编写**
 
-**如果没有创建自己的protobuf，直接把脚本中无用的命令注释掉，然后运行gen_proto.sh**
+**如果没有创建自己的protobuf，直接运行gen_proto.sh，不需要的pb.go文件可在.gitignore酌情忽略，切记不要修改gen_proto.sh脚本**
 
 ```
 安装grpc插件：https://grpc.io/docs/quickstart/go/
