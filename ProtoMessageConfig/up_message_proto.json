@@ -867,5 +867,33 @@
         "packets": [
             "DistanceHOS9120I1RSUCCont"
         ]
+    },
+    "SampleMode":{
+        "fields":[
+            "sample_mode"
+        ],
+        "packets":[
+            "SampleMode"
+        ]
+    },
+    "TriggerSampleConfigInfo":{
+        "fields":[
+            "send_mode",
+            "is_trigger_set",
+            "is_triggered",
+            "wind_threshold",
+            "wind_debounce"  
+        ],
+        "packets":[
+            "TriggerConfigHCF910"
+        ]
+    },
+    "TriggerEvent":{
+        "fields":[
+            "sample_type"
+        ],
+        "packets":[
+            "TriggerEvent"
+        ]
     }
 }

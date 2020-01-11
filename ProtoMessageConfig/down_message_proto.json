@@ -595,5 +595,30 @@
         "packets":[
             "GetRS485DataRSUCCont"
         ]
+    },
+    "SetSampleMode":{
+        "fields":[
+            "sample_mode"
+        ],
+        "packets":[
+            "SetSampleMode"
+        ]
+    },
+    "SetTransMode":{
+        "fields":[
+            "send_mode"
+        ],
+        "packets":[
+            "SetTransMode"
+        ]
+    },
+    "SetTriggerConfig":{
+        "fields":[
+            "wind_threshold",
+            "wind_debounce"
+        ],
+        "packets":[
+            "SetTriggerConfigHCF910"
+        ]
     }
 }
