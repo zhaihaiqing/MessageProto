@@ -9,25 +9,21 @@ fi
 OUT_DIR=${1}
 MODULE=$2
 mkdir -p ${OUT_DIR}
+rm -rf ${OUT_DIR}/*
+mkdir ${OUT_DIR}/SensorMessages
 
 #gRPC客户端和服务端接口代码
 #protoc -I=$SRC_DIR $SRC_DIR/addressbook.proto --go_out=plugins=grpc:$DST_DIR
-#编译EventEngine.proto
+#编译package:EventEngine
 protoc -I $PWD/MessageProto --go_out=plugins=grpc,MGroupedMessage.proto=${MODULE}/${OUT_DIR}/GroupedMessage,MSensorUpMessage.proto=${MODULE}/${OUT_DIR}/SensorMessages:${OUT_DIR} $PWD/MessageProto/EventEngineAPI.proto $PWD/MessageProto/EventMessage.proto
 
-#编译SensorGrpcProto.proto
-protoc -I $PWD/MessageProto --go_out=plugins=grpc,MSensorDownMessage.proto=${MODULE}/${OUT_DIR}/SensorMessages,MSensorAckMessage.proto=${MODULE}/${OUT_DIR}/SensorMessages:${OUT_DIR} $PWD/MessageProto/SensorGrpcProto.proto $PWD/MessageProto/SensorDownMessage.proto $PWD/MessageProto/SensorAckMessage.proto
-rm ${OUT_DIR}/SensorDownMessage.pb.go
-#protobuf文件编译
-#protoc -I=$SRC_DIR --go_out=$DST_DIR $SRC_DIR/addressbook.proto
-#编译SensorMessages/SensorMessages.proto
-# protoc -I $PWD/MessageProto --go_out=${OUT_DIR} $PWD/MessageProto/SensorMessages/SensorMessages.proto
-#编译SensorUpMessages.proto
-protoc -I $PWD/MessageProto -I $PWD/MessageProto/SensorMessages --go_out=${OUT_DIR}/SensorMessages $PWD/MessageProto/SensorUpMessage.proto $PWD/MessageProto/SensorMessages/SensorMessages.proto
-rm -rf ${OUT_DIR}/SensorMessages/SensorMessages #删除多余目录
-#编译SensorDownMessages.proto
-protoc -I $PWD/MessageProto -I $PWD/MessageProto/SensorMessages --go_out=${OUT_DIR}/SensorMessages $PWD/MessageProto/SensorDownMessage.proto $PWD/MessageProto/SensorMessages/SensorMessages.proto
+#编译package:SensorMessages
+protoc -I $PWD/MessageProto --go_out=plugins=grpc,MSensorDownMessage.proto=${MODULE}/${OUT_DIR}/SensorMessages,\
+MSensorAckMessage.proto=${MODULE}/${OUT_DIR}/SensorMessages:${OUT_DIR}/SensorMessages $PWD/MessageProto/SensorGrpcProto.proto \
+$PWD/MessageProto/SensorDownMessage.proto $PWD/MessageProto/SensorAckMessage.proto \
+$PWD/MessageProto/SensorUpMessage.proto $PWD/MessageProto/SensorMessages/SensorMessages.proto
+cp ${OUT_DIR}/SensorMessages/SensorMessages/* ${OUT_DIR}/SensorMessages/
 rm -rf ${OUT_DIR}/SensorMessages/SensorMessages #删除多余目录
 
-#编译GroupedMessage.proto
+#编译GroupedMessage: GroupedMessage.proto
 protoc -I $PWD/MessageProto --go_out=MSensorUpMessage.proto=${MODULE}/${OUT_DIR}/SensorMessages:${OUT_DIR} $PWD/MessageProto/GroupedMessage.proto

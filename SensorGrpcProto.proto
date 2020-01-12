@@ -6,7 +6,7 @@ import "SensorDownMessage.proto";
 import "SensorAckMessage.proto";
 
 //golang编译结果路径${go_out}/./SensorMessages/,命名空间：SensorMessages
-option go_package = "./SensorMessages;SensorMessages";
+option go_package = "SensorMessages";
 
 service SensorDownHandle {
   rpc SensorDown (SensorDownMessage) returns (SensorAckMessage) {}
