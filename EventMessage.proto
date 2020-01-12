@@ -13,6 +13,8 @@ message EventMessage {
         WIND = 1; //风速风向
         CAR = 2;  //重车过桥
         EARTHQUAKE = 3; //地震
+        MANUALTRIGGER = 4;  //人工触发
+        SENSORTRIGGER = 5;  //传感网触发
     }
     uint64 event_id = 1;    //事件标识，发生的事件的编号
     string project_name = 2;    //项目
