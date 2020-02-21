@@ -152,6 +152,6 @@
     "SetSampleMode": "SetSampleModeAck",
     "QuerySampleMode": "QuerySampleModeAck",
     "SetTrasMode": "SetTransModeAck",
-    "SetTriggerConfigHCF910": "SetTriggerConfigAck",
+    "SetTriggerSampleConfigHCF910": "SetTriggerConfigAck",
     "QueryTriggerConfig": "QueryTriggerConfigAck"
 }
