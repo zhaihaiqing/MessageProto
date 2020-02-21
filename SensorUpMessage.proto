@@ -82,5 +82,11 @@ message SensorUpMessage {
     SampleMode samplemode = 80;
     TriggerSampleConfigInfo triggersampleconfiginfo = 81;
     TriggerEvent triggerevent = 82;
+    IncliContData inclicontdata = 83;
+    TempHumiContData temphumicontdata = 84;
+    DistanceContData distancecontdata = 85;
+    StrainContData straincontdata = 86;
+    SettlementContData settlementcontdata = 87;
+    AnemometerContData anemometercontdata = 88;
   }
 }

@@ -340,7 +340,7 @@
     },
     "GetGatewayCtrlInfo":{
         "fields":null,
-        "extension":{
+        "extend_fields":{
             "command": "string"
         },
         "packets":[
@@ -618,7 +618,7 @@
             "wind_debounce"
         ],
         "packets":[
-            "SetTriggerConfigHCF910"
+            "SetTriggerSampleConfigHCF910"
         ]
     }
 }

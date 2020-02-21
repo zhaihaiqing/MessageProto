@@ -94,6 +94,7 @@ message CablePeaksData{
    int32 quality = 9;
    string range = 10;
    double extent = 11;
+   double cable = 101;
 }
 
 message SettlementData{
@@ -551,6 +552,38 @@ message TriggerSampleConfigInfo{
 
 message TriggerEvent{
    int32 sample_type = 1;
+}
+
+message IncliContData{
+   double angle = 101;
+   double sample_interval = 102;
+}
+
+message TempHumiContData{
+   double temp = 101;
+   double humi = 102;
+   double air_pressure = 103;
+   double sample_interval = 104;
+}
+
+message DistanceContData{
+   double distance = 101;
+   double sample_interval = 102;
+}
+
+message StrainContData{
+   double strain = 101;
+   double sample_interval = 102;
+}
+
+message SettlementContData{
+   double deflection = 101;
+   double sample_interval = 102;
+}
+
+message AnemometerContData{
+   double wind_speed = 101;
+   double wind_direction = 102;
 }
 
 message SetRfChannelInfo{

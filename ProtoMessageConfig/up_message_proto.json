@@ -178,10 +178,11 @@
             "values",
             "quality",
             "range",
-            "extent",
-            "cable"
+            "extent"
         ],
-        "extend_fields":null,
+        "extend_fields":{
+            "cable": "double"
+        },
         "packets":[
             "CablePeaksHCF100",
             "CablePeaksHCF4000"
