@@ -161,6 +161,9 @@
             "VibraHCF300V1",
             "VibraHCF3000",
             "VibraHCF4000"
+        ],
+        "extend_packets":[
+            "Vibra2D00102"
         ]
     },
     "CablePeaksData":{
@@ -175,12 +178,16 @@
             "values",
             "quality",
             "range",
-            "extent"
+            "extent",
+            "cable"
         ],
-        "extension":null,
+        "extend_fields":null,
         "packets":[
             "CablePeaksHCF100",
             "CablePeaksHCF4000"
+        ],
+        "extend_packets":[
+            "CableVibration1B101"
         ]
     },
     "SettlementData":{
@@ -427,7 +434,7 @@
     },
     "WeightingData": {
         "fields": null,
-        "extension": {
+        "extend_fields": {
             "LaneID": "string",
             "LaneIDFlyOver": "string",
             "Speed": "double",
@@ -781,7 +788,7 @@
     },
     "VirtualModuleNAODU": {
         "fields": null,
-        "extension": {
+        "extend_fields": {
             "val": "double",
             "kx": "repeated double",
             "kk": "repeated double"
@@ -794,7 +801,7 @@
     },
     "VirtualModuleHCF700_485_Naodu": {
         "fields": null,
-        "extension": {
+        "extend_fields": {
             "val": "double"
         },
         "packets": [
@@ -803,7 +810,7 @@
     },
     "VirtualModuleHCF1100": {
         "fields": null,
-        "extension": {
+        "extend_fields": {
             "group": "int32",
             "x1_0": "repeated double",
             "x2_0": "repeated double",
@@ -894,6 +901,72 @@
         ],
         "packets":[
             "TriggerEvent"
+        ]
+    },
+    "IncliContData":{
+        "fields": null,
+        "extend_fields":{
+            "angle":"double",
+            "sample_interval":"double"
+        },
+        "packets":[
+            "IncliLCH100"
+        ]
+    },
+    "TempHumiContData":{
+        "fields":null,
+        "extend_fields":{
+            "temp":"double",
+            "humi":"double",
+            "air_pressure":"double",
+            "sample_interval":"double"
+        },
+        "packets":[
+            "TempHumiNH121WSYR",
+            "TempFBG4000T",
+            "TempFBG4700S"
+        ]
+    },
+    "DistanceContData":{
+        "fields":null,
+        "extend_fields":{
+            "distance":"double",
+            "sample_interval":"double"
+        },
+        "packets":[
+            "Displacement5G107",
+            "CrackFBG4420T",
+            "Displacement5G204"
+        ]
+    },
+    "StrainContData":{
+        "fields":null,
+        "extend_fields":{
+            "strain": "double",
+            "sample_interval":"double"
+        },
+        "packets":[
+            "StrainFBG4000T"
+        ]
+    },
+    "SettlementContData":{
+        "fields":null,
+        "extend_fields":{
+            "deflection":"double",
+            "sample_interval":"double"
+        },
+        "packets":[
+            "DeflectionFBG550"
+        ]
+    },
+    "AnemometerContData":{
+        "fields":null,
+        "extend_fields":{
+            "wind_speed": "double",
+            "wind_direction": "double"
+        },
+        "packets":[
+            "AnemometerNHFS47BR"
         ]
     }
 }
