@@ -586,6 +586,11 @@ message AnemometerContData{
    double wind_direction = 102;
 }
 
+message VirtualModuleSmoothSettlement{
+   double new_value = 101;
+   double t_value = 102;
+}
+
 message SetRfChannelInfo{
    int32 rf_channel = 1;
 }

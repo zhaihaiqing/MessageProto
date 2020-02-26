@@ -15,4 +15,5 @@ message GroupedMessage {
     uint64 restore_areatime = 5; //上下限阈值算法：已满足上下限的持续时间，单位ms
     uint32 last_unix_time = 6;   //上下限阈值算法：已满足上下限的数据窗口,最后数据点的时间戳,单位s
     int32 last_microsecond = 7;  //上下限阈值算法：已满足上下限的数据窗口,最后数据点的时间戳,单位微妙
+    string task_id = 8; //重算任务编号
 }

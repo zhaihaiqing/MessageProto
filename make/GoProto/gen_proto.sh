@@ -16,6 +16,8 @@ mkdir ${OUT_DIR}/SensorMessages
 #protoc -I=$SRC_DIR $SRC_DIR/addressbook.proto --go_out=plugins=grpc:$DST_DIR
 #编译package:EventEngine
 protoc -I $PWD/MessageProto --go_out=plugins=grpc,MGroupedMessage.proto=${MODULE}/${OUT_DIR}/GroupedMessage,MSensorUpMessage.proto=${MODULE}/${OUT_DIR}/SensorMessages:${OUT_DIR} $PWD/MessageProto/EventEngineAPI.proto $PWD/MessageProto/EventMessage.proto
+#编译ComputeEngine
+protoc -I $PWD/MessageProto --go_out=plugins=grpc,MGroupedMessage.proto=${MODULE}/${OUT_DIR}/GroupedMessage,MSensorUpMessage.proto=${MODULE}/${OUT_DIR}/SensorMessages:${OUT_DIR} $PWD/MessageProto/ComputeEngineAPI.proto
 
 #编译package:SensorMessages
 protoc -I $PWD/MessageProto --go_out=plugins=grpc,MSensorDownMessage.proto=${MODULE}/${OUT_DIR}/SensorMessages,\
