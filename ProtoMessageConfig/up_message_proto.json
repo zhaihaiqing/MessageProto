@@ -969,5 +969,15 @@
         "packets":[
             "AnemometerNHFS47BR"
         ]
+    },
+    "VirtualModuleSmoothSettlement": {
+        "fields": null,
+        "extend_fields": {
+            "new_value": "double",
+            "t_value": "double"
+        },
+        "packets": [
+            "SmoothSettlement"
+        ]
     }
 }
