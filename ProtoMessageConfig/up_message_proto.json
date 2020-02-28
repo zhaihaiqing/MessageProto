@@ -695,6 +695,11 @@
             "coordinate_init_y",
             "coordinate_init_z"
         ],
+        "extend_fields":{
+            "x": "double",
+            "y": "double",
+            "z": "double"
+        },
         "packets":[
             "ShapeArrayHCF1100",
             "ShapeArrayHCF1100I0RSUC"
