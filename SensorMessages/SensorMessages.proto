@@ -433,6 +433,9 @@ message ShapeArrayHCF1100{
    double coordinate_init_x = 20;
    double coordinate_init_y = 21;
    double coordinate_init_z = 22;
+   double x = 101;
+   double y = 102;
+   double z = 103;
 }
 
 message NodeInfoRSUC{
