@@ -181,7 +181,8 @@
             "extent"
         ],
         "extend_fields":{
-            "cable": "double"
+            "cable": "double",
+            "point_width": "uint32"
         },
         "packets":[
             "CablePeaksHCF100",

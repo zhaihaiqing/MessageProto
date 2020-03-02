@@ -95,6 +95,7 @@ message CablePeaksData{
    string range = 10;
    double extent = 11;
    double cable = 101;
+   uint32 point_width = 102;
 }
 
 message SettlementData{
