@@ -812,7 +812,8 @@
             "val": "double"
         },
         "packets": [
-            "HCF700_485"
+            "HCF700_485",
+            "PressHCF710I0RSUC"
         ]
     },
     "VirtualModuleHCF1100": {
@@ -983,7 +984,7 @@
             "t_value": "double"
         },
         "packets": [
-            "SmoothSettlement"
+            "PressHCF700"
         ]
     }
 }
