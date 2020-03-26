@@ -22,7 +22,8 @@
             "TempHumiHCF600",
             "TempHumiHOS9010Uart485",
             "TemperatureHCF500",
-            "TempHumiHOS9010I0RSUC"
+            "TempHumiHOS9010I0RSUC",
+            "TempBGK370002"
         ]
     },
     "VibraWireData": {
@@ -210,7 +211,8 @@
             "PressHCF700",
             "Uart485ForHCF700SampleData",
             "PressHCF700I0RSUC",
-            "PressHCF710I0RSUC"
+            "PressHCF710I0RSUC",
+            "DeflectionMWJL1"
         ]
     },
     "StressData":{
@@ -223,7 +225,8 @@
         "packets":[
             "StressHIS300Cont",
             "StressHIS500",
-            "StressHIS400"
+            "StressHIS400",
+            "StressFBG5220"
         ]
     },
     "IncliHCF410V1":{
@@ -272,7 +275,9 @@
             "DistanceHOS910030I1RSUC",
             "DistanceHOS910030I2RSUC",
             "DistanceHOS9120I0RSUC",
-            "DistanceHOS9120I1RSUC"
+            "DistanceHOS9120I1RSUC",
+            "DistanceBGK4420I",
+            "DistanceMWCJ1"
         ]
     },
     "Uart485ForHFS716Sample":{
@@ -932,7 +937,10 @@
         "packets":[
             "TempHumiNH121WSYR",
             "TempFBG4000T",
-            "TempFBG4700S"
+            "TempFBG4700S",
+            "TempFGB5420",
+            "HumiMWWS1",
+            "Temp18B20"
         ]
     },
     "DistanceContData":{
@@ -944,7 +952,11 @@
         "packets":[
             "Displacement5G107",
             "CrackFBG4420T",
-            "Displacement5G204"
+            "Displacement5G204",
+            "DistanceLVDT20",
+            "DistanceMWND50",
+            "DistanceFBG5100",
+            "DistanceGTH10"
         ]
     },
     "StrainContData":{
@@ -964,7 +976,8 @@
             "sample_interval":"double"
         },
         "packets":[
-            "DeflectionFBG550"
+            "DeflectionFBG550",
+            "DeflectionFBG5650"
         ]
     },
     "AnemometerContData":{
@@ -985,6 +998,24 @@
         },
         "packets": [
             "PressHCF700"
+        ]
+    },
+    "StrainData":{
+        "fields":null,
+        "extend_fields":{
+            "strain":"double"
+        },
+        "packets":[
+            "StrainBGK4000"
+        ]
+    },
+    "StressGapData":{
+        "fields":null,
+        "extend_fields":{
+            "stress":"double"
+        },
+        "packets":[
+            "StressST2"
         ]
     }
 }
