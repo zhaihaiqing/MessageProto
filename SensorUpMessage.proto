@@ -89,5 +89,7 @@ message SensorUpMessage {
     SettlementContData settlementcontdata = 87;
     AnemometerContData anemometercontdata = 88;
     VirtualModuleSmoothSettlement virtualmodulesmoothsettlement = 89;
+    StrainData straindata = 90;
+    StressGapData stressgapdata = 91;
   }
 }
