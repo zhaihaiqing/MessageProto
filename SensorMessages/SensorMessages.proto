@@ -595,6 +595,14 @@ message VirtualModuleSmoothSettlement{
    double t_value = 102;
 }
 
+message StrainData{
+   double strain = 101;
+}
+
+message StressGapData{
+   double stress = 101;
+}
+
 message SetRfChannelInfo{
    int32 rf_channel = 1;
 }
