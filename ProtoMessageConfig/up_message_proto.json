@@ -923,7 +923,7 @@
             "sample_interval":"double"
         },
         "packets":[
-            "IncliLCH100"
+            "IncliLCF100"
         ]
     },
     "TempHumiContData":{
