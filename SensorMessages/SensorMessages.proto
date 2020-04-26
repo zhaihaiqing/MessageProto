@@ -80,6 +80,7 @@ message VibrationData{
    double data = 1;
    string range = 2;
    double sample_interval = 3;
+   double speed = 101;
 }
 
 message CablePeaksData{
