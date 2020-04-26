@@ -156,6 +156,9 @@
             "channel",
             "microsecond"
         ],
+        "extend_fields":{
+            "speed": "double"
+        },
         "packets":[
             "VibraHCF300",
             "VibraHCF410",
@@ -227,6 +230,9 @@
             "StressHIS500",
             "StressHIS400",
             "StressFBG5220"
+        ],
+        "extend_packets":[
+            "StressFBG4000T"
         ]
     },
     "IncliHCF410V1":{
