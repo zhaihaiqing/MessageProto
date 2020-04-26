@@ -280,6 +280,12 @@ message WeightingData{
    double AxleSpacing5 = 124;
    double AxleSpacing6 = 125;
    double AxleSpacing7 = 126;
+   double carLength = 127;
+   string cross_lane = 128;
+   string reverse = 129;
+   uint32 axle_count = 130;
+   double chassis_freq = 131;
+   double temp = 132;
 }
 
 message CalibrationConfigHCF2000{
@@ -601,6 +607,12 @@ message StrainData{
 
 message StressGapData{
    double stress = 101;
+}
+
+message GPSContData{
+   double x = 101;
+   double y = 102;
+   double z = 103;
 }
 
 message SetRfChannelInfo{

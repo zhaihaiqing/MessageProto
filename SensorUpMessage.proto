@@ -91,5 +91,6 @@ message SensorUpMessage {
     VirtualModuleSmoothSettlement virtualmodulesmoothsettlement = 89;
     StrainData straindata = 90;
     StressGapData stressgapdata = 91;
+    GPSContData gpscontdata = 92;
   }
 }
