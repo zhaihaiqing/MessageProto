@@ -467,7 +467,13 @@
             "AxleSpacing4": "double",
             "AxleSpacing5": "double",
             "AxleSpacing6": "double",
-            "AxleSpacing7": "double"
+            "AxleSpacing7": "double",
+            "carLength": "double",
+            "cross_lane": "string",
+            "reverse": "string",
+            "axle_count": "uint32",
+            "chassis_freq": "double",
+            "temp": "double"
         },
         "packets": [
             "BJCC-ITS"
@@ -977,7 +983,8 @@
         },
         "packets":[
             "DeflectionFBG550",
-            "DeflectionFBG5650"
+            "DeflectionFBG5650",
+            "DeflectionYC11"
         ]
     },
     "AnemometerContData":{
@@ -1016,6 +1023,17 @@
         },
         "packets":[
             "StressST2"
+        ]
+    },
+    "GPSContData":{
+        "fields":null,
+        "extend_fields":{
+            "x": "double",
+            "y": "double",
+            "z": "double"
+        },
+        "packets":[
+            "GPSDataGR30"
         ]
     }
 }
