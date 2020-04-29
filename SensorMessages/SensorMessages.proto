@@ -1,5 +1,9 @@
 syntax = "proto3";
 
+package SensorMessages;
+
+option java_package = "com.smartbow.sensormessages";
+
 
 message HighPrecisionIncliData{
    double angle = 1;
