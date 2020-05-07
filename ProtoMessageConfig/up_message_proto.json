@@ -228,11 +228,11 @@
         "packets":[
             "StressHIS300Cont",
             "StressHIS500",
-            "StressHIS400",
-            "StressFBG5220"
+            "StressHIS400"
         ],
         "extend_packets":[
-            "StressFBG4000T"
+            "StressFBG4000T",
+            "StressFBG5220"
         ]
     },
     "IncliHCF410V1":{
