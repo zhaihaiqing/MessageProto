@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package SensorMessages;
-
 option java_package = "com.smartbow.sensormessages";
 
+
+package SensorMessages;
 
 import "SensorMessages/SensorMessages.proto";
 
