@@ -232,7 +232,8 @@
         ],
         "extend_packets":[
             "StressFBG4000T",
-            "StressFBG5220"
+            "StressFBG5220",
+            "StressFBG5210"
         ]
     },
     "IncliHCF410V1":{
