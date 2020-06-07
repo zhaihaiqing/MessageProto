@@ -14,8 +14,10 @@ C-->E(SensorGrpcProto.proto)
 D-->E
 B-->F(GroupedMessage.proto)
 B-->G(EventMessage.proto)
-F-->H(EventEngine.proto)
+F-->H(EventEngineAPI.proto)
 G-->H
+F-->I(ComputeEngineAPI.proto)
+G-->I
 
 ```
 
@@ -32,7 +34,7 @@ A-->K(SensorGrpcProto.proto)
 
 D(GroupedMessage)-->E(GroupedMessage.proto)
 
-F(EventEngine)-->G(EventEngine.proto)
+F(EventEngine)-->G(EventEngineAPI.proto)
 F-->H(EventMessage.proto)
 
 ```
@@ -244,3 +246,7 @@ service FooService {
 Message定义中的每个字段都有一个unique number，这个编号用来在消息的二进制格式中辨识你的字段，并且一旦使用了就不能再更改这个字段编号。注意1-15的字段编号会使用1个字节进行编码，16-2047的编号需要两个字节。所以，你应该为频繁出现的message元素保留1-15。请记住为将来可能频繁出现的元素保留空间。
 
 字段编号最小为1，最大为2^29-1。你不能使用19000-19999的编号（FieldDescriptor::kFirstReservedNumber through FieldDescriptor::kLastReservedNumber）因为它们为protocol buffer的实现保留。如果你是用了保留的编号，编译.proto的时候，会报错，类似的，你不能使用任何之前保留的编号。
+
+# 附录 如何编译MessageProto
+
+请参照项目根目录/CompileMessageProto下的readme文件
