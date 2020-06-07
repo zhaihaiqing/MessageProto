@@ -10,13 +10,15 @@
 
 - 建立/etc/docker/daemon.json文件
 - 添加
+
 ```
 {
-"insecure-registries":[
-    "docker-registry.thunics.org:5000"
+    "insecure-registries":[
+        "docker-registry.thunics.org:5000"
     ]
 }
 ```
+
 - 重启docker 服务
 sudo service docker-service restart
 
@@ -30,6 +32,7 @@ sudo service docker-service restart
 
 - 更改wsn-data或者MessageProto目录下的内容，即修改proto的消息定义和解析树json的定义
 - 在run.sh所在目录执行指令
+    
     ```
     备注：run.sh脚本中的docker镜像版本需要和从仓库拉取镜像的版本一致
     sudo ./run.sh
