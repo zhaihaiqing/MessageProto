@@ -99,6 +99,7 @@ message CablePeaksData{
    double extent = 11;
    double cable = 101;
    uint32 point_width = 102;
+   int32 id = 103;
 }
 
 message SettlementData{
@@ -616,6 +617,22 @@ message GPSContData{
    double x = 101;
    double y = 102;
    double z = 103;
+}
+
+message OtaRequirePiece{
+   string filename = 101;
+   int32 piece_num = 102;
+   int32 piece_size = 103;
+}
+
+message OtaAddFileState{
+   string filename = 101;
+   enum AFSRes {
+      STATE_RECOVERY = 0;
+      STATE_APPEND = 1;
+      STATE_ALREADY = 2;
+   }
+   AFSRes res = 102;
 }
 
 message SetRfChannelInfo{

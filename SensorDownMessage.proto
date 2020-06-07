@@ -13,6 +13,8 @@ message SensorDownMessage {
   int32 node_id = 3;
   string user_id = 4;
   uint32 unix_time = 5;
+  uint32 instruction_id = 6;
+  map<string,string> meta_data = 7;
 
   oneof msg {
     SetRfChannelInfo setrfchannelinfo = 20;

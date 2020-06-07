@@ -94,5 +94,7 @@ message SensorUpMessage {
     StrainData straindata = 90;
     StressGapData stressgapdata = 91;
     GPSContData gpscontdata = 92;
+    OtaRequirePiece otarequirepiece = 93;
+    OtaAddFileState otaaddfilestate = 94;
   }
 }

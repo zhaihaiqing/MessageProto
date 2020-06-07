@@ -186,7 +186,8 @@
         ],
         "extend_fields":{
             "cable": "double",
-            "point_width": "uint32"
+            "point_width": "uint32",
+            "id": "int32"
         },
         "packets":[
             "CablePeaksHCF100",
@@ -1041,6 +1042,32 @@
         },
         "packets":[
             "GPSDataGR30"
+        ]
+    },
+    "OtaRequirePiece":{
+        "fields": null,
+        "extend_fields":{
+            "filename": "string",
+            "piece_num": "int32",
+            "piece_size": "int32"
+        },
+        "packets":[
+            "123"
+        ]
+    },
+    "OtaAddFileState":{
+        "fields": null,
+        "AFSRes": {
+            "STATE_RECOVERY": 0,
+            "STATE_APPEND": 1,
+            "STATE_ALREADY": 2
+        },
+        "extend_fields":{
+            "filename": "string",
+            "res": "AFSRes"
+        },
+        "packets":[
+            "123"
         ]
     }
 }
