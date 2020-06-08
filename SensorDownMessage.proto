@@ -65,5 +65,8 @@ message SensorDownMessage {
     SetSampleMode setsamplemode = 65;
     SetTransMode settransmode = 66;
     SetTriggerConfig settriggerconfig = 67;
+    OtaReceivePiece otareceivepiece = 68;
+    OtaAddFile otaaddfile = 69;
+    OtaCancelFile otacancelfile = 70;
   }
 }

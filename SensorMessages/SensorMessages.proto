@@ -100,6 +100,7 @@ message CablePeaksData{
    double cable = 101;
    uint32 point_width = 102;
    int32 id = 103;
+   repeated float f_value = 104;
 }
 
 message SettlementData{
@@ -191,6 +192,8 @@ message TopInfoNodeData{
    int32 sensor_init = 24;
    int32 send_delay = 25;
    int32 tx_mode = 26;
+   int32 battery_num = 101;
+   int32 battery_type = 102;
 }
 
 message PowerStateNodeData{
@@ -369,6 +372,12 @@ message ClockTaskSampleInfo{
    int32 is_continuous_s = 22;
    int32 is_factory_init_s = 23;
    int32 is_user_init_s = 24;
+   string odr_v = 101;
+   string range_v = 102;
+   string axis_v = 103;
+   int32 period_v = 104;
+   int32 running_mode = 105;
+   int32 running_mode_s = 106;
 }
 
 message ChannelInfoHFS316{
@@ -633,6 +642,37 @@ message OtaAddFileState{
       STATE_ALREADY = 2;
    }
    AFSRes res = 102;
+}
+
+message OtaTransFileState{
+   string filename = 101;
+   enum TFSRes {
+      STATE_SUC = 0;
+      STATE_ALLCOM = 1;
+      STATE_ACTIVE = 2;
+      STATE_RET = 3;
+      STATE_TERM = 4;
+      STATE_REACTIVE = 5;
+      STATE_ABANDON = 6;
+   }
+   TFSRes res = 102;
+}
+
+message OtaLoadFileState{
+   string filename = 101;
+   enum LFSRes {
+      STATE_SUC = 0;
+   }
+   LFSRes res = 102;
+}
+
+message OtaCancelFileState{
+   string filename = 101;
+   enum CFSRes {
+      STATE_SUC = 0;
+      STATE_NOEXIST = 1;
+   }
+   CFSRes res = 102;
 }
 
 message SetRfChannelInfo{
@@ -956,4 +996,21 @@ message SetTransMode{
 message SetTriggerConfig{
    int32 wind_threshold = 1;
    int32 wind_debounce = 2;
+}
+
+message OtaReceivePiece{
+   string filename = 101;
+   int32 piece_num = 102;
+   int32 piece_size = 103;
+   string piece_data = 104;
+}
+
+message OtaAddFile{
+   string filename = 101;
+   int32 filesize = 102;
+   int32 is_load = 103;
+}
+
+message OtaCancelFile{
+   string filename = 101;
 }
