@@ -13,7 +13,7 @@
         ]
     },
     "TempHumiData": {
-        "fields":[ 
+        "fields": [
             "addr",
             "temp",
             "humi"
@@ -27,7 +27,7 @@
         ]
     },
     "VibraWireData": {
-        "fields":[
+        "fields": [
             "db",
             "freq",
             "temp",
@@ -47,11 +47,11 @@
             "VibraWireHFS500",
             "VibraWireHFS500V1",
             "Uart485ForHFS316SampleData",
-            "VibraWireHFS530"       
+            "VibraWireHFS530"
         ]
     },
-    "AnemometerData":{
-        "fields":[
+    "AnemometerData": {
+        "fields": [
             "wind_direction",
             "wind_speed",
             "temp",
@@ -71,7 +71,7 @@
             "serial_number",
             "version"
         ],
-        "packets":[
+        "packets": [
             "AnemometerHCF900",
             "AnemometerHCF910",
             "FC307DataList",
@@ -84,94 +84,94 @@
             "WindDirectionHOS915I2RSUC"
         ]
     },
-    "InclinationData":{
-        "fields":[
+    "InclinationData": {
+        "fields": [
             "absolute_angle",
             "primary_projection",
             "secondary_projection"
         ],
-        "packets":[
+        "packets": [
             "IncliHCF200",
             "IncliHCF410",
             "IncliHCF4000"
         ]
     },
-    "VoltageData":{
-        "fields":[
+    "VoltageData": {
+        "fields": [
             "data",
             "sample_interval",
             "channel",
             "microsecond",
             "sample_type"
         ],
-        "packets":[
+        "packets": [
             "VoltageHIS100",
             "VoltageHIS100Cont"
         ]
     },
-    "CurrentData":{
-        "fields":[
+    "CurrentData": {
+        "fields": [
             "data",
             "sample_interval",
             "channel",
             "microsecond",
             "sample_type"
         ],
-        "packets":[
+        "packets": [
             "CurrentHIS100",
             "CurrentHIS100Cont"
         ]
     },
-    "ResistanceData":{
-        "fields":[
+    "ResistanceData": {
+        "fields": [
             "data",
             "sample_interval",
             "channel",
             "microsecond",
             "sample_type"
         ],
-        "packets":[
+        "packets": [
             "ResistanceHIS100",
             "ResistanceHIS100Cont"
         ]
     },
-    "MillivoltData":{
-        "fields":[
+    "MillivoltData": {
+        "fields": [
             "data",
             "sample_interval",
             "channel",
             "microsecond",
             "sample_type"
         ],
-        "packets":[
+        "packets": [
             "MillivoltHIS100",
             "MillivoltHIS100Cont"
         ]
     },
-    "VibrationData":{
-        "fields":[
+    "VibrationData": {
+        "fields": [
             "data",
             "range",
             "sample_interval",
             "channel",
             "microsecond"
         ],
-        "extend_fields":{
+        "extend_fields": {
             "speed": "double"
         },
-        "packets":[
+        "packets": [
             "VibraHCF300",
             "VibraHCF410",
             "VibraHCF300V1",
             "VibraHCF3000",
             "VibraHCF4000"
         ],
-        "extend_packets":[
+        "extend_packets": [
             "Vibra2D00102"
         ]
     },
-    "CablePeaksData":{
-        "fields":[
+    "CablePeaksData": {
+        "fields": [
             "average_power",
             "axis",
             "base_freq",
@@ -184,21 +184,23 @@
             "range",
             "extent"
         ],
-        "extend_fields":{
+        "extend_fields": {
             "cable": "double",
             "point_width": "uint32",
-            "id": "int32"
+            "id": "int32",
+            "f_value": "repeated float"
         },
-        "packets":[
+        "packets": [
             "CablePeaksHCF100",
-            "CablePeaksHCF4000"
+            "CablePeaksHCF4000",
+            "CablePeaksHNF4010"
         ],
-        "extend_packets":[
+        "extend_packets": [
             "CableVibration1B101"
         ]
     },
-    "SettlementData":{
-        "fields":[
+    "SettlementData": {
+        "fields": [
             "addr",
             "raw_value",
             "value",
@@ -211,7 +213,7 @@
             "pre_cali_raw_value",
             "pre_cali_relative_value"
         ],
-        "packets":[
+        "packets": [
             "PressHCF700",
             "Uart485ForHCF700SampleData",
             "PressHCF700I0RSUC",
@@ -219,57 +221,57 @@
             "DeflectionMWJL1"
         ]
     },
-    "StressData":{
-        "fields":[
+    "StressData": {
+        "fields": [
             "data",
             "sample_interval",
             "channel",
             "microsecond"
         ],
-        "packets":[
+        "packets": [
             "StressHIS300Cont",
             "StressHIS500",
             "StressHIS400"
         ],
-        "extend_packets":[
+        "extend_packets": [
             "StressFBG4000T",
             "StressFBG5220",
             "StressFBG5210"
         ]
     },
-    "IncliHCF410V1":{
-        "fields":[
+    "IncliHCF410V1": {
+        "fields": [
             "x",
             "y",
             "z"
         ],
-        "packets":[
+        "packets": [
             "IncliHCF410V1"
         ]
     },
-    "GRTU1000":{
-        "fields":[
+    "GRTU1000": {
+        "fields": [
             "gas_channel_1",
             "gas_channel_2",
             "gas_channel_3",
             "gas_channel_4",
             "temp"
         ],
-        "packets":[
+        "packets": [
             "GRTU1000Data"
         ]
     },
-    "HOS3000CH4":{
-        "fields":[
+    "HOS3000CH4": {
+        "fields": [
             "addr",
             "gas_strength"
         ],
-        "packets":[
+        "packets": [
             "Uart485ForHOS3000CH4SampleData"
         ]
     },
-    "DistanceData":{
-        "fields":[
+    "DistanceData": {
+        "fields": [
             "distance",
             "addr",
             "measure_mode",
@@ -277,7 +279,7 @@
             "sensor_status",
             "baudrate"
         ],
-        "packets":[
+        "packets": [
             "Uart485ForHOS910030SampleData",
             "DistanceHOS910030I0RSUC",
             "DistanceHOS910030I1RSUC",
@@ -288,8 +290,8 @@
             "DistanceMWCJ1"
         ]
     },
-    "Uart485ForHFS716Sample":{
-        "fields":[
+    "Uart485ForHFS716Sample": {
+        "fields": [
             "temperature_or_ressum",
             "Hz_or_resratio",
             "channel_unixtime",
@@ -298,24 +300,24 @@
             "serial_number",
             "version"
         ],
-        "packets":[
+        "packets": [
             "Uart485ForHFS716SampleData",
             "VibraWireResHFS716I0RSUC"
         ]
     },
-    "VoltageDataV1":{
-        "fields":[
+    "VoltageDataV1": {
+        "fields": [
             "millivolt",
             "temp",
             "voltage"
         ],
-        "packets":[
+        "packets": [
             "VoltageHIS800",
             "VoltageALUC"
         ]
     },
-    "TopInfoNodeData":{
-        "fields":[
+    "TopInfoNodeData": {
+        "fields": [
             "SQI",
             "parent",
             "battery_voltage",
@@ -343,13 +345,18 @@
             "send_delay",
             "tx_mode"
         ],
-        "packets":[
+        "extend_fields": {
+            "battery_num": "int32",
+            "battery_type": "int32"
+        },
+        "packets": [
             "TopInfoSensorNode",
-            "TopInfoTransNode"
+            "TopInfoTransNode",
+            "NbTopInfoNodeData"
         ]
     },
-    "PowerStateNodeData":{
-        "fields":[
+    "PowerStateNodeData": {
+        "fields": [
             "battery_num",
             "battery_type",
             "cha_state",
@@ -358,31 +365,31 @@
             "battery_voltage",
             "current"
         ],
-        "packets":[
+        "packets": [
             "PowerStateSensorNode",
             "PowerStateTransNode"
         ]
     },
-    "SerialNumber":{
-        "fields":[
+    "SerialNumber": {
+        "fields": [
             "serial_number"
         ],
-        "packets":[
+        "packets": [
             "SerialNumber",
             "SerialNumberTransNode"
         ]
     },
-    "SoftVersion":{
-        "fields":[
+    "SoftVersion": {
+        "fields": [
             "version"
         ],
-        "packets":[
+        "packets": [
             "SoftVersion",
             "SoftwareVersionTransNode"
         ]
     },
-    "ClockTaskTimeInfoSensorNode":{
-        "fields":[
+    "ClockTaskTimeInfoSensorNode": {
+        "fields": [
             "clock1_is_on",
             "clock1_hour",
             "clock1_minute",
@@ -396,54 +403,54 @@
             "clock2_interval",
             "clock2_number"
         ],
-        "packets":[
+        "packets": [
             "ClockTaskTimeInfoSensorNode"
         ]
     },
-    "HoldRegisterData1HCF700":{
-        "fields":[
+    "HoldRegisterData1HCF700": {
+        "fields": [
             "addr",
             "init_value",
             "density"
         ],
-        "packets":[
+        "packets": [
             "HoldRegisterData1HCF700"
         ]
     },
-    "HoldRegisterData2HCF700":{
-        "fields":[
+    "HoldRegisterData2HCF700": {
+        "fields": [
             "addr",
             "g_value",
             "full_sensor_value",
             "full_adc_value",
             "zero_adc_value"
         ],
-        "packets":[
+        "packets": [
             "HoldRegisterData2HCF700"
         ]
     },
-    "InputRegisterDataHCF700":{
-        "fields":[
+    "InputRegisterDataHCF700": {
+        "fields": [
             "version",
-            "worktime",    
+            "worktime",
             "addr",
             "relative_value",
             "raw_value",
             "temp",
             "adc_value"
         ],
-        "packets":[
+        "packets": [
             "InputRegisterDataHCF700"
         ]
     },
-    "GRTU1000Status":{
-        "fields":[
+    "GRTU1000Status": {
+        "fields": [
             "longdata",
             "latidata",
             "latitude",
             "longitude"
         ],
-        "packets":[
+        "packets": [
             "GRTU1000Status"
         ]
     },
@@ -487,39 +494,39 @@
             "BJCC-ITS"
         ]
     },
-    "CalibrationConfigHCF2000":{
-        "fields":[
+    "CalibrationConfigHCF2000": {
+        "fields": [
             "number",
             "temp",
             "offset"
         ],
-        "packets":[
+        "packets": [
             "CalibrationConfigHCF2000"
         ]
     },
-    "InitIncliInfo":{
-        "fields":[
+    "InitIncliInfo": {
+        "fields": [
             "incli_marked",
             "main_direction",
             "origin_x",
             "origin_y",
             "origin_z"
         ],
-        "packets":[
+        "packets": [
             "IncliCaliInfoHCF200",
             "IncliCaliInfoHCF4000"
         ]
     },
-    "InitIncliHCF200Done":{
-        "fields":[
+    "InitIncliHCF200Done": {
+        "fields": [
             "error_t"
         ],
-        "packets":[
+        "packets": [
             "InitIncliHCF200Done"
         ]
     },
-    "ClockTaskSampleInfoAndTriggerSampleInfo":{
-        "fields":[
+    "ClockTaskSampleInfoAndTriggerSampleInfo": {
+        "fields": [
             "odr",
             "range",
             "axis",
@@ -544,31 +551,31 @@
             "trigger_threshold",
             "trigger_period"
         ],
-        "packets":[
+        "packets": [
             "ClockTaskSampleInfoAndTriggerSampleInfoHCF300",
             "ClockTaskSampleInfoAndTriggerSampleInfoHCF400",
             "ClockTaskSampleInfoAndTriggerSampleInfoHCF4000"
         ]
     },
-    "StdNodeHGR100B2":{
-        "fields":[
+    "StdNodeHGR100B2": {
+        "fields": [
             "reference_node"
         ],
-        "packets":[
+        "packets": [
             "StdNodeHGR100B2"
         ]
     },
-    "ExistNodesHGR100B2":{
-        "fields":[
+    "ExistNodesHGR100B2": {
+        "fields": [
             "node_bit"
         ],
-        "packets":[
+        "packets": [
             "ExistNodes1HGR100B2",
             "ExistNodes2HGR100B2"
         ]
     },
-    "ClockTaskSampleInfo":{
-        "fields":[
+    "ClockTaskSampleInfo": {
+        "fields": [
             "odr",
             "range",
             "axis",
@@ -594,7 +601,15 @@
             "is_factory_init_s",
             "is_user_init_s"
         ],
-        "packets":[
+        "extend_fields": {
+            "odr_v": "string",
+            "range_v": "string",
+            "axis_v": "string",
+            "period_v": "int32",
+            "running_mode": "int32",
+            "running_mode_s": "int32"
+        },
+        "packets": [
             "ClockTaskSampleInfoHFS200",
             "ClockTaskSampleInfoHFS200V1",
             "ClockTaskSampleInfoHFS316",
@@ -607,66 +622,66 @@
             "ClockTaskSampleInfoHFS500",
             "ClockTaskSampleInfoHFS530",
             "ClockTaskSampleInfoHIS100",
-            "ClockTaskSampleInfoHIS400"
-
+            "ClockTaskSampleInfoHIS400",
+            "SampleInfoHNF4010"
         ]
     },
-    "ChannelInfoHFS316":{
-        "fields":[
+    "ChannelInfoHFS316": {
+        "fields": [
             "max_channel_num",
             "channel_info"
         ],
-        "packets":[
+        "packets": [
             "ChannelInfoHFS316"
         ]
     },
-    "ChannelInfoHIS100":{
-        "fields":[
+    "ChannelInfoHIS100": {
+        "fields": [
             "channel1_config",
             "channel2_config",
             "channel3_config",
             "channel4_config",
             "voltage"
         ],
-        "packets":[
+        "packets": [
             "ChannelInfoHIS100"
         ]
     },
-    "ChannelFreqInfo":{
-        "fields":[
+    "ChannelFreqInfo": {
+        "fields": [
             "channel_freq"
         ],
-        "packets":[
+        "packets": [
             "ChannelFreqHFS500",
             "ChannelFreqHFS530"
         ]
     },
-    "CaliInfoHIS100":{
-        "fields":[
+    "CaliInfoHIS100": {
+        "fields": [
             "channel_bit",
             "number",
             "calibration_num",
             "sensor_data",
             "standard_data"
         ],
-        "packets":[
+        "packets": [
             "CaliInfoHIS100"
         ]
     },
-    "Uart485AutoSampleFlag":{
-        "fields":[
+    "Uart485AutoSampleFlag": {
+        "fields": [
             "auto_sample_interval",
             "disconnect_interval",
             "sample_collect_interval",
             "auto_sample_flag",
             "baudrate"
         ],
-        "packets":[
+        "packets": [
             "Uart485AutoSampleFlag"
         ]
     },
-    "Uart485CmdList":{
-        "fields":[
+    "Uart485CmdList": {
+        "fields": [
             "sub_type",
             "main_type",
             "product_type",
@@ -675,23 +690,23 @@
             "collect_data_length",
             "collect_instruct"
         ],
-        "packets":[
+        "packets": [
             "Uart485CmdList"
         ]
     },
-    "Uart485TypeList":{
-        "fields":[
+    "Uart485TypeList": {
+        "fields": [
             "addr",
             "main_type",
             "sub_type",
             "product_type"
         ],
-        "packets":[
+        "packets": [
             "Uart485TypeList"
         ]
     },
-    "ShapeArrayHCF1100":{
-        "fields":[
+    "ShapeArrayHCF1100": {
+        "fields": [
             "addr",
             "acc_x",
             "acc_y",
@@ -715,17 +730,17 @@
             "coordinate_init_y",
             "coordinate_init_z"
         ],
-        "extend_fields":{
+        "extend_fields": {
             "x": "double",
             "y": "double",
             "z": "double"
         },
-        "packets":[
+        "packets": [
             "ShapeArrayHCF1100",
             "ShapeArrayHCF1100I0RSUC"
         ]
     },
-    "NodeInfoRSUC":{
+    "NodeInfoRSUC": {
         "fields": [
             "addr",
             "sample_ins_type",
@@ -733,62 +748,62 @@
             "product_type",
             "node_type"
         ],
-        "packets":[
+        "packets": [
             "NodeInfoRSUC"
         ]
     },
-    "InstructionInfoRSUC":{
-        "fields":[
+    "InstructionInfoRSUC": {
+        "fields": [
             "product_type",
             "product_ins_type",
             "product_ins_type_index",
             "ins_buf"
         ],
-        "packets":[
+        "packets": [
             "InstructionInfoRSUC"
         ]
     },
-    "TransparentDataRSUC":{
-        "fields":[
+    "TransparentDataRSUC": {
+        "fields": [
             "product_type",
             "product_ins_type",
             "data_len",
             "data"
         ],
-        "packets":[
+        "packets": [
             "TransparentDataRSUC"
         ]
     },
-   "ChildNodeTransNode":{
-        "fields":[
+    "ChildNodeTransNode": {
+        "fields": [
             "is_snoop",
             "total",
             "snoop_total",
             "sub_total",
             "node_in_network"
         ],
-        "packets":[
+        "packets": [
             "ChildNodeTransNode"
         ]
     },
-    "NodeWhiteListEntryTransNode":{
-        "fields":[
+    "NodeWhiteListEntryTransNode": {
+        "fields": [
             "serial_number"
         ],
-        "packets":[
+        "packets": [
             "NodeWhiteListEntryTransNode"
         ]
     },
-    "CurrentDataV1":{
-        "fields":[
+    "CurrentDataV1": {
+        "fields": [
             "current"
         ],
-        "packets":[
+        "packets": [
             "CurrentALUC"
         ]
     },
-    "SampleParameterDataRSUC":{
-        "fields":[
+    "SampleParameterDataRSUC": {
+        "fields": [
             "product_pow_sup_mode",
             "voltage",
             "running_mode",
@@ -798,17 +813,17 @@
             "pow_on_interval",
             "retrieve_interval"
         ],
-        "packets":[
+        "packets": [
             "SampleParameterDataRSUC"
         ]
     },
-    "SensorConfigInfoHIS400":{
-        "fields":[
+    "SensorConfigInfoHIS400": {
+        "fields": [
             "k_value",
             "s_value",
             "value_0"
         ],
-        "packets":[
+        "packets": [
             "SensorConfigInfoHIS400"
         ]
     },
@@ -850,8 +865,8 @@
             "Uart485ForHCF1100SampleData"
         ]
     },
-    "DistanceHOS910030I1RSUCCont":{
-        "fields":[
+    "DistanceHOS910030I1RSUCCont": {
+        "fields": [
             "data",
             "addr",
             "sample_interval",
@@ -861,38 +876,38 @@
             "DistanceHOS910030I1RSUCCont"
         ]
     },
-    "AnalogSampleDataCont":{
-        "fields":[
+    "AnalogSampleDataCont": {
+        "fields": [
             "data",
             "sample_interval",
             "microsecond"
         ],
-        "packets":[
+        "packets": [
             "VoltageALUCCont",
             "CurrentALUCCont"
         ]
     },
-    "TopInfoRSUC":{
-        "fields":[
+    "TopInfoRSUC": {
+        "fields": [
             "version",
             "serial_number"
         ],
-        "packets":[
+        "packets": [
             "TopInfoHCF710RSUC"
         ]
     },
-    "InclinationRSUC":{
-        "fields":[
+    "InclinationRSUC": {
+        "fields": [
             "angle_x",
             "angle_y",
             "angle_z"
         ],
-        "packets":[
+        "packets": [
             "IncliHCF2100I0RSUC"
         ]
     },
-    "DistanceRSUCCont":{
-        "fields":[
+    "DistanceRSUCCont": {
+        "fields": [
             "data",
             "addr",
             "sample_interval",
@@ -902,53 +917,53 @@
             "DistanceHOS9120I1RSUCCont"
         ]
     },
-    "SampleMode":{
-        "fields":[
+    "SampleMode": {
+        "fields": [
             "sample_mode"
         ],
-        "packets":[
+        "packets": [
             "SampleMode"
         ]
     },
-    "TriggerSampleConfigInfo":{
-        "fields":[
+    "TriggerSampleConfigInfo": {
+        "fields": [
             "send_mode",
             "is_trigger_set",
             "is_triggered",
             "wind_threshold",
-            "wind_debounce"  
+            "wind_debounce"
         ],
-        "packets":[
+        "packets": [
             "TriggerConfigHCF910"
         ]
     },
-    "TriggerEvent":{
-        "fields":[
+    "TriggerEvent": {
+        "fields": [
             "sample_type"
         ],
-        "packets":[
+        "packets": [
             "TriggerEvent"
         ]
     },
-    "IncliContData":{
+    "IncliContData": {
         "fields": null,
-        "extend_fields":{
-            "angle":"double",
-            "sample_interval":"double"
+        "extend_fields": {
+            "angle": "double",
+            "sample_interval": "double"
         },
-        "packets":[
+        "packets": [
             "IncliLCF100"
         ]
     },
-    "TempHumiContData":{
-        "fields":null,
-        "extend_fields":{
-            "temp":"double",
-            "humi":"double",
-            "air_pressure":"double",
-            "sample_interval":"double"
+    "TempHumiContData": {
+        "fields": null,
+        "extend_fields": {
+            "temp": "double",
+            "humi": "double",
+            "air_pressure": "double",
+            "sample_interval": "double"
         },
-        "packets":[
+        "packets": [
             "TempHumiNH121WSYR",
             "TempFBG4000T",
             "TempFBG4700S",
@@ -957,13 +972,13 @@
             "Temp18B20"
         ]
     },
-    "DistanceContData":{
-        "fields":null,
-        "extend_fields":{
-            "distance":"double",
-            "sample_interval":"double"
+    "DistanceContData": {
+        "fields": null,
+        "extend_fields": {
+            "distance": "double",
+            "sample_interval": "double"
         },
-        "packets":[
+        "packets": [
             "Displacement5G107",
             "CrackFBG4420T",
             "Displacement5G204",
@@ -973,35 +988,35 @@
             "DistanceGTH10"
         ]
     },
-    "StrainContData":{
-        "fields":null,
-        "extend_fields":{
+    "StrainContData": {
+        "fields": null,
+        "extend_fields": {
             "strain": "double",
-            "sample_interval":"double"
+            "sample_interval": "double"
         },
-        "packets":[
+        "packets": [
             "StrainFBG4000T"
         ]
     },
-    "SettlementContData":{
-        "fields":null,
-        "extend_fields":{
-            "deflection":"double",
-            "sample_interval":"double"
+    "SettlementContData": {
+        "fields": null,
+        "extend_fields": {
+            "deflection": "double",
+            "sample_interval": "double"
         },
-        "packets":[
+        "packets": [
             "DeflectionFBG550",
             "DeflectionFBG5650",
             "DeflectionYC11"
         ]
     },
-    "AnemometerContData":{
-        "fields":null,
-        "extend_fields":{
+    "AnemometerContData": {
+        "fields": null,
+        "extend_fields": {
             "wind_speed": "double",
             "wind_direction": "double"
         },
-        "packets":[
+        "packets": [
             "AnemometerNHFS47BR"
         ]
     },
@@ -1015,59 +1030,105 @@
             "PressHCF700"
         ]
     },
-    "StrainData":{
-        "fields":null,
-        "extend_fields":{
-            "strain":"double"
+    "StrainData": {
+        "fields": null,
+        "extend_fields": {
+            "strain": "double"
         },
-        "packets":[
+        "packets": [
             "StrainBGK4000"
         ]
     },
-    "StressGapData":{
-        "fields":null,
-        "extend_fields":{
-            "stress":"double"
+    "StressGapData": {
+        "fields": null,
+        "extend_fields": {
+            "stress": "double"
         },
-        "packets":[
+        "packets": [
             "StressST2"
         ]
     },
-    "GPSContData":{
-        "fields":null,
-        "extend_fields":{
+    "GPSContData": {
+        "fields": null,
+        "extend_fields": {
             "x": "double",
             "y": "double",
             "z": "double"
         },
-        "packets":[
+        "packets": [
             "GPSDataGR30"
         ]
     },
-    "OtaRequirePiece":{
+    "OtaRequirePiece": {
         "fields": null,
-        "extend_fields":{
+        "extend_fields": {
             "filename": "string",
             "piece_num": "int32",
             "piece_size": "int32"
         },
-        "packets":[
-            "123"
+        "packets": [
+            "OtaRequirePiece"
         ]
     },
-    "OtaAddFileState":{
+    "OtaAddFileState": {
         "fields": null,
         "AFSRes": {
             "STATE_RECOVERY": 0,
             "STATE_APPEND": 1,
             "STATE_ALREADY": 2
         },
-        "extend_fields":{
+        "extend_fields": {
             "filename": "string",
             "res": "AFSRes"
         },
-        "packets":[
-            "123"
+        "packets": [
+            "OtaAddFileState"
+        ]
+    },
+    "OtaTransFileState": {
+        "fields": null,
+        "TFSRes": {
+            "STATE_SUC": 0,
+            "STATE_ALLCOM": 1,
+            "STATE_ACTIVE": 2,
+            "STATE_RET": 3,
+            "STATE_TERM": 4,
+            "STATE_REACTIVE": 5,
+            "STATE_ABANDON": 6
+        },
+        "extend_fields": {
+            "filename": "string",
+            "res": "TFSRes"
+        },
+        "packets": [
+            "OtaTransFileState"
+        ]
+    },
+    "OtaLoadFileState": {
+        "fields": null,
+        "LFSRes": {
+            "STATE_SUC": 0
+        },
+        "extend_fields": {
+            "filename": "string",
+            "res": "LFSRes"
+        },
+        "packets": [
+            "OtaLoadFileState"
+        ]
+    },
+    "OtaCancelFileState": {
+        "fields": null,
+        "CFSRes": {
+            "STATE_SUC": 0,
+            "STATE_NOEXIST": 1
+        },
+        "extend_fields": {
+            "filename": "string",
+            "res": "CFSRes"
+        },
+        "packets": [
+            "OtaCancelFileState"
         ]
     }
 }

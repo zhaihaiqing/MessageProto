@@ -562,5 +562,38 @@
         "packets":[
             "SetTriggerSampleConfigHCF910"
         ]
-    }
+    },
+    "OtaReceivePiece":{
+        "fields": null,
+        "extend_fields":{
+            "filename"   : "string",
+            "piece_num"  : "int32",
+            "piece_size" : "int32",
+            "piece_data" : "string"
+        },
+        "packets":[
+            "OtaSendPiece"
+        ]
+    },
+    "OtaAddFile":{
+        "fields": null,
+        "extend_fields":{
+            "filename"   : "string",
+            "filesize"  : "int32",
+            "is_load" : "int32"
+            
+        },
+        "packets":[
+            "OtaAddFile"
+        ]
+    },
+    "OtaCancelFile":{
+        "fields": null,
+        "extend_fields":{
+            "filename"   : "string"
+        },
+        "packets":[
+            "OtaCancelFile"
+        ]
+    }                                
 }
