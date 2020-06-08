@@ -165,6 +165,12 @@
             "running_mode",
             "analog_sample_type"
         ],
+        "extend_fields":{
+            "clock_num":"int32",
+            "running_mode_s":"int32",
+            "def":"int32",
+            "def_s":"int32"
+        },
         "packets":[
             "ConfigClockTaskHCF100",
             "ConfigClockTaskHCF200",

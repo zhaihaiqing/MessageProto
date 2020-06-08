@@ -786,6 +786,10 @@ message ConfigClockTask{
    int32 ext_channel_bit_s = 40;
    int32 running_mode = 41;
    int32 analog_sample_type = 42;
+   int32 clock_num = 101;
+   int32 running_mode_s = 102;
+   int32 def = 103;
+   int32 def_s = 104;
 }
 
 message SetTriggerConfigInfo{
