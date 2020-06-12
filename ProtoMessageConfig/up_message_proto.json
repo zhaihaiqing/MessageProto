@@ -607,7 +607,9 @@
             "axis_v": "string",
             "period_v": "int32",
             "running_mode": "int32",
-            "running_mode_s": "int32"
+            "running_mode_s": "int32",
+            "def": "int32",
+            "def_s": "int32"
         },
         "packets": [
             "ClockTaskSampleInfoHFS200",
@@ -1107,7 +1109,8 @@
     "OtaLoadFileState": {
         "fields": null,
         "LFSRes": {
-            "STATE_SUC": 0
+            "STATE_SUC": 0,
+            "STATE_FAIL": 1
         },
         "extend_fields": {
             "filename": "string",

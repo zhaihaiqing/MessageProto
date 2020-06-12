@@ -378,6 +378,8 @@ message ClockTaskSampleInfo{
    int32 period_v = 104;
    int32 running_mode = 105;
    int32 running_mode_s = 106;
+   int32 def = 107;
+   int32 def_s = 108;
 }
 
 message ChannelInfoHFS316{
@@ -662,6 +664,7 @@ message OtaLoadFileState{
    string filename = 101;
    enum LFSRes {
       STATE_SUC = 0;
+      STATE_FAIL = 1;
    }
    LFSRes res = 102;
 }
