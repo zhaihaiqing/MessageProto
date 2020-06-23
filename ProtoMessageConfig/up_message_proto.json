@@ -1052,7 +1052,7 @@
             "piece_size": "int32"
         },
         "packets":[
-            "123"
+            "OtaRequirePiece"
         ]
     },
     "OtaAddFileState":{
@@ -1067,7 +1067,7 @@
             "res": "AFSRes"
         },
         "packets":[
-            "123"
+            "OtaAddFileState"
         ]
     }
 }
