@@ -6,7 +6,7 @@ import "GroupedMessage.proto";
 import "EventMessage.proto";
 
 //golang结果的编译路径为${go_out}/./EventEngine,命名空间为EventEngine
-option go_package = "./EventEngine;EventEngine";
+option go_package = ".;EventEngine";
 
 //事件引擎服务的接口
 service EventEngineService {

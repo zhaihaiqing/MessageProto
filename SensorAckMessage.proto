@@ -3,7 +3,7 @@ syntax = "proto3";
 package SensorMessages;
 
 // golang编译结果路径${go_out}/./SensorMessages/,命名空间：SensorMessages
-option go_package = "SensorMessages";
+option go_package = ".;SensorMessages";
 
 message SensorAckMessage {
     enum ErrCode {
