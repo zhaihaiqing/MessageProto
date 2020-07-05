@@ -197,6 +197,9 @@
             "ConfigClockTaskHFS530",
             "ConfigClockTaskDTUC",
             "ConfigClockTaskHIS400"
+        ],
+        "extend_packets": [
+            "ConfigClockTaskHNF4010"
         ]
     },
     "SetTriggerConfigInfo":{
@@ -572,10 +575,10 @@
     "OtaReceivePiece":{
         "fields": null,
         "extend_fields":{
-            "filename"   : "string",
-            "piece_num"  : "int32",
-            "piece_size" : "int32",
-            "piece_data" : "string"
+            "filename": "string",
+            "piece_num": "int32",
+            "piece_size": "int32",
+            "piece_data": "string"
         },
         "packets":[
             "OtaSendPiece"
@@ -584,9 +587,9 @@
     "OtaAddFile":{
         "fields": null,
         "extend_fields":{
-            "filename"   : "string",
-            "filesize"  : "int32",
-            "is_load" : "int32"
+            "filename": "string",
+            "filesize": "int32",
+            "is_load": "int32"
             
         },
         "packets":[
@@ -596,7 +599,7 @@
     "OtaCancelFile":{
         "fields": null,
         "extend_fields":{
-            "filename"   : "string"
+            "filename": "string"
         },
         "packets":[
             "OtaCancelFile"

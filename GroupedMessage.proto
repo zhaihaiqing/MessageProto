@@ -5,7 +5,7 @@ package GroupedMessage;
 import "SensorUpMessage.proto";
 
 //golang结果的编译路径为${go_out}/./GroupedMessage,命名空间为GroupedMessage
-option go_package = "./GroupedMessage;GroupedMessage";
+option go_package = ".;GroupedMessage";
 
 message GroupedMessage {
     string project_name = 1;

@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 option java_package = "com.smartbow.sensormessages";
+option go_package = ".;SensorMessages";
 
 
 package SensorMessages;
@@ -13,8 +14,9 @@ message SensorDownMessage {
   int32 node_id = 3;
   string user_id = 4;
   uint32 unix_time = 5;
-  uint32 instruction_id = 6;
+  string instruction_id = 6;
   map<string,string> meta_data = 7;
+  string token = 8;
 
   oneof msg {
     SetRfChannelInfo setrfchannelinfo = 20;
