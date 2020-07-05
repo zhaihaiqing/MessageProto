@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PROGRAM_VERSION=v1.1.3
+PROGRAM_VERSION=v1.2.1
 
 docker rm BStack2Proto3
 docker rmi docker-registry.thunics.org:5000/bstack2proto3:${PROGRAM_VERSION}
