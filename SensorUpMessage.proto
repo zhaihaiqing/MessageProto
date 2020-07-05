@@ -97,5 +97,8 @@ message SensorUpMessage {
     GPSContData gpscontdata = 92;
     OtaRequirePiece otarequirepiece = 93;
     OtaAddFileState otaaddfilestate = 94;
+    OtaTransFileState otatransfilestate = 95;
+    OtaLoadFileState otaloadfilestate = 96;
+    OtaCancelFileState otacancelfilestate = 97;
   }
 }

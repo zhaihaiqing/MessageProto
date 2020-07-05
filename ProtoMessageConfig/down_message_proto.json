@@ -165,6 +165,12 @@
             "running_mode",
             "analog_sample_type"
         ],
+        "extend_fields":{
+            "clock_num":"int32",
+            "running_mode_s":"int32",
+            "def":"int32",
+            "def_s":"int32"
+        },
         "packets":[
             "ConfigClockTaskHCF100",
             "ConfigClockTaskHCF200",
@@ -191,6 +197,9 @@
             "ConfigClockTaskHFS530",
             "ConfigClockTaskDTUC",
             "ConfigClockTaskHIS400"
+        ],
+        "extend_packets": [
+            "ConfigClockTaskHNF4010"
         ]
     },
     "SetTriggerConfigInfo":{
@@ -562,5 +571,38 @@
         "packets":[
             "SetTriggerSampleConfigHCF910"
         ]
-    }
+    },
+    "OtaReceivePiece":{
+        "fields": null,
+        "extend_fields":{
+            "filename": "string",
+            "piece_num": "int32",
+            "piece_size": "int32",
+            "piece_data": "string"
+        },
+        "packets":[
+            "OtaSendPiece"
+        ]
+    },
+    "OtaAddFile":{
+        "fields": null,
+        "extend_fields":{
+            "filename": "string",
+            "filesize": "int32",
+            "is_load": "int32"
+            
+        },
+        "packets":[
+            "OtaAddFile"
+        ]
+    },
+    "OtaCancelFile":{
+        "fields": null,
+        "extend_fields":{
+            "filename": "string"
+        },
+        "packets":[
+            "OtaCancelFile"
+        ]
+    }                                
 }
