@@ -188,12 +188,22 @@
             "cable": "double",
             "point_width": "uint32",
             "id": "int32",
-            "f_value": "repeated float"
+            "f_value": "repeated float",
+            "t_cable":"double",
+            "peaks_res":"repeated double ",
+            "peaks_cali":"repeated double",
+            "seqno":"uint32",
+            "data":"repeated int32",
+            "pkt_data_count":"uint32"
+
         },
         "packets": [
             "CablePeaksHCF100",
             "CablePeaksHCF4000",
-            "CablePeaksHNF4010"
+            "CablePeaksHNF4010",
+            "CablePeaksSS40N1",
+            "CablePeaksSS40N2",
+            "CableVibDataSS40N2"
         ],
         "extend_packets": [
             "CableVibration1B101"
@@ -625,7 +635,9 @@
             "ClockTaskSampleInfoHFS530",
             "ClockTaskSampleInfoHIS100",
             "ClockTaskSampleInfoHIS400",
-            "SampleInfoHNF4010"
+            "SampleInfoHNF4010",
+            "SampleInfoSS40N1",
+            "SampleInfoSS40N2"
         ]
     },
     "ChannelInfoHFS316": {
@@ -1133,5 +1145,20 @@
         "packets": [
             "OtaCancelFileState"
         ]
-    }
+    },
+    "AlgorithmConfigInfo":{
+        "fields": null,
+        "extend_fields":{
+            "kn_0": "repeated double",
+            "kn_1": "repeated double",
+            "kn_2": "repeated double",
+            "peaks": "repeated int32"
+        },
+        "packets":[
+            "AlgorithmConfigInfoSS40N2"
+        ]
+    }                          
+
+
+
 }
