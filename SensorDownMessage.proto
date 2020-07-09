@@ -70,5 +70,6 @@ message SensorDownMessage {
     OtaReceivePiece otareceivepiece = 68;
     OtaAddFile otaaddfile = 69;
     OtaCancelFile otacancelfile = 70;
+    SetAlgorithmConfig setalgorithmconfig = 71;
   }
 }

@@ -26,9 +26,9 @@
             "axis",
             "period"
         ],
-        "extend_fields": [
-            "def"
-        ],
+        "extend_fields": {
+            "def": "int32"
+        },
         "packets":[
             "GetVibraHCF300",
             "GetVibraHCF3000",
