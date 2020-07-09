@@ -212,10 +212,8 @@
             "ConfigClockTaskHIS400"
         ],
         "extend_packets": [
-            "ConfigClockTaskHNF4010",
             "ConfigClockTaskSS40N1",
             "ConfigClockTaskSS40N2"
-
         ]
     },
     "SetTriggerConfigInfo":{
@@ -591,7 +589,7 @@
     "OtaReceivePiece":{
         "fields": null,
         "extend_fields":{
-            "filename":"string",
+            "filename": "string",
             "piece_num": "int32",
             "piece_size": "int32",
             "piece_data": "string"
