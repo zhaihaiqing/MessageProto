@@ -157,7 +157,12 @@
             "microsecond"
         ],
         "extend_fields": {
-            "speed": "double"
+            "speed": "double",
+            "pkt_data_count" : "uint32",
+            "pkt_num" : "uint32",
+            "seqno" : "uint32", 
+            "freq" : "double",
+            "l_data" : "repeated int32"
         },
         "packets": [
             "VibraHCF300",
@@ -167,7 +172,8 @@
             "VibraHCF4000"
         ],
         "extend_packets": [
-            "Vibra2D00102"
+            "Vibra2D00102",
+            "CableVibDataSS40N2"
         ]
     },
     "CablePeaksData": {

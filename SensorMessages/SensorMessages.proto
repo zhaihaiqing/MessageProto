@@ -84,6 +84,11 @@ message VibrationData{
    string range = 2;
    double sample_interval = 3;
    double speed = 101;
+   uint32 pkt_data_count = 102;
+   uint32 pkt_num = 103;
+   uint32 seqno = 104;
+   double freq = 105;
+   repeated int32 l_data = 106;
 }
 
 message CablePeaksData{
