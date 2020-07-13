@@ -162,7 +162,9 @@
             "pkt_num" : "uint32",
             "seqno" : "uint32", 
             "freq" : "double",
-            "l_data" : "repeated int32"
+            "l_data" : "repeated int32",
+            "axis" : "string",
+            "odr" : "string"
         },
         "packets": [
             "VibraHCF300",

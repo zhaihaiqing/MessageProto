@@ -89,6 +89,8 @@ message VibrationData{
    uint32 seqno = 104;
    double freq = 105;
    repeated int32 l_data = 106;
+   string axis = 107;
+   string odr = 108;
 }
 
 message CablePeaksData{
