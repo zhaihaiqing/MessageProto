@@ -625,7 +625,7 @@
             "kn_0": "repeated double",
             "kn_1": "repeated double",
             "kn_2": "repeated double",
-            "peaks": "repeated int32"
+            "peaks": "repeated uint32"
         },
         "packets":[
             "SetAlgorithmConfigSS40N2"

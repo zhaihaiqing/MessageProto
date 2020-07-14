@@ -162,7 +162,7 @@
             "pkt_num" : "uint32",
             "seqno" : "uint32", 
             "freq" : "double",
-            "l_data" : "repeated int32",
+            "f_data" : "repeated float",
             "axis" : "string",
             "odr" : "string"
         },
@@ -195,22 +195,18 @@
         "extend_fields": {
             "cable": "double",
             "point_width": "uint32",
-            "id": "int32",
+            "id": "uint32",
             "f_value": "repeated float",
             "t_cable": "double",
             "peaks_res": "repeated double",
-            "peaks_cali": "repeated double",
-            "seqno": "uint32",
-            "data": "repeated int32",
-            "pkt_data_count": "uint32"
+            "peaks_cali": "repeated double"
 
         },
         "packets": [
             "CablePeaksHCF100",
             "CablePeaksHCF4000",
             "CablePeaksSS40N1",
-            "CablePeaksSS40N2",
-            "CableVibDataSS40N2"
+            "CablePeaksSS40N2"
         ],
         "extend_packets": [
             "CableVibration1B101"
@@ -1158,7 +1154,7 @@
             "kn_0": "repeated double",
             "kn_1": "repeated double",
             "kn_2": "repeated double",
-            "peaks": "repeated int32"
+            "peaks": "repeated uint32"
         },
         "packets":[
             "AlgorithmConfigInfoSS40N2"
