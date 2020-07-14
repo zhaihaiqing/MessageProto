@@ -198,8 +198,8 @@
             "id": "uint32",
             "f_value": "repeated float",
             "t_cable": "double",
-            "peaks_res": "repeated double",
-            "peaks_cali": "repeated double"
+            "peaks_res": "repeated uint32",
+            "peaks_cali": "repeated uint32"
 
         },
         "packets": [
@@ -622,7 +622,8 @@
             "running_mode": "int32",
             "running_mode_s": "int32",
             "def": "int32",
-            "def_s": "int32"
+            "def_s": "int32",
+            "def_v": "int32"
         },
         "packets": [
             "ClockTaskSampleInfoHFS200",
