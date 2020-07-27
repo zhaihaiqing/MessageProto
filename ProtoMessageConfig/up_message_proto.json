@@ -249,7 +249,9 @@
         "extend_packets": [
             "StressFBG4000T",
             "StressFBG5220",
-            "StressFBG5210"
+            "StressFBG5210",
+            "StressZenoptics160",
+            "StressDH1205"
         ]
     },
     "IncliHCF410V1": {
@@ -969,7 +971,8 @@
             "sample_interval": "double"
         },
         "packets": [
-            "IncliLCF100"
+            "IncliLCF100",
+            "IncliMWQJ01"
         ]
     },
     "TempHumiContData": {
@@ -986,7 +989,9 @@
             "TempFBG4700S",
             "TempFGB5420",
             "HumiMWWS1",
-            "Temp18B20"
+            "Temp18B20",
+            "TempZenoptics610",
+            "TempHumiZenoptics630"
         ]
     },
     "DistanceContData": {
@@ -1002,7 +1007,10 @@
             "DistanceLVDT20",
             "DistanceMWND50",
             "DistanceFBG5100",
-            "DistanceGTH10"
+            "DistanceGTH10",
+            "DisplacementZenoptics530",
+            "CrackZenoptics510",
+            "DistanceMWND135"
         ]
     },
     "StrainContData": {

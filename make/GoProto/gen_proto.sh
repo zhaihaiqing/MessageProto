@@ -37,3 +37,10 @@ $PWD/MessageProto/SensorMessages/SensorMessages.proto
 protoc -I $PWD/MessageProto --go_out=MSensorUpMessage.proto=${MODULE}/${OUT_DIR}/SensorMessages,\
 MSensorMessages/SensorMessages.proto=${MODULE}/${OUT_DIR}/SensorMessages:${OUT_DIR}/GroupedMessage \
 --go_opt=paths=import $PWD/MessageProto/GroupedMessage.proto
+
+protoc -I $PWD/MessageProto --include_imports --descriptor_set_out=${OUT_DIR}/proto.desc \
+$PWD/MessageProto/SensorAckMessage.proto  $PWD/MessageProto/SensorUpMessage.proto \
+$PWD/MessageProto/SensorMessages/SensorMessages.proto \
+$PWD/MessageProto/SensorDownMessage.proto  $PWD/MessageProto/SensorGrpcProto.proto \
+$PWD/MessageProto/EventEngineAPI.proto $PWD/MessageProto/EventMessage.proto \
+$PWD/MessageProto/ComputeEngineAPI.proto  $PWD/MessageProto/GroupedMessage.proto
