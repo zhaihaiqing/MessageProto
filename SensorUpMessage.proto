@@ -101,5 +101,6 @@ message SensorUpMessage {
     OtaLoadFileState otaloadfilestate = 96;
     OtaCancelFileState otacancelfilestate = 97;
     AlgorithmConfigInfo algorithmconfiginfo = 98;
+    SystemBootInfo systembootinfo = 99;
   }
 }

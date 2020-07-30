@@ -668,8 +668,10 @@ message OtaTransFileState{
       STATE_TERM = 4;
       STATE_REACTIVE = 5;
       STATE_ABANDON = 6;
+      STATE_LOADADBS = 7;
    }
    TFSRes res = 102;
+   uint32 nretrans = 103;
 }
 
 message OtaLoadFileState{
@@ -695,6 +697,10 @@ message AlgorithmConfigInfo{
    repeated double kn_1 = 102;
    repeated double kn_2 = 103;
    repeated uint32 peaks = 104;
+}
+
+message SystemBootInfo{
+   uint32 boot_src = 101;
 }
 
 message SetRfChannelInfo{
@@ -1053,8 +1059,4 @@ message SetAlgorithmConfig{
    repeated double kn_1 = 102;
    repeated double kn_2 = 103;
    repeated uint32 peaks = 104;
-}
-
-message SystemBootInfo{
-   uint32 boot_src = 101;
 }
