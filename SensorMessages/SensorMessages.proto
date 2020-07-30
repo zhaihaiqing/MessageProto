@@ -1054,3 +1054,7 @@ message SetAlgorithmConfig{
    repeated double kn_2 = 103;
    repeated uint32 peaks = 104;
 }
+
+message SystemBootInfo{
+   uint32 boot_src = 101;
+}

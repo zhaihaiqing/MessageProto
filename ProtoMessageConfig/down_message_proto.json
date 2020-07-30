@@ -595,7 +595,7 @@
             "piece_data": "string"
         },
         "packets":[
-            "OtaSendPiece"
+            "OtaReceivePiece"
         ]
     },
     "OtaAddFile":{

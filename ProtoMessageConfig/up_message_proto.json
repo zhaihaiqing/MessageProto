@@ -1119,11 +1119,14 @@
             "STATE_RET": 3,
             "STATE_TERM": 4,
             "STATE_REACTIVE": 5,
-            "STATE_ABANDON": 6
+            "STATE_ABANDON": 6,
+            "STATE_LOADADBS":7
+
         },
         "extend_fields": {
             "filename": "string",
-            "res": "TFSRes"
+            "res": "TFSRes",
+            "nretrans":"uint32"
         },
         "packets": [
             "OtaTransFileState"
@@ -1168,8 +1171,14 @@
         "packets":[
             "AlgorithmConfigInfoSS40N2"
         ]
-    }                          
-
-
-
+    },
+    "SystemBootInfo": {
+        "fields": null,
+        "extend_fields": {
+            "boot_src":"uint32"
+        },
+        "packets": [
+            "SystemBootInfo"
+        ]
+    }                    
 }
