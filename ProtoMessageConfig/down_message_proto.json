@@ -26,11 +26,18 @@
             "axis",
             "period"
         ],
+        "extend_fields": {
+            "def": "int32"
+        },
         "packets":[
             "GetVibraHCF300",
             "GetVibraHCF3000",
             "GetVibraHCF4000",
             "GetVibraWireHFS400"
+        ],
+        "extend_packets": [
+            "GetVibDataSS40N1",
+            "GetVibDataSS40N2"
         ]
     },
     "GetVibraWireSampleData":{
@@ -169,7 +176,13 @@
             "clock_num":"int32",
             "running_mode_s":"int32",
             "def":"int32",
-            "def_s":"int32"
+            "def_s":"int32",
+            "is_on":"int32",
+            "hour":"int32",
+            "minute":"int32",
+            "second":"int32",
+            "interval":"int32",
+            "number":"int32"
         },
         "packets":[
             "ConfigClockTaskHCF100",
@@ -199,7 +212,8 @@
             "ConfigClockTaskHIS400"
         ],
         "extend_packets": [
-            "ConfigClockTaskHNF4010"
+            "ConfigClockTaskSS40N1",
+            "ConfigClockTaskSS40N2"
         ]
     },
     "SetTriggerConfigInfo":{
@@ -581,7 +595,7 @@
             "piece_data": "string"
         },
         "packets":[
-            "OtaSendPiece"
+            "OtaReceivePiece"
         ]
     },
     "OtaAddFile":{
@@ -604,5 +618,17 @@
         "packets":[
             "OtaCancelFile"
         ]
-    }                                
+    },
+    "SetAlgorithmConfig":{
+        "fields": null,
+        "extend_fields":{
+            "kn_0": "repeated double",
+            "kn_1": "repeated double",
+            "kn_2": "repeated double",
+            "peaks": "repeated uint32"
+        },
+        "packets":[
+            "SetAlgorithmConfigSS40N2"
+        ]
+    }                              
 }

@@ -84,6 +84,13 @@ message VibrationData{
    string range = 2;
    double sample_interval = 3;
    double speed = 101;
+   uint32 pkt_data_count = 102;
+   uint32 pkt_num = 103;
+   uint32 seqno = 104;
+   double freq = 105;
+   repeated float f_data = 106;
+   string axis = 107;
+   string odr = 108;
 }
 
 message CablePeaksData{
@@ -100,8 +107,11 @@ message CablePeaksData{
    double extent = 11;
    double cable = 101;
    uint32 point_width = 102;
-   int32 id = 103;
+   uint32 id = 103;
    repeated float f_value = 104;
+   double t_cable = 105;
+   repeated uint32 peaks_res = 106;
+   repeated uint32 peaks_cali = 107;
 }
 
 message SettlementData{
@@ -381,6 +391,7 @@ message ClockTaskSampleInfo{
    int32 running_mode_s = 106;
    int32 def = 107;
    int32 def_s = 108;
+   int32 def_v = 109;
 }
 
 message ChannelInfoHFS316{
@@ -657,8 +668,10 @@ message OtaTransFileState{
       STATE_TERM = 4;
       STATE_REACTIVE = 5;
       STATE_ABANDON = 6;
+      STATE_LOADADBS = 7;
    }
    TFSRes res = 102;
+   uint32 nretrans = 103;
 }
 
 message OtaLoadFileState{
@@ -679,6 +692,17 @@ message OtaCancelFileState{
    CFSRes res = 102;
 }
 
+message AlgorithmConfigInfo{
+   repeated double kn_0 = 101;
+   repeated double kn_1 = 102;
+   repeated double kn_2 = 103;
+   repeated uint32 peaks = 104;
+}
+
+message SystemBootInfo{
+   uint32 boot_src = 101;
+}
+
 message SetRfChannelInfo{
    int32 rf_channel = 1;
 }
@@ -694,6 +718,7 @@ message GetVibSampleData{
    int32 range = 2;
    int32 axis = 3;
    int32 period = 4;
+   int32 def = 101;
 }
 
 message GetVibraWireSampleData{
@@ -794,6 +819,12 @@ message ConfigClockTask{
    int32 running_mode_s = 102;
    int32 def = 103;
    int32 def_s = 104;
+   int32 is_on = 105;
+   int32 hour = 106;
+   int32 minute = 107;
+   int32 second = 108;
+   int32 interval = 109;
+   int32 number = 110;
 }
 
 message SetTriggerConfigInfo{
@@ -1021,4 +1052,11 @@ message OtaAddFile{
 
 message OtaCancelFile{
    string filename = 101;
+}
+
+message SetAlgorithmConfig{
+   repeated double kn_0 = 101;
+   repeated double kn_1 = 102;
+   repeated double kn_2 = 103;
+   repeated uint32 peaks = 104;
 }
