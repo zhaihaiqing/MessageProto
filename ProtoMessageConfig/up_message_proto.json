@@ -23,7 +23,8 @@
             "TempHumiHOS9010Uart485",
             "TemperatureHCF500",
             "TempHumiHOS9010I0RSUC",
-            "TempBGK370002"
+            "TempBGK370002",
+            "TempHT61B10I0RSUC"
         ]
     },
     "VibraWireData": {
