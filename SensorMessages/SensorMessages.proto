@@ -703,6 +703,11 @@ message SystemBootInfo{
    uint32 boot_src = 101;
 }
 
+message ServerAddressInfo{
+   repeated string server_address = 101;
+   uint32 signal_quality = 102;
+}
+
 message SetRfChannelInfo{
    int32 rf_channel = 1;
 }
@@ -1059,4 +1064,13 @@ message SetAlgorithmConfig{
    repeated double kn_1 = 102;
    repeated double kn_2 = 103;
    repeated uint32 peaks = 104;
+}
+
+message ServerAddress{
+   string server_address = 101;
+}
+
+message SetMQTTParameter{
+   string user_name = 101;
+   string password = 102;
 }

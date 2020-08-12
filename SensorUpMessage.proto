@@ -102,5 +102,6 @@ message SensorUpMessage {
     OtaCancelFileState otacancelfilestate = 97;
     AlgorithmConfigInfo algorithmconfiginfo = 98;
     SystemBootInfo systembootinfo = 99;
+    ServerAddressInfo serveraddressinfo = 100;
   }
 }

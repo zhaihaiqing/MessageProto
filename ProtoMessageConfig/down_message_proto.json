@@ -630,5 +630,25 @@
         "packets":[
             "SetAlgorithmConfigSS40N2"
         ]
-    }                              
+    },
+    "ServerAddress":{
+        "fields": null,
+        "extend_fields":{
+            "server_address": "string"
+        },
+        "packets":[
+            "AddServerAddress",
+            "DeleteServerAddress"
+        ]
+    },
+    "SetMQTTParameter":{
+        "fields": null,
+        "extend_fields":{
+            "user_name": "string",
+            "password": "string"
+        },
+        "packets":[
+            "SetMQTTParameter"
+        ]
+    }                                    
 }
