@@ -706,6 +706,7 @@ message SystemBootInfo{
 message ServerAddressInfo{
    repeated string server_address = 101;
    uint32 signal_quality = 102;
+   string sim_imsi = 103;
 }
 
 message SetRfChannelInfo{
