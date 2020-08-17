@@ -1181,5 +1181,16 @@
         "packets": [
             "SystemBootInfo"
         ]
+    },
+    "ServerAddressInfo": {
+        "fields": null,
+        "extend_fields": {
+            "server_address":"repeated string",
+            "signal_quality":"uint32",
+            "sim_imsi":"string"
+        },
+        "packets": [
+            "ServerAddressInfo"
+        ]
     }                    
 }
