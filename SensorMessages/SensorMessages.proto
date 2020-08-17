@@ -700,7 +700,16 @@ message AlgorithmConfigInfo{
 }
 
 message SystemBootInfo{
-   uint32 boot_src = 101;
+   uint32 version = 101;
+   enum SBIRes {
+      SYS_POWERUP = 0;      // 正常上电重启
+      SYS_BROWNOUT = 1;     // 欠电重启
+      SYS_WATCHDOG = 2;     // 看门狗重启
+      SYS_ADBS_ACT = 3;     // 灾备重启
+      BUSI_NORMAL=10;       // 业务组件执行重启指令，正常重启
+      BUSI_SAM_TIMEOUT=11;  // 采集组件未响应
+   }
+   SBIRes boot_src = 102;
 }
 
 message ServerAddressInfo{

@@ -1175,8 +1175,17 @@
     },
     "SystemBootInfo": {
         "fields": null,
+        "SBIRes": {
+            "SYS_POWERUP": 0,
+            "SYS_BROWNOUT": 1,
+            "SYS_WATCHDOG": 2,
+            "SYS_ADBS_ACT": 3,
+            "BUSI_NORMAL": 10,
+            "BUSI_SAM_TIMEOUT": 11
+        },
         "extend_fields": {
-            "boot_src":"uint32"
+            "version":"uint32",
+            "boot_src":"SBIRes"
         },
         "packets": [
             "SystemBootInfo"
