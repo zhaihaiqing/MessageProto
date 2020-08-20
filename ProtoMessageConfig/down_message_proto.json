@@ -366,7 +366,9 @@
         ],
         "packets":[
             "SetChannelFreqHFS500",
-            "SetChannelFreqHFS530",
+            "SetChannelFreqHFS530"
+        ],
+        "extend_packets":[
             "SetChannelFreqMTCollecter",
             "SetChannelFreqHFS716Collecter"
         ]
