@@ -107,7 +107,8 @@
         ],
         "packets": [
             "VoltageHIS100",
-            "VoltageHIS100Cont"
+            "VoltageHIS100Cont",
+            "VoltageMTSampleData"
         ]
     },
     "CurrentData": {

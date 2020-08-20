@@ -361,11 +361,14 @@
     },
     "SetChannelFreqInfo": {
         "fields":[
-            "channel_freq"
+            "channel_freq",
+            "period"
         ],
         "packets":[
             "SetChannelFreqHFS500",
-            "SetChannelFreqHFS530"
+            "SetChannelFreqHFS530",
+            "SetChannelFreqMTCollecter",
+            "SetChannelFreqHFS716Collecter"
         ]
     },
     "SetChannelConfigHIS100": {

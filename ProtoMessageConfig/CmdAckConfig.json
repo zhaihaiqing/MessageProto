@@ -156,5 +156,7 @@
     "QuerySampleMode": "QuerySampleModeAck",
     "SetTrasMode": "SetTransModeAck",
     "SetTriggerSampleConfigHCF910": "SetTriggerConfigAck",
-    "QueryTriggerConfig": "QueryTriggerConfigAck"
+    "QueryTriggerConfig": "QueryTriggerConfigAck",
+    "SetChannelFreqMTCollecter":"SetChannelFreqMTCollecterAck",
+    "SetChannelFreqHFS716Collecter":"SetChannelFreqHFS716CollecterAck"
 }
