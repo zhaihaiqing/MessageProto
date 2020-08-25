@@ -20,9 +20,8 @@ message EventMessage {
     string project_name = 2;    //项目
     EventType event_type = 3;   //事件类型
     int32 event_rule_id = 4;   //事件规则编号，业务系统配置的规则编号
-    uint32 unix_time = 5;   //发生事件的时间,秒 弃用
-    int32 microsecond = 6;  //发生时间的毫秒时间，微妙 弃用
+    uint32 unix_time = 5;   //发生事件的时间,秒
+    int32 microsecond = 6;  //发生时间的毫秒时间，微妙
     repeated SensorMessages.SensorUpMessage source = 7;  //触发源的数据
-    uint64 restore_areatime = 8; //上下限阈值算法：已满足上下限的持续时间，单位ms 弃用
-    map<string, double> params = 9; //提供给无状态服务的参数map
+    map<string, double> params = 8; //提供给无状态服务的参数map
 }
