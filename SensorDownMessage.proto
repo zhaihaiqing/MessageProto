@@ -73,5 +73,6 @@ message SensorDownMessage {
     SetAlgorithmConfig setalgorithmconfig = 71;
     ServerAddress serveraddress = 72;
     SetMQTTParameter setmqttparameter = 73;
+    DownNodeDataCRTX downnodedatacrtx = 74;
   }
 }

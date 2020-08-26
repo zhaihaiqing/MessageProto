@@ -718,6 +718,27 @@ message ServerAddressInfo{
    string sim_imsi = 103;
 }
 
+message UpNodeDataCRTX{
+   uint32 address = 101;
+   uint32 pro_type = 102;
+   uint32 node_type = 103;
+   uint32 node_group = 104;
+}
+
+message InstructionInfoCRTX{
+   uint32 ins_version = 101;
+   uint32 ins_numbers = 102;
+}
+
+message NodeListCRTX{
+   repeated uint32 address_list = 101;
+}
+
+message ErrorCodeCRTX{
+   uint32 error_code = 101;
+   string error_describe = 102;
+}
+
 message SetRfChannelInfo{
    int32 rf_channel = 1;
 }
@@ -1083,4 +1104,11 @@ message ServerAddress{
 message SetMQTTParameter{
    string user_name = 101;
    string password = 102;
+}
+
+message DownNodeDataCRTX{
+   uint32 address = 101;
+   uint32 pro_type = 102;
+   uint32 node_type = 103;
+   uint32 node_group = 104;
 }
