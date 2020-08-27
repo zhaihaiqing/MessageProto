@@ -1202,5 +1202,46 @@
         "packets": [
             "ServerAddressInfo"
         ]
-    }                    
+    },
+    "UpNodeDataCRTX":{
+        "fields": null,
+        "extend_fields":{
+            "addr": "uint32",
+            "pro_type": "uint32",
+            "node_type": "uint32",
+            "node_group": "uint32"
+        },
+        "packets":[
+            "NodeInfoCRTX"
+        ]
+    },
+    "InstructionInfoCRTX":{
+        "fields": null,
+        "extend_fields":{
+            "ins_version": "uint32",
+            "ins_numbers": "uint32"
+        },
+        "packets":[
+            "InstructionInfoCRTX"
+        ]
+    },
+    "NodeListCRTX":{
+        "fields": null,
+        "extend_fields":{
+            "addr_list": "repeated uint32"
+        },
+        "packets":[
+            "NodeListCRTX"
+        ]
+    },
+    "ErrorCodeCRTX":{
+        "fields": null,
+        "extend_fields":{
+            "err_code": "uint32",
+            "err_describe":"string"
+        },
+        "packets":[
+            "ErrorCodeCRTX"
+        ]
+    }
 }

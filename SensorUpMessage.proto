@@ -103,5 +103,9 @@ message SensorUpMessage {
     AlgorithmConfigInfo algorithmconfiginfo = 98;
     SystemBootInfo systembootinfo = 99;
     ServerAddressInfo serveraddressinfo = 100;
+    UpNodeDataCRTX upnodedatacrtx = 101;
+    InstructionInfoCRTX instructioninfocrtx = 102;
+    NodeListCRTX nodelistcrtx = 103;
+    ErrorCodeCRTX errorcodecrtx = 104;
   }
 }

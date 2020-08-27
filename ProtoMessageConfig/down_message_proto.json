@@ -655,5 +655,20 @@
         "packets":[
             "SetMQTTParameter"
         ]
-    }                                    
+    },
+    "DownNodeDataCRTX":{
+        "fields": null,
+        "extend_fields":{
+            "addr": "uint32",
+            "pro_type": "uint32",
+            "node_type": "uint32",
+            "node_group": "uint32"
+        },
+        "packets":[
+            "AddNodeCRTX",
+            "DeleteNodeInfoCRTX",
+            "ChangeNodeCRTX",
+            "QueryNodeCRTX"
+        ]
+    }
 }
