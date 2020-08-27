@@ -659,7 +659,7 @@
     "DownNodeDataCRTX":{
         "fields": null,
         "extend_fields":{
-            "address": "uint32",
+            "addr": "uint32",
             "pro_type": "uint32",
             "node_type": "uint32",
             "node_group": "uint32"

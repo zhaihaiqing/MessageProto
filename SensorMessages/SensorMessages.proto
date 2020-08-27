@@ -719,7 +719,7 @@ message ServerAddressInfo{
 }
 
 message UpNodeDataCRTX{
-   uint32 address = 101;
+   uint32 addr = 101;
    uint32 pro_type = 102;
    uint32 node_type = 103;
    uint32 node_group = 104;
@@ -731,12 +731,12 @@ message InstructionInfoCRTX{
 }
 
 message NodeListCRTX{
-   repeated uint32 address_list = 101;
+   repeated uint32 addr_list = 101;
 }
 
 message ErrorCodeCRTX{
-   uint32 error_code = 101;
-   string error_describe = 102;
+   uint32 err_code = 101;
+   string err_describe = 102;
 }
 
 message SetRfChannelInfo{
@@ -1107,7 +1107,7 @@ message SetMQTTParameter{
 }
 
 message DownNodeDataCRTX{
-   uint32 address = 101;
+   uint32 addr = 101;
    uint32 pro_type = 102;
    uint32 node_type = 103;
    uint32 node_group = 104;

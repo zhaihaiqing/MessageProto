@@ -1206,7 +1206,7 @@
     "UpNodeDataCRTX":{
         "fields": null,
         "extend_fields":{
-            "address": "uint32",
+            "addr": "uint32",
             "pro_type": "uint32",
             "node_type": "uint32",
             "node_group": "uint32"
@@ -1228,7 +1228,7 @@
     "NodeListCRTX":{
         "fields": null,
         "extend_fields":{
-            "address_list": "repeated uint32"
+            "addr_list": "repeated uint32"
         },
         "packets":[
             "NodeListCRTX"
@@ -1237,8 +1237,8 @@
     "ErrorCodeCRTX":{
         "fields": null,
         "extend_fields":{
-            "error_code": "uint32",
-            "error_describe":"string"
+            "err_code": "uint32",
+            "err_describe":"string"
         },
         "packets":[
             "ErrorCodeCRTX"
