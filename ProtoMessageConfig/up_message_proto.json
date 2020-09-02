@@ -962,6 +962,11 @@
         "fields": [
             "sample_type"
         ],
+        "extend_fields": {
+            "filename": "string",
+            "level": "int32",
+            "alert_value": "double"
+        },
         "packets": [
             "TriggerEvent"
         ]

@@ -589,6 +589,9 @@ message TriggerSampleConfigInfo{
 
 message TriggerEvent{
    int32 sample_type = 1;
+   string filename = 101;
+   int32 level = 102;
+   double alert_value = 103;
 }
 
 message IncliContData{
