@@ -14,6 +14,7 @@ mkdir ${OUT_DIR}/SensorMessages
 mkdir ${OUT_DIR}/ComputeEngine
 mkdir ${OUT_DIR}/EventEngine
 mkdir ${OUT_DIR}/GroupedMessage
+mkdir ${OUT_DIR}/BatchMessage
 
 #gRPC客户端和服务端接口代码
 #protoc -I=$SRC_DIR $SRC_DIR/addressbook.proto --go_out=plugins=grpc:$DST_DIR
@@ -38,9 +39,14 @@ protoc -I $PWD/MessageProto --go_out=MSensorUpMessage.proto=${MODULE}/${OUT_DIR}
 MSensorMessages/SensorMessages.proto=${MODULE}/${OUT_DIR}/SensorMessages:${OUT_DIR}/GroupedMessage \
 --go_opt=paths=import $PWD/MessageProto/GroupedMessage.proto
 
+# 编译proto的描述元信息
 protoc -I $PWD/MessageProto --include_imports --descriptor_set_out=${OUT_DIR}/proto.desc \
 $PWD/MessageProto/SensorAckMessage.proto  $PWD/MessageProto/SensorUpMessage.proto \
 $PWD/MessageProto/SensorMessages/SensorMessages.proto \
 $PWD/MessageProto/SensorDownMessage.proto  $PWD/MessageProto/SensorGrpcProto.proto \
 $PWD/MessageProto/EventEngineAPI.proto $PWD/MessageProto/EventMessage.proto \
 $PWD/MessageProto/ComputeEngineAPI.proto  $PWD/MessageProto/GroupedMessage.proto
+
+#编译BatchMessage BatchMessage.proto
+protoc -I $PWD/MessageProto --go_out=${OUT_DIR}/BatchMessage \
+--go_opt=paths=import $PWD/MessageProto/BatchMessage.proto

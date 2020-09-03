@@ -10,7 +10,7 @@ message BatchMessages {
   string node_id = 2;
   string gateway_id = 3;
   uint32 unix_time = 4;
-  uint32 microsecond = 5;
+  int32 microsecond = 5;
   string channel = 6;
   double freq = 7;
   repeated float data = 8;
