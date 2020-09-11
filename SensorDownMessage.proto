@@ -71,5 +71,8 @@ message SensorDownMessage {
     OtaAddFile otaaddfile = 69;
     OtaCancelFile otacancelfile = 70;
     SetAlgorithmConfig setalgorithmconfig = 71;
+    ServerAddress serveraddress = 72;
+    SetMQTTParameter setmqttparameter = 73;
+    DownNodeDataCRTX downnodedatacrtx = 74;
   }
 }

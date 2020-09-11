@@ -361,11 +361,16 @@
     },
     "SetChannelFreqInfo": {
         "fields":[
-            "channel_freq"
+            "channel_freq",
+            "period"
         ],
         "packets":[
             "SetChannelFreqHFS500",
             "SetChannelFreqHFS530"
+        ],
+        "extend_packets":[
+            "SetChannelFreqMTCollecter",
+            "SetChannelFreqHFS716Collecter"
         ]
     },
     "SetChannelConfigHIS100": {
@@ -630,5 +635,40 @@
         "packets":[
             "SetAlgorithmConfigSS40N2"
         ]
-    }                              
+    },
+    "ServerAddress":{
+        "fields": null,
+        "extend_fields":{
+            "server_address": "string"
+        },
+        "packets":[
+            "AddServerAddress",
+            "DeleteServerAddress"
+        ]
+    },
+    "SetMQTTParameter":{
+        "fields": null,
+        "extend_fields":{
+            "user_name": "string",
+            "password": "string"
+        },
+        "packets":[
+            "SetMQTTParameter"
+        ]
+    },
+    "DownNodeDataCRTX":{
+        "fields": null,
+        "extend_fields":{
+            "addr": "uint32",
+            "pro_type": "uint32",
+            "node_type": "uint32",
+            "node_group": "uint32"
+        },
+        "packets":[
+            "AddNodeCRTX",
+            "DeleteNodeInfoCRTX",
+            "ChangeNodeCRTX",
+            "QueryNodeCRTX"
+        ]
+    }
 }

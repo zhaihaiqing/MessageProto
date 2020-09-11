@@ -116,6 +116,7 @@
     "AddNodeRSUC": "AddNodeRSUCAck",
     "AddOneInsRSUC": "AddOneInsRSUCAck",
     "AddTwoInsRSUC": "AddTwoInsRSUCAck",
+    "AddServerAddress" : "AddServerAddressAck",
     "AddNodeWhiteListTransNode": "AddNodeWhiteListTransNodeAck",
     "SetRfChannelSensorNode": "SetRfChannelSensorNodeAck",
     "SetRfChannelTransNode": "SetRfChannelTransNodeAck",
@@ -136,6 +137,7 @@
     "SetCalibrationALUC": "SetCalibrationALUCAck",
     "SetCaliHIS400": "SetCaliHIS400Ack",
     "SetSensorConfigHIS400": "SetSensorConfigHIS400Ack",
+    "SetMQTTParameter": "SetMQTTParameterAck",
     "QuerySensorConfigHIS400": "QuerySensorConfigHIS400Ack",
     "RebootSensorNode": "RebootSensorNodeAck",
     "RebootTransNode": "RebootTransNodeAck",
@@ -147,11 +149,14 @@
     "DelCaliHCF2000": "DelCaliHCF2000Ack",
     "DeleteNodeInfoRSUC": "DeleteNodeInfoRSUCAck",
     "DeleteInstructionRSUC": "DeleteInstructionRSUCAck",
+    "DeleteServerAddress": "DeleteServerAddressAck",
     "TransparentInstructionRSUC": "TransparentInstructionRSUCAck",
     "AutoScanHGR100B2": "AutoScanHGR100B2Ack",
     "SetSampleMode": "SetSampleModeAck",
     "QuerySampleMode": "QuerySampleModeAck",
     "SetTrasMode": "SetTransModeAck",
     "SetTriggerSampleConfigHCF910": "SetTriggerConfigAck",
-    "QueryTriggerConfig": "QueryTriggerConfigAck"
+    "QueryTriggerConfig": "QueryTriggerConfigAck",
+    "SetChannelFreqMTCollecter":"SetChannelFreqMTCollecterAck",
+    "SetChannelFreqHFS716Collecter":"SetChannelFreqHFS716CollecterAck"
 }

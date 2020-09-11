@@ -589,6 +589,9 @@ message TriggerSampleConfigInfo{
 
 message TriggerEvent{
    int32 sample_type = 1;
+   string filename = 101;
+   int32 level = 102;
+   double alert_value = 103;
 }
 
 message IncliContData{
@@ -700,7 +703,47 @@ message AlgorithmConfigInfo{
 }
 
 message SystemBootInfo{
-   uint32 boot_src = 101;
+   uint32 version = 101;
+   enum SBIRes {
+      SYS_POWERUP = 0;
+      SYS_BROWNOUT = 1;
+      SYS_WATCHDOG = 2;
+      SYS_ADBS_ACT = 3;
+      BUSI_NORMAL = 10;
+      BUSI_SAM_TIMEOUT = 11;
+   }
+   SBIRes boot_src = 102;
+}
+
+message ServerAddressInfo{
+   repeated string server_address = 101;
+   uint32 signal_quality = 102;
+   string sim_imsi = 103;
+}
+
+message UpNodeDataCRTX{
+   uint32 addr = 101;
+   uint32 pro_type = 102;
+   uint32 node_type = 103;
+   uint32 node_group = 104;
+}
+
+message InstructionInfoCRTX{
+   uint32 ins_version = 101;
+   uint32 ins_numbers = 102;
+}
+
+message NodeListCRTX{
+   repeated uint32 addr_list = 101;
+}
+
+message ErrorCodeCRTX{
+   uint32 err_code = 101;
+   string err_describe = 102;
+}
+
+message PressData{
+   double pressure = 1;
 }
 
 message SetRfChannelInfo{
@@ -1059,4 +1102,20 @@ message SetAlgorithmConfig{
    repeated double kn_1 = 102;
    repeated double kn_2 = 103;
    repeated uint32 peaks = 104;
+}
+
+message ServerAddress{
+   string server_address = 101;
+}
+
+message SetMQTTParameter{
+   string user_name = 101;
+   string password = 102;
+}
+
+message DownNodeDataCRTX{
+   uint32 addr = 101;
+   uint32 pro_type = 102;
+   uint32 node_type = 103;
+   uint32 node_group = 104;
 }
