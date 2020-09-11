@@ -742,6 +742,10 @@ message ErrorCodeCRTX{
    string err_describe = 102;
 }
 
+message PressData{
+   double pressure = 1;
+}
+
 message SetRfChannelInfo{
    int32 rf_channel = 1;
 }

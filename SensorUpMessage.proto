@@ -107,5 +107,6 @@ message SensorUpMessage {
     InstructionInfoCRTX instructioninfocrtx = 102;
     NodeListCRTX nodelistcrtx = 103;
     ErrorCodeCRTX errorcodecrtx = 104;
+    PressData pressdata = 105;
   }
 }

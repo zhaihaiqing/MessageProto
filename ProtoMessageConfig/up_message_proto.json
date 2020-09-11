@@ -1248,5 +1248,13 @@
         "packets":[
             "ErrorCodeCRTX"
         ]
+    },
+    "PressData": {
+        "fields": [
+            "pressure"
+        ],
+        "packets": [
+            "PressHT12210I0RSUC"
+        ]
     }
 }
