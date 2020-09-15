@@ -105,10 +105,18 @@
             "microsecond",
             "sample_type"
         ],
+        "extend_fields":{
+            "data_x":"double",
+            "data_y":"double"
+        },
         "packets": [
             "VoltageHIS100",
             "VoltageHIS100Cont",
             "VoltageMTSampleData"
+        ],
+        "extend_packets":[
+            "VoltageMTBatchSampleData",
+            "VoltageMTSingleSampleData"
         ]
     },
     "CurrentData": {
