@@ -59,6 +59,8 @@ message VoltageData{
    double data = 1;
    double sample_interval = 2;
    int32 sample_type = 3;
+   double data_x = 4;
+   double data_y = 5;
 }
 
 message CurrentData{
