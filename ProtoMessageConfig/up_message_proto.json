@@ -111,8 +111,7 @@
         },
         "packets": [
             "VoltageHIS100",
-            "VoltageHIS100Cont",
-            "VoltageMTSampleData"
+            "VoltageHIS100Cont"
         ],
         "extend_packets":[
             "VoltageMTBatchSampleData",
