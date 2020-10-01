@@ -260,7 +260,8 @@
             "StressFBG5220",
             "StressFBG5210",
             "StressZenoptics160",
-            "StressDH1205"
+            "StressDH1205",
+            "StressMS2"
         ]
     },
     "IncliHCF410V1": {
@@ -986,7 +987,8 @@
         },
         "packets": [
             "IncliLCF100",
-            "IncliMWQJ01"
+            "IncliMWQJ01",
+            "IncliTI1"
         ]
     },
     "TempHumiContData": {
@@ -1005,7 +1007,9 @@
             "HumiMWWS1",
             "Temp18B20",
             "TempZenoptics610",
-            "TempHumiZenoptics630"
+            "TempHumiZenoptics630",
+            "TempGT1",
+            "TempHumiTH1"
         ]
     },
     "DistanceContData": {
@@ -1024,7 +1028,8 @@
             "DistanceGTH10",
             "DisplacementZenoptics530",
             "CrackZenoptics510",
-            "DistanceMWND135"
+            "DistanceMWND135",
+            "DistanceDS5"
         ]
     },
     "StrainContData": {
@@ -1046,7 +1051,8 @@
         "packets": [
             "DeflectionFBG550",
             "DeflectionFBG5650",
-            "DeflectionYC11"
+            "DeflectionYC11",
+            "DeflectionWL5"
         ]
     },
     "AnemometerContData": {
