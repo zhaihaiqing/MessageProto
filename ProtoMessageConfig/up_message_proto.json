@@ -944,6 +944,9 @@
         ],
         "packets": [
             "DistanceHOS9120I1RSUCCont"
+        ],
+        "extend_packets":[
+            "DistanceHOS9120CRTXCont"
         ]
     },
     "SampleMode": {
