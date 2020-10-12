@@ -184,7 +184,8 @@
         ],
         "extend_packets": [
             "Vibra2D00102",
-            "CableVibDataSS40N2"
+            "CableVibDataSS40N2",
+            "VibraST44B2"
         ]
     },
     "CablePeaksData": {
