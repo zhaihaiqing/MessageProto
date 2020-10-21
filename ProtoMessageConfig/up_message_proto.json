@@ -24,7 +24,8 @@
             "TemperatureHCF500",
             "TempHumiHOS9010I0RSUC",
             "TempBGK370002",
-            "TempHT61B10I0RSUC"
+            "TempHT61B10I0RSUC",
+            "TempHumiYTDY0102"
         ]
     },
     "VibraWireData": {
@@ -82,7 +83,8 @@
             "AnemometerHCF920I0RSUC",
             "AnemometerHOS915I0RSUC",
             "WindSpeedHOS915I1RSUC",
-            "WindDirectionHOS915I2RSUC"
+            "WindDirectionHOS915I2RSUC",
+            "MeteoroHT92B10I0RSUC"
         ]
     },
     "InclinationData": {
@@ -313,7 +315,10 @@
             "DistanceHOS9120I0RSUC",
             "DistanceHOS9120I1RSUC",
             "DistanceBGK4420I",
-            "DistanceMWCJ1"
+            "DistanceMWCJ1",
+            "DistanceYTFD0103",
+            "DistanceYTDG0720",
+            "DistanceSIT1800R"
         ]
     },
     "Uart485ForHFS716Sample": {
@@ -945,6 +950,9 @@
         ],
         "packets": [
             "DistanceHOS9120I1RSUCCont"
+        ],
+        "extend_packets":[
+            "DistanceHOS9120CRTXCont"
         ]
     },
     "SampleMode": {
@@ -1102,7 +1110,9 @@
             "z": "double"
         },
         "packets": [
-            "GPSDataGR30"
+            "GPSDataGR30",
+            "GPSDataH3",
+            "GPSDataSIT1800"
         ]
     },
     "OtaRequirePiece": {
