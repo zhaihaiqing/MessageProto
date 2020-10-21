@@ -83,7 +83,8 @@
             "AnemometerHCF920I0RSUC",
             "AnemometerHOS915I0RSUC",
             "WindSpeedHOS915I1RSUC",
-            "WindDirectionHOS915I2RSUC"
+            "WindDirectionHOS915I2RSUC",
+            "MeteoroHT92B10I0RSUC"
         ]
     },
     "InclinationData": {
