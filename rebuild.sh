@@ -19,8 +19,6 @@ echo "step3: check MessageProto"
 RESULT=`awk '$1 ~ /congratulation/ {print "yes"}' result.txt`
 if [ "${RESULT}" == "yes" ]; then
     echo "MessageProto check success"
-    cd MessageProto/
-    git push
     exit 0
 else
   echo "MessageProto check failed"
