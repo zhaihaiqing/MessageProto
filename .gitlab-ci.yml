@@ -1,0 +1,35 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: none
+
+stages:
+  - check
+  - manual_check
+
+build_proto_variable:
+  stage: check
+  image: docker-registry.thunics.org:5000/dp-rebuild-env:v1.0.0-golang-python
+  script:
+    - if [ ${RUN_BUILD} != "yes" ]; then exit 0; fi
+    - ./rebuild.sh || if [ $? -eq 1 ]; then echo "rebuild failed"; exit 1; else echo "rebuild success"; fi
+    - rm -rf .Rebuild
+  only:
+    - master
+    - develop
+    - tags
+  tags:
+    - gitlab-runner-db-test01
+
+build_proto_manual:
+  stage: check
+  image: docker-registry.thunics.org:5000/dp-rebuild-env:v1.0.0-golang-python
+  script:
+    - ./rebuild.sh || if [ $? -eq 1 ]; then echo "rebuild failed"; exit 1; else echo "rebuild success"; fi
+    - rm -rf .Rebuild
+  only:
+    - master
+    - develop
+    - tags
+  when: manual
+  tags:
+    - gitlab-runner-db-test01
+
