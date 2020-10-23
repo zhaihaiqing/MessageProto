@@ -25,7 +25,8 @@
             "TempHumiHOS9010I0RSUC",
             "TempBGK370002",
             "TempHT61B10I0RSUC",
-            "TempHumiYTDY0102"
+            "TempHumiYTDY0102",
+            "HumiPR3000ECTH"
         ]
     },
     "VibraWireData": {
@@ -317,7 +318,8 @@
             "DistanceMWCJ1",
             "DistanceYTFD0103",
             "DistanceYTDG0720",
-            "DistanceSIT1800R"
+            "DistanceSIT1800R",
+            "DistanceNJWSJD02"
         ]
     },
     "Uart485ForHFS716Sample": {
@@ -1037,7 +1039,8 @@
             "DisplacementZenoptics530",
             "CrackZenoptics510",
             "DistanceMWND135",
-            "DistanceDS5"
+            "DistanceDS5",
+            "DistanceNJWSLX1"
         ]
     },
     "StrainContData": {
@@ -1111,7 +1114,8 @@
         "packets": [
             "GPSDataGR30",
             "GPSDataH3",
-            "GPSDataSIT1800"
+            "GPSDataSIT1800",
+            "GPSDataHOS7110H3"
         ]
     },
     "OtaRequirePiece": {
