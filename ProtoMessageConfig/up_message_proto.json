@@ -85,7 +85,7 @@
             "AnemometerHOS915I0RSUC",
             "WindSpeedHOS915I1RSUC",
             "WindDirectionHOS915I2RSUC",
-            "MeteoroHT92B10I0RSUC"
+            "WeatherStationHT92B10I0RSUC"
         ]
     },
     "InclinationData": {
@@ -187,7 +187,8 @@
         ],
         "extend_packets": [
             "Vibra2D00102",
-            "CableVibDataSS40N2"
+            "CableVibDataSS40N2",
+            "VibraST44B2"
         ]
     },
     "CablePeaksData": {

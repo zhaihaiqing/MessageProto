@@ -1,0 +1,25 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: none
+
+stages:
+  - check
+
+build_proto:
+  stage: check
+  image: docker-registry.thunics.org:5000/bstack2proto3:v1.2.2
+  script:
+    - ./rebuild.sh || if [ $? -eq 1 ]; then echo "rebuild failed"; exit 1; else echo "rebuild success"; fi
+    - cd .Rebuild/MessageProto
+    - enable_commit=`git status|awk '$0 ~ /nothing to commit, working tree clean/ {print "no"}'`
+    - if [ "${enable_commit}" == "no" ]; then rm -rf .Rebuild; exit 0; fi
+    - git add .
+    - git commit -m "update:update proto --user=robot"
+    - git push
+    - rm -rf .Rebuild
+  only:
+    - master
+    - develop
+    - tags
+  tags:
+    - gitlab-runner-db-test01
+
