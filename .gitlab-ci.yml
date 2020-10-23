@@ -25,7 +25,10 @@ build_proto_manual:
   image: docker-registry.thunics.org:5000/bstack2proto3:v1.2.2
   script:
     - ./rebuild.sh || if [ $? -eq 1 ]; then echo "rebuild failed"; exit 1; else echo "rebuild success"; fi
-    - pwd
+    - cd .Rebuild/MessageProto
+    - ls -l
+    - status_result=`git status|awk '$0 ~ /nothing to commit, working tree clean/ {print "yes"}'`
+    - echo ${status_result}
     - rm -rf .Rebuild
   only:
     - master
