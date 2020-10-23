@@ -7,7 +7,7 @@ stages:
 
 build_proto_variable:
   stage: check
-  image: docker-registry.thunics.org:5000/ubuntu:20.04-docker-git
+  image: docker-registry.thunics.org:5000/bstack2proto3:v1.2.2
   script:
     - if [ "${RUN_BUILD}" != "yes" ]; then exit 0; fi
     - ./rebuild.sh || if [ $? -eq 1 ]; then echo "rebuild failed"; exit 1; else echo "rebuild success"; fi
@@ -21,7 +21,7 @@ build_proto_variable:
 
 build_proto_manual:
   stage: check
-  image: docker-registry.thunics.org:5000/ubuntu:20.04-docker-git
+  image: docker-registry.thunics.org:5000/bstack2proto3:v1.2.2
   script:
     - ./rebuild.sh || if [ $? -eq 1 ]; then echo "rebuild failed"; exit 1; else echo "rebuild success"; fi
     - rm -rf .Rebuild

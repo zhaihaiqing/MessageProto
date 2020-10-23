@@ -13,7 +13,7 @@ git clone -b master http://git.thunics.org/embedded/wsn-data.git
 
 # 校验
 echo "step3: check MessageProto"
-../CompileMessageProto/run.sh > result.txt
+/home/work/bstack2proto3/BStack2Proto3 > result.txt
 
 # 更新git仓库
 RESULT=`awk '$1 ~ /congratulation/ {print "yes"}' result.txt`
