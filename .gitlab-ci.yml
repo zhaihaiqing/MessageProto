@@ -11,7 +11,12 @@ build_proto_variable:
   script:
     - if [ "${RUN_BUILD}" != "yes" ]; then exit 0; fi
     - ./rebuild.sh || if [ $? -eq 1 ]; then echo "rebuild failed"; exit 1; else echo "rebuild success"; fi
-    - pwd
+    - cd .Rebuild/MessageProto
+    - enable_commit=`git status|awk '$0 ~ /nothing to commit, working tree clean/ {print "no"}'`
+    - if [ "${enable_commit}" == "no" ]; then rm -rf .Rebuild; exit 0; fi
+    - git add .
+    - git commit -m "update:update proto --user=robot"
+    - git push
     - rm -rf .Rebuild
   only:
     - master
@@ -26,9 +31,11 @@ build_proto_manual:
   script:
     - ./rebuild.sh || if [ $? -eq 1 ]; then echo "rebuild failed"; exit 1; else echo "rebuild success"; fi
     - cd .Rebuild/MessageProto
-    - ls -l
-    - status_result=`git status|awk '$0 ~ /nothing to commit, working tree clean/ {print "yes"}'`
-    - echo ${status_result}
+    - enable_commit=`git status|awk '$0 ~ /nothing to commit, working tree clean/ {print "no"}'`
+    - if [ "${enable_commit}" == "no" ]; then rm -rf .Rebuild; exit 0; fi
+    - git add .
+    - git commit -m "update:update proto --user=robot"
+    - git push
     - rm -rf .Rebuild
   only:
     - master
