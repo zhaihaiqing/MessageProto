@@ -3,6 +3,7 @@ variables:
 
 stages:
   - check
+  - trigger_pipeline
 
 build_proto:
   stage: check
@@ -23,3 +24,14 @@ build_proto:
   tags:
     - gitlab-runner-db-test01
 
+trigger_robot:
+  stage: trigger_pipeline
+  script:
+    - echo "trigger MQTT2Pulsar update MessageProto..."
+    - curl -X POST -F token=b48ccbf57b8f58369ba3b3e3657181 -F ref=master http://git.thunics.org/api/v4/projects/742/trigger/pipeline
+    - curl -X POST -F token=b48ccbf57b8f58369ba3b3e3657181 -F ref=develop http://git.thunics.org/api/v4/projects/742/trigger/pipeline
+  only:
+    - master
+    - tags
+  tags:
+    - gitlab-runner-db-test01
