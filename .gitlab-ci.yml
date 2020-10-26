@@ -9,14 +9,23 @@ build_proto:
   stage: check
   image: docker-registry.thunics.org:5000/bstack2proto3:v1.2.2
   script:
-    - ./rebuild.sh || if [ $? -eq 1 ]; then echo "rebuild failed"; exit 1; else echo "rebuild success"; fi
-    - cd .Rebuild/MessageProto
+    - export COMPILE_PATH=.Rebuild
+    - mkdir ${COMPILE_PATH}
+    - cd ${COMPILE_PATH}
+    - echo "step1:clone MessageProto..."
+    - echo "MessageProto branch:${CI_COMMIT_REF_NAME}"
+    - git clone -b ${CI_COMMIT_REF_NAME} http://git.thunics.org/dp/MessageProto.git
+    - echo "step2:clone wsn-data..."
+    - git clone -b master http://git.thunics.org/embedded/wsn-data.git
+    - echo "step3:check MessageProto"
+    - /home/work/bstack2proto3/BStack2Proto3 > result.txt
+    - RESULT=`awk '$1 ~ /congratulation/ {print "yes"}' result.txt`
+    - if [ "${RESULT}" == "yes" ]; then echo "MessageProto check success"; else echo "MessageProto check failed"; cat result.txt; exit 1; fi
+    - cd MessageProto
     - enable_commit=`git status|awk '$0 ~ /nothing to commit, working tree clean/ {print "no"}'`
-    - if [ "${enable_commit}" == "no" ]; then rm -rf .Rebuild; exit 0; fi
-    - git add .
-    - git commit -m "update:update proto --user=robot"
-    - git push
-    - rm -rf .Rebuild
+    - if [ "${enable_commit}" != "no" ]; then git add .; git commit -m "update:update proto --user=robot"; git push; fi
+    - cd ../..
+    - rm -rf ${COMPILE_PATH}
   only:
     - master
     - develop
