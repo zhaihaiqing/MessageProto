@@ -250,3 +250,10 @@ Message定义中的每个字段都有一个unique number，这个编号用来在
 # 附录 如何编译MessageProto
 
 请参照项目根目录/CompileMessageProto下的readme文件
+
+# 附录 数据中台基础构建Docker环境
+
+http://192.168.111.50:9999/repo/tags/dp-rebuild-env
+
+Docker仓库：http://git.thunics.org/dp/DataPlatformRebuildEnv
+
