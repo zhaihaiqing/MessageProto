@@ -51,6 +51,12 @@ trigger_robot:
     - echo "trigger GoRealTimeStreams update MessageProto..."
     - curl -X POST -F token=25d5649e41c37ab168d0ca8dfa47e0 -F ref=master http://git.thunics.org/api/v4/projects/752/trigger/pipeline
     - curl -X POST -F token=25d5649e41c37ab168d0ca8dfa47e0 -F ref=develop http://git.thunics.org/api/v4/projects/752/trigger/pipeline
+    - echo "trigger GoDataStreamToClickhouse update MessageProto..."
+    - curl -X POST -F token=5e96dd3ac66d5c386f7ef5b05d067e -F ref=master http://git.thunics.org/api/v4/projects/771/trigger/pipeline
+    - curl -X POST -F token=5e96dd3ac66d5c386f7ef5b05d067e -F ref=develop http://git.thunics.org/api/v4/projects/771/trigger/pipeline
+    - echo "trigger ClickhouseAPI update MessageProto..."
+    - curl -X POST -F token=98579274c917242e53016fb43977a7 -F ref=master http://git.thunics.org/api/v4/projects/535/trigger/pipeline
+    - curl -X POST -F token=98579274c917242e53016fb43977a7 -F ref=develop http://git.thunics.org/api/v4/projects/535/trigger/pipeline
   only:
     - master
     - tags
