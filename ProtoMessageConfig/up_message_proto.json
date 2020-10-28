@@ -97,7 +97,8 @@
         "packets": [
             "IncliHCF200",
             "IncliHCF410",
-            "IncliHCF4000"
+            "IncliHCF4000",
+            "IncliSS42F1"
         ]
     },
     "VoltageData": {
@@ -434,7 +435,13 @@
             "clock2_minute",
             "clock2_second",
             "clock2_interval",
-            "clock2_number"
+            "clock2_number",
+            "clock0_is_on",
+            "clock0_hour",
+            "clock0_minute",
+            "clock0_second",
+            "clock0_interval",
+            "clock0_number"
         ],
         "packets": [
             "ClockTaskTimeInfoSensorNode"
@@ -547,7 +554,8 @@
         ],
         "packets": [
             "IncliCaliInfoHCF200",
-            "IncliCaliInfoHCF4000"
+            "IncliCaliInfoHCF4000",
+            "IncliCaliInfoSS42F1"
         ]
     },
     "InitIncliHCF200Done": {

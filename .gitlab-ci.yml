@@ -7,17 +7,14 @@ stages:
 
 build_proto:
   stage: check
-  image: docker-registry.thunics.org:5000/bstack2proto3:v1.2.2
+  image: docker-registry.thunics.org:5000/bstack2proto3:v1.2.3
   script:
     - export COMPILE_PATH=.Rebuild
     - mkdir ${COMPILE_PATH}
     - cd ${COMPILE_PATH}
-    - echo "step1:clone MessageProto..."
     - echo "MessageProto branch:${CI_COMMIT_REF_NAME}"
     - git clone -b ${CI_COMMIT_REF_NAME} http://git.thunics.org/dp/MessageProto.git
-    - echo "step2:clone wsn-data..."
     - git clone -b master http://git.thunics.org/embedded/wsn-data.git
-    - echo "step3:check MessageProto"
     - /home/work/bstack2proto3/BStack2Proto3 > result.txt
     - RESULT=`awk '$1 ~ /congratulation/ {print "yes"}' result.txt`
     - if [ "${RESULT}" == "yes" ]; then echo "MessageProto check success"; else echo "MessageProto check failed"; cat result.txt; exit 1; fi
@@ -42,6 +39,24 @@ trigger_robot:
     - echo "trigger MQTT2Pulsar update MessageProto..."
     - curl -X POST -F token=b48ccbf57b8f58369ba3b3e3657181 -F ref=master http://git.thunics.org/api/v4/projects/742/trigger/pipeline
     - curl -X POST -F token=b48ccbf57b8f58369ba3b3e3657181 -F ref=develop http://git.thunics.org/api/v4/projects/742/trigger/pipeline
+    - echo "trigger SensorRouterPlus update MessageProto..."
+    - curl -X POST -F token=ae550f9b5c0beb5a26a75b0199ab3b -F ref=master http://git.thunics.org/api/v4/projects/452/trigger/pipeline
+    - curl -X POST -F token=ae550f9b5c0beb5a26a75b0199ab3b -F ref=develop http://git.thunics.org/api/v4/projects/452/trigger/pipeline
+    - echo "trigger DataPlatformScheduler update MessageProto..."
+    - curl -X POST -F token=26c1794e463676f5fabf01a31f63bb -F ref=master http://git.thunics.org/api/v4/projects/505/trigger/pipeline
+    - curl -X POST -F token=26c1794e463676f5fabf01a31f63bb -F ref=develop http://git.thunics.org/api/v4/projects/505/trigger/pipeline
+    - echo "trigger GoGateway2Project update MessageProto..."
+    - curl -X POST -F token=07ca976f5b9cfa54ce8beebe662590 -F ref=master http://git.thunics.org/api/v4/projects/611/trigger/pipeline
+    - curl -X POST -F token=07ca976f5b9cfa54ce8beebe662590 -F ref=develop http://git.thunics.org/api/v4/projects/611/trigger/pipeline
+    - echo "trigger GoRealTimeStreams update MessageProto..."
+    - curl -X POST -F token=25d5649e41c37ab168d0ca8dfa47e0 -F ref=master http://git.thunics.org/api/v4/projects/752/trigger/pipeline
+    - curl -X POST -F token=25d5649e41c37ab168d0ca8dfa47e0 -F ref=develop http://git.thunics.org/api/v4/projects/752/trigger/pipeline
+    - echo "trigger GoDataStreamToClickhouse update MessageProto..."
+    - curl -X POST -F token=5e96dd3ac66d5c386f7ef5b05d067e -F ref=master http://git.thunics.org/api/v4/projects/771/trigger/pipeline
+    - curl -X POST -F token=5e96dd3ac66d5c386f7ef5b05d067e -F ref=develop http://git.thunics.org/api/v4/projects/771/trigger/pipeline
+    - echo "trigger ClickhouseAPI update MessageProto..."
+    - curl -X POST -F token=98579274c917242e53016fb43977a7 -F ref=master http://git.thunics.org/api/v4/projects/535/trigger/pipeline
+    - curl -X POST -F token=98579274c917242e53016fb43977a7 -F ref=develop http://git.thunics.org/api/v4/projects/535/trigger/pipeline
   only:
     - master
     - tags

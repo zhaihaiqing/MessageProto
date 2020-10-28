@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PROGRAM_VERSION=v1.2.2
+PROGRAM_VERSION=v1.2.3
 
 mkdir .output
 docker pull docker-registry.thunics.org:5000/bstack2proto3:${PROGRAM_VERSION}
