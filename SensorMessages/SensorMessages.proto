@@ -240,6 +240,12 @@ message ClockTaskTimeInfoSensorNode{
    int32 clock2_second = 10;
    int32 clock2_interval = 11;
    int32 clock2_number = 12;
+   int32 clock0_is_on = 13;
+   int32 clock0_hour = 14;
+   int32 clock0_minute = 15;
+   int32 clock0_second = 16;
+   int32 clock0_interval = 17;
+   int32 clock0_number = 18;
 }
 
 message HoldRegisterData1HCF700{
