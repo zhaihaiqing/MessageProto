@@ -7,7 +7,7 @@ stages:
 
 build_proto:
   stage: check
-  image: docker-registry.thunics.org:5000/bstack2proto3:v1.2.2
+  image: docker-registry.thunics.org:5000/bstack2proto3:v1.2.3
   script:
     - export COMPILE_PATH=.Rebuild
     - mkdir ${COMPILE_PATH}
