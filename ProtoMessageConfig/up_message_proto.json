@@ -258,7 +258,8 @@
         "packets": [
             "StressHIS300Cont",
             "StressHIS500",
-            "StressHIS400"
+            "StressHIS400",
+            "StressHIS400V2"
         ],
         "extend_packets": [
             "StressFBG4000T",
