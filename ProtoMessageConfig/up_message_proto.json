@@ -50,7 +50,9 @@
             "VibraWireHFS500",
             "VibraWireHFS500V1",
             "Uart485ForHFS316SampleData",
-            "VibraWireHFS530"
+            "VibraWireHFS530",
+            "VibraWireSCZ0F1",
+            "VibraWireSCZ0N1"
         ]
     },
     "AnemometerData": {
@@ -669,7 +671,9 @@
             "ClockTaskSampleInfoHIS100",
             "ClockTaskSampleInfoHIS400",
             "ClockTaskSampleInfoSS40N1",
-            "ClockTaskSampleInfoSS40N2"
+            "ClockTaskSampleInfoSS40N2",
+            "ClockTaskSampleInfoSCZ0F1",
+            "ClockTaskSampleInfoSCZ0N1"
         ]
     },
     "ChannelInfoHFS316": {
@@ -1292,6 +1296,32 @@
         ],
         "packets": [
             "PressHT12210I0RSUC"
+        ]
+    },
+    "VibraWireInfo":{
+        "fields": null,
+        "extend_fields":{
+            "ch0_midfreq": "uint32",
+            "ch1_midfreq": "uint32",
+            "ch2_midfreq": "uint32",
+            "ch3_midfreq": "uint32",
+            "ch4_midfreq": "uint32",
+            "ch5_midfreq": "uint32",
+            "ch6_midfreq": "uint32",
+            "ch7_midfreq": "uint32",
+            "ch8_midfreq": "uint32",
+            "ch9_midfreq": "uint32",
+            "ch10_midfreq": "uint32",
+            "ch11_midfreq": "uint32",
+            "ch12_midfreq": "uint32",
+            "ch13_midfreq": "uint32",
+            "ch14_midfreq": "uint32",
+            "ch15_midfreq": "uint32",
+            "ch16_midfreq": "uint32"
+        },
+        "packets":[
+            "VibraWireInfoSCZ0F1",
+            "VibraWireInfoSCZ0N1"
         ]
     }
 }

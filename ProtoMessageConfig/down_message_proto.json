@@ -213,7 +213,9 @@
         ],
         "extend_packets": [
             "ConfigClockTaskSS40N1",
-            "ConfigClockTaskSS40N2"
+            "ConfigClockTaskSS40N2",
+            "ConfigClockTaskSCZ0F1",
+            "ConfigClockTaskSCZ0N1"
         ]
     },
     "SetTriggerConfigInfo":{
@@ -669,6 +671,32 @@
             "DeleteNodeInfoCRTX",
             "ChangeNodeCRTX",
             "QueryNodeCRTX"
+        ]
+    },
+    "ConfigVibraWireParameter":{
+        "fields": null,
+        "extend_fields":{
+            "ch0_midfreq": "uint32",
+            "ch1_midfreq": "uint32",
+            "ch2_midfreq": "uint32",
+            "ch3_midfreq": "uint32",
+            "ch4_midfreq": "uint32",
+            "ch5_midfreq": "uint32",
+            "ch6_midfreq": "uint32",
+            "ch7_midfreq": "uint32",
+            "ch8_midfreq": "uint32",
+            "ch9_midfreq": "uint32",
+            "ch10_midfreq": "uint32",
+            "ch11_midfreq": "uint32",
+            "ch12_midfreq": "uint32",
+            "ch13_midfreq": "uint32",
+            "ch14_midfreq": "uint32",
+            "ch15_midfreq": "uint32",
+            "ch16_midfreq": "uint32"
+        },
+        "packets":[
+            "ConfigVibraWireParameterSCZ0F1",
+            "ConfigVibraWireParameterSCZ0N1"
         ]
     }
 }
