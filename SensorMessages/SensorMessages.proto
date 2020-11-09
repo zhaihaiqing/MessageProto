@@ -754,6 +754,26 @@ message PressData{
    double pressure = 1;
 }
 
+message VibraWireInfo{
+   uint32 ch0_midfreq = 101;
+   uint32 ch1_midfreq = 102;
+   uint32 ch2_midfreq = 103;
+   uint32 ch3_midfreq = 104;
+   uint32 ch4_midfreq = 105;
+   uint32 ch5_midfreq = 106;
+   uint32 ch6_midfreq = 107;
+   uint32 ch7_midfreq = 108;
+   uint32 ch8_midfreq = 109;
+   uint32 ch9_midfreq = 110;
+   uint32 ch10_midfreq = 111;
+   uint32 ch11_midfreq = 112;
+   uint32 ch12_midfreq = 113;
+   uint32 ch13_midfreq = 114;
+   uint32 ch14_midfreq = 115;
+   uint32 ch15_midfreq = 116;
+   uint32 ch16_midfreq = 117;
+}
+
 message SetRfChannelInfo{
    int32 rf_channel = 1;
 }
@@ -1126,4 +1146,24 @@ message DownNodeDataCRTX{
    uint32 pro_type = 102;
    uint32 node_type = 103;
    uint32 node_group = 104;
+}
+
+message ConfigVibraWireParameter{
+   uint32 ch0_midfreq = 101;
+   uint32 ch1_midfreq = 102;
+   uint32 ch2_midfreq = 103;
+   uint32 ch3_midfreq = 104;
+   uint32 ch4_midfreq = 105;
+   uint32 ch5_midfreq = 106;
+   uint32 ch6_midfreq = 107;
+   uint32 ch7_midfreq = 108;
+   uint32 ch8_midfreq = 109;
+   uint32 ch9_midfreq = 110;
+   uint32 ch10_midfreq = 111;
+   uint32 ch11_midfreq = 112;
+   uint32 ch12_midfreq = 113;
+   uint32 ch13_midfreq = 114;
+   uint32 ch14_midfreq = 115;
+   uint32 ch15_midfreq = 116;
+   uint32 ch16_midfreq = 117;
 }

@@ -108,5 +108,6 @@ message SensorUpMessage {
     NodeListCRTX nodelistcrtx = 103;
     ErrorCodeCRTX errorcodecrtx = 104;
     PressData pressdata = 105;
+    VibraWireInfo vibrawireinfo = 106;
   }
 }
