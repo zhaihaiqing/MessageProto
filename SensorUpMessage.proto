@@ -109,5 +109,6 @@ message SensorUpMessage {
     ErrorCodeCRTX errorcodecrtx = 104;
     PressData pressdata = 105;
     VibraWireInfo vibrawireinfo = 106;
+    MoistureData moisturedata = 107;
   }
 }

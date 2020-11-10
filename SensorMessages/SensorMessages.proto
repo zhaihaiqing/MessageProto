@@ -774,6 +774,10 @@ message VibraWireInfo{
    uint32 ch16_midfreq = 117;
 }
 
+message MoistureData{
+   double moisture = 101;
+}
+
 message SetRfChannelInfo{
    int32 rf_channel = 1;
 }
