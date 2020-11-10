@@ -324,7 +324,9 @@
             "DistanceYTFD0103",
             "DistanceYTDG0720",
             "DistanceSIT1800R",
-            "DistanceNJWSJD02"
+            "DistanceNJWSJD02",
+            "DistanceHT71B10",
+            "DistanceHT66B10"
         ]
     },
     "Uart485ForHFS716Sample": {
@@ -339,7 +341,8 @@
         ],
         "packets": [
             "Uart485ForHFS716SampleData",
-            "VibraWireResHFS716I0RSUC"
+            "VibraWireResHFS716I0RSUC",
+            "VibraHOS2700SR"
         ]
     },
     "VoltageDataV1": {
@@ -1054,7 +1057,8 @@
             "CrackZenoptics510",
             "DistanceMWND135",
             "DistanceDS5",
-            "DistanceNJWSLX1"
+            "DistanceNJWSLX1",
+            "DistanceWYSSA21000"
         ]
     },
     "StrainContData": {
@@ -1322,6 +1326,15 @@
         "packets":[
             "VibraWireInfoSCZ0F1",
             "VibraWireInfoSCZ0N1"
+        ]
+    },
+    "MoistureData":{
+        "fields": null,
+        "extend_fields":{
+            "moisture": "double"
+        },
+        "packets":[
+            "MoistureHT65B10"
         ]
     }
 }
