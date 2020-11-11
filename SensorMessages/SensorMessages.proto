@@ -777,6 +777,13 @@ message MoistureData{
    double moisture = 101;
 }
 
+message AlgorithmConfigInfo{
+   repeated double kn_0 = 101;
+   repeated double kn_1 = 102;
+   repeated double kn_2 = 103;
+   repeated uint32 peaks = 104;
+}
+
 message SetRfChannelInfo{
    int32 rf_channel = 1;
 }

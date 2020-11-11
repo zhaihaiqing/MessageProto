@@ -110,5 +110,6 @@ message SensorUpMessage {
     PressData pressdata = 105;
     VibraWireInfo vibrawireinfo = 106;
     MoistureData moisturedata = 107;
+    AlgorithmConfigInfo algorithmconfiginfo = 108;
   }
 }
