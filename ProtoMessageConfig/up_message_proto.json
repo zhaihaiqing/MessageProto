@@ -52,7 +52,8 @@
             "Uart485ForHFS316SampleData",
             "VibraWireHFS530",
             "VibraWireSCZ0F1",
-            "VibraWireSCZ0N1"
+            "VibraWireSCZ0N1",
+            "VibraWireHOS2700SR"
         ]
     },
     "AnemometerData": {
@@ -341,8 +342,7 @@
         ],
         "packets": [
             "Uart485ForHFS716SampleData",
-            "VibraWireResHFS716I0RSUC",
-            "VibraHOS2700SR"
+            "VibraWireResHFS716I0RSUC"
         ]
     },
     "VoltageDataV1": {
