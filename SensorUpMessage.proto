@@ -100,7 +100,7 @@ message SensorUpMessage {
     OtaTransFileState otatransfilestate = 95;
     OtaLoadFileState otaloadfilestate = 96;
     OtaCancelFileState otacancelfilestate = 97;
-    PeriodicUp periodicup = 98 ;
+    PeriodicUp periodicup = 98;
     SystemBootInfo systembootinfo = 99;
     ServerAddressInfo serveraddressinfo = 100;
     UpNodeDataCRTX upnodedatacrtx = 101;
