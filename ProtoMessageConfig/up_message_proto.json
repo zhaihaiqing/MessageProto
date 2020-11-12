@@ -50,7 +50,10 @@
             "VibraWireHFS500",
             "VibraWireHFS500V1",
             "Uart485ForHFS316SampleData",
-            "VibraWireHFS530"
+            "VibraWireHFS530",
+            "VibraWireSCZ0F1",
+            "VibraWireSCZ0N1",
+            "VibraWireHOS2700SR"
         ]
     },
     "AnemometerData": {
@@ -322,7 +325,8 @@
             "DistanceYTFD0103",
             "DistanceYTDG0720",
             "DistanceSIT1800R",
-            "DistanceNJWSJD02"
+            "DistanceNJWSJD02",
+            "DistanceHT71B10"
         ]
     },
     "Uart485ForHFS716Sample": {
@@ -669,7 +673,9 @@
             "ClockTaskSampleInfoHIS100",
             "ClockTaskSampleInfoHIS400",
             "ClockTaskSampleInfoSS40N1",
-            "ClockTaskSampleInfoSS40N2"
+            "ClockTaskSampleInfoSS40N2",
+            "ClockTaskSampleInfoSCZ0F1",
+            "ClockTaskSampleInfoSCZ0N1"
         ]
     },
     "ChannelInfoHFS316": {
@@ -1050,7 +1056,8 @@
             "CrackZenoptics510",
             "DistanceMWND135",
             "DistanceDS5",
-            "DistanceNJWSLX1"
+            "DistanceNJWSLX1",
+            "DistanceWYSSA21000"
         ]
     },
     "StrainContData": {
@@ -1204,16 +1211,15 @@
             "OtaCancelFileState"
         ]
     },
-    "AlgorithmConfigInfo":{
+    "PeriodicUp":{
         "fields": null,
         "extend_fields":{
-            "kn_0": "repeated double",
-            "kn_1": "repeated double",
-            "kn_2": "repeated double",
-            "peaks": "repeated uint32"
+            "ccid": "string",
+            "imsi": "string",
+            "imei": "string"
         },
         "packets":[
-            "AlgorithmConfigInfoSS40N2"
+            "PeriodicUp"
         ]
     },
     "SystemBootInfo": {
@@ -1292,6 +1298,62 @@
         ],
         "packets": [
             "PressHT12210I0RSUC"
+        ]
+    },
+    "VibraWireInfo":{
+        "fields": null,
+        "extend_fields":{
+            "ch0_midfreq": "uint32",
+            "ch1_midfreq": "uint32",
+            "ch2_midfreq": "uint32",
+            "ch3_midfreq": "uint32",
+            "ch4_midfreq": "uint32",
+            "ch5_midfreq": "uint32",
+            "ch6_midfreq": "uint32",
+            "ch7_midfreq": "uint32",
+            "ch8_midfreq": "uint32",
+            "ch9_midfreq": "uint32",
+            "ch10_midfreq": "uint32",
+            "ch11_midfreq": "uint32",
+            "ch12_midfreq": "uint32",
+            "ch13_midfreq": "uint32",
+            "ch14_midfreq": "uint32",
+            "ch15_midfreq": "uint32",
+            "ch16_midfreq": "uint32"
+        },
+        "packets":[
+            "VibraWireInfoSCZ0F1",
+            "VibraWireInfoSCZ0N1"
+        ]
+    },
+    "MoistureData":{
+        "fields": null,
+        "extend_fields":{
+            "moisture": "double"
+        },
+        "packets":[
+            "MoistureHT65B10"
+        ]
+    },
+    "AlgorithmConfigInfo":{
+        "fields": null,
+        "extend_fields":{
+            "kn_0": "repeated double",
+            "kn_1": "repeated double",
+            "kn_2": "repeated double",
+            "peaks": "repeated uint32"
+        },
+        "packets":[
+            "AlgorithmConfigInfoSS40N2"
+        ]
+    },
+    "PrecipitationData":{
+        "fields": null,
+        "extend_fields":{
+            "precipitation": "double"
+        },
+        "packets":[
+            "PrecipitationcHT66B10"
         ]
     }
 }
