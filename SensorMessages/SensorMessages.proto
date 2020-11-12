@@ -784,6 +784,10 @@ message AlgorithmConfigInfo{
    repeated uint32 peaks = 104;
 }
 
+message PrecipitationData{
+   double precipitation = 101;
+}
+
 message SetRfChannelInfo{
    int32 rf_channel = 1;
 }

@@ -111,5 +111,6 @@ message SensorUpMessage {
     VibraWireInfo vibrawireinfo = 106;
     MoistureData moisturedata = 107;
     AlgorithmConfigInfo algorithmconfiginfo = 108;
+    PrecipitationData precipitationdata = 109;
   }
 }
