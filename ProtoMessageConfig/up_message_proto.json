@@ -326,8 +326,7 @@
             "DistanceYTDG0720",
             "DistanceSIT1800R",
             "DistanceNJWSJD02",
-            "DistanceHT71B10",
-            "DistanceHT66B10"
+            "DistanceHT71B10"
         ]
     },
     "Uart485ForHFS716Sample": {
@@ -1346,6 +1345,15 @@
         },
         "packets":[
             "AlgorithmConfigInfoSS40N2"
+        ]
+    },
+    "PrecipitationData":{
+        "fields": null,
+        "extend_fields":{
+            "precipitation": "double"
+        },
+        "packets":[
+            "PrecipitationcHT66B10"
         ]
     }
 }
