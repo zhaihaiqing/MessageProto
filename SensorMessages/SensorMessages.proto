@@ -593,6 +593,15 @@ message TriggerSampleConfigInfo{
    int32 is_triggered = 3;
    int32 wind_threshold = 4;
    int32 wind_debounce = 5;
+   uint32 is_incli_triggered = 101;
+   uint32 is_cable_triggered = 102;
+   uint32 is_vibra_triggered = 103;
+   uint32 incli_debounce = 104;
+   uint32 cable_threshold = 105;
+   uint32 vibra_debounce = 106;
+   uint32 vibra_threshold_x = 107;
+   uint32 vibra_threshold_y = 108;
+   uint32 vibra_threshold_z = 109;
 }
 
 message TriggerEvent{
@@ -786,6 +795,17 @@ message AlgorithmConfigInfo{
 
 message PrecipitationData{
    double precipitation = 101;
+}
+
+message TimeSyncInfo{
+   uint32 is_sync = 101;
+   uint32 is_sync_need = 102;
+   uint32 sync_interval = 103;
+   uint32 sync_timeout_period = 104;
+}
+
+message ErrorMessage{
+   uint32 err_no = 101;
 }
 
 message SetRfChannelInfo{
@@ -1180,4 +1200,17 @@ message ConfigVibraWireParameter{
    uint32 ch14_midfreq = 115;
    uint32 ch15_midfreq = 116;
    uint32 ch16_midfreq = 117;
+}
+
+message SetTriggerSampleConfig{
+   uint32 vibra_debounce = 101;
+   uint32 vibra_threshold_x = 102;
+   uint32 vibra_threshold_y = 103;
+   uint32 vibra_threshold_z = 104;
+}
+
+message ConfigTimeSyncParameter{
+   uint32 is_sync_need = 101;
+   uint32 sync_interval = 102;
+   uint32 sync_timeout_period = 103;
 }

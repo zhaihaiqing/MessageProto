@@ -75,5 +75,7 @@ message SensorDownMessage {
     SetMQTTParameter setmqttparameter = 73;
     DownNodeDataCRTX downnodedatacrtx = 74;
     ConfigVibraWireParameter configvibrawireparameter = 75;
+    SetTriggerSampleConfig settriggersampleconfig = 76;
+    ConfigTimeSyncParameter configtimesyncparameter = 77;
   }
 }

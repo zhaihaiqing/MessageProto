@@ -215,7 +215,8 @@
             "ConfigClockTaskSS40N1",
             "ConfigClockTaskSS40N2",
             "ConfigClockTaskSCZ0F1",
-            "ConfigClockTaskSCZ0N1"
+            "ConfigClockTaskSCZ0N1",
+            "ConfigClockTaskSS44F1"
         ]
     },
     "SetTriggerConfigInfo":{
@@ -697,6 +698,29 @@
         "packets":[
             "ConfigVibraWireParameterSCZ0F1",
             "ConfigVibraWireParameterSCZ0N1"
+        ]
+    },
+    "SetTriggerSampleConfig":{
+        "fields": null,
+        "extend_fields":{
+            "vibra_debounce": "uint32",
+            "vibra_threshold_x": "uint32",
+            "vibra_threshold_y": "uint32",
+            "vibra_threshold_z": "uint32"
+        },
+        "packets":[
+            "SetTriggerSampleConfigSS44F1"
+        ]
+    },
+    "ConfigTimeSyncParameter":{
+        "fields": null,
+        "extend_fields":{
+            "is_sync_need": "uint32",
+            "sync_interval": "uint32",
+            "sync_timeout_period": "uint32"
+        },
+        "packets":[
+            "ConfigTimeSyncParameter"
         ]
     }
 }
