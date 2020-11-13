@@ -1353,7 +1353,7 @@
             "precipitation": "double"
         },
         "packets":[
-            "PrecipitationcHT66B10"
+            "PrecipitationHT66B10"
         ]
     }
 }
