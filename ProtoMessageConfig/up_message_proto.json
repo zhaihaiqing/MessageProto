@@ -1181,9 +1181,9 @@
             "STATE_SUC": 0,
             "STATE_ALLCOM": 1,
             "STATE_ACTIVE": 2,
-            "STATE_RET": 3,
-            "STATE_TERM": 4,
-            "STATE_REACTIVE": 5,
+            "STATE_REACTIVE": 3,
+            "STATE_RET":4,
+            "STATE_TERM": 5,
             "STATE_ABANDON": 6,
             "STATE_LOADADBS":7
 
