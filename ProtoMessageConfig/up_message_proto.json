@@ -53,7 +53,7 @@
             "VibraWireHFS530",
             "VibraWireSCZ0F1",
             "VibraWireSCZ0N1",
-            "VibraWireHOS2700SR"
+            "VibraWireHT13110"
         ]
     },
     "AnemometerData": {
@@ -1367,7 +1367,7 @@
             "precipitation": "double"
         },
         "packets":[
-            "PrecipitationHT66B10"
+            "PrecipitationHT66B20"
         ]
     },
     "TimeSyncInfo":{
