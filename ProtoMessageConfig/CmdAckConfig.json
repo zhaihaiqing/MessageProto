@@ -105,6 +105,7 @@
     "ConfigClockTaskGRTU1000": "ConfigClockTaskAck",
     "ConfigClockTaskFC307": "ConfigClockTaskAck",
     "ConfigClockTaskHIS400": "ConfigClockTaskAck",
+    "ConfigTimeSyncParameter" : "ConfigTimeSyncParameterAck",
     "ClearInstructionHCF700": "ClearInstructionHCF700Ack",
     "ClearInstructionHIS700": "ClearInstructionHIS700Ack",
     "CloseNodeWhiteListTransNode": "CloseNodeWhiteListTransNodeAck",
@@ -154,8 +155,9 @@
     "AutoScanHGR100B2": "AutoScanHGR100B2Ack",
     "SetSampleMode": "SetSampleModeAck",
     "QuerySampleMode": "QuerySampleModeAck",
-    "SetTrasMode": "SetTransModeAck",
+    "SetTransMode": "SetTransModeAck",
     "SetTriggerSampleConfigHCF910": "SetTriggerConfigAck",
+    "SetTriggerSampleConfigSS44F1": "SetTriggerSampleConfigSS44F1Ack",
     "QueryTriggerConfig": "QueryTriggerConfigAck",
     "SetChannelFreqMTCollecter":"SetChannelFreqMTCollecterAck",
     "SetChannelFreqHFS716Collecter":"SetChannelFreqHFS716CollecterAck"

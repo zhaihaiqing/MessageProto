@@ -112,5 +112,7 @@ message SensorUpMessage {
     MoistureData moisturedata = 107;
     AlgorithmConfigInfo algorithmconfiginfo = 108;
     PrecipitationData precipitationdata = 109;
+    TimeSyncInfo timesyncinfo = 110;
+    ErrorMessage errormessage = 111;
   }
 }
