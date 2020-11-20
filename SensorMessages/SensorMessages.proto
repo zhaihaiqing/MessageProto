@@ -26,7 +26,6 @@ message VibraWireData{
    double voltage = 5;
    double sample_interval = 6;
    int32 addr = 7;
-   uint32 freqm = 101;
 }
 
 message AnemometerData{
