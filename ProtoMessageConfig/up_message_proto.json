@@ -41,9 +41,6 @@
             "channel",
             "addr"
         ],
-        "extend_fields":{
-            "freqm":"uint32"
-        },
         "packets": [
             "VibraWireHFS316",
             "VibraWireHFS100",
