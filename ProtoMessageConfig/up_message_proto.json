@@ -41,9 +41,6 @@
             "channel",
             "addr"
         ],
-        "extend_fields":{
-            "freqm":"uint32"
-        },
         "packets": [
             "VibraWireHFS316",
             "VibraWireHFS100",
@@ -328,8 +325,7 @@
             "DistanceYTFD0103",
             "DistanceYTDG0720",
             "DistanceSIT1800R",
-            "DistanceNJWSJD02",
-            "DistanceHT71B10"
+            "DistanceNJWSJD02"
         ]
     },
     "Uart485ForHFS716Sample": {
@@ -1149,7 +1145,8 @@
             "GPSDataGR30",
             "GPSDataH3",
             "GPSDataSIT1800",
-            "GPSDataHOS7110H3"
+            "GPSDataHOS7110H3",
+            "GPSDataHS71F"
         ]
     },
     "OtaRequirePiece": {
@@ -1392,6 +1389,16 @@
         },
         "packets":[
             "ErrorMessage"
+        ]
+    },
+    "InclinometerData":{
+        "fields": null,
+        "extend_fields":{
+            "x": "double",
+            "y": "double"
+        },
+        "packets":[
+            "InclinometerHT21B10"
         ]
     }
 }
