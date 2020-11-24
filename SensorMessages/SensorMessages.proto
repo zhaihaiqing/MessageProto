@@ -808,6 +808,11 @@ message ErrorMessage{
    uint32 err_no = 101;
 }
 
+message InclinometerData{
+   double x = 101;
+   double y = 102;
+}
+
 message SetRfChannelInfo{
    int32 rf_channel = 1;
 }

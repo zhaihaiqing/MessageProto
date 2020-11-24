@@ -114,5 +114,6 @@ message SensorUpMessage {
     PrecipitationData precipitationdata = 109;
     TimeSyncInfo timesyncinfo = 110;
     ErrorMessage errormessage = 111;
+    InclinometerData inclinometerdata = 112;
   }
 }
